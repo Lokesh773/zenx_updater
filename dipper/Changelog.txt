@@ -1,440 +1,395 @@
 =======================
-     06-21-2020
+     07-16-2020
+=======================
+
+
+   * build/soong
+637913ab soong: allow ping and curl tools
+
+   * hardware/qcom-caf/sdm845/display
+95a2d7c71 gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+
+   * kernel/xiaomi/sdm845
+6042e08ad2ab defconfig: disable LTO
+e88dce82470e defconfig: Sync ZenX-Core v2.0
+9692a14c23bc gpu: drm: use power efficient workingqueues
+6bafa99e3765 platform: ipa: use power efficient workingqueues
+60fa01ab05f9 block: queue work on power efficient wq
+ee2f69403b1e Optimize some kernel default settings
+65eb8486d89b defconfig: disable CONFIG_RELR
+cc78ff98bb04 Revert "net/wireguard: add wireguard importer"
+b87a65e142d7 mm: Set swappiness to 30
+bf90cb46e8c4 blk: Disable IO_STAT completely
+507fd271afcc Add USB HID Support for 4.9 Kernels
+581ffb3bb2f1 sched/fair: Optimize Schedtune boosted task placement
+85dc75f0621b sched/fair: improve big task placement
+f0c23c67fb50 sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS
+af51dbc9bc6d msm: kgsl: Relax CPU latency requirements to save power
+c4c9ecd791a4 arch:arm64: GPU set initial Frequency @180 Mhz
+6088f08196a1 arch:arm64:dts GPU Underclock to 180 Mhz
+06c738431cca kernel:power: enter sleep quicker
+afc4da0403f9 sdm845-gpu-dtsi: enable NAP power saving state for Adreno 630 GPU
+4639cca4810d enable audit log
+c154bbcd2aca leds-qpnp-haptics: add vibration control support Squash of autor mod @flar2
+3fee01d327ea defonfig: remove CONFIG_CC_STACKPROTECTOR_STRONG
+d6235ecfc72b [BACKPORT]: drm/msm/sde: add sysfs node in dpu driver to provide fps
+ba0bf84e94ca defconfig: Enable Unwanted Files Blocker
+b49ef903bf3a fs: add a /system/ path to file blocker
+11c6d513bb31 fs: block MAGNETAR
+7d994778445c fs: add a simplified file blocker
+a6d874bb99af drivers: misc: implement usb fast charge mode
+
+   * packages/apps/ZenHub
+f1dbff8c ZenHub: Add ZenHub Settings [2/2]
+
+   * vendor/zenx
+d537fcd9 vendor: [SQUASCH]  Switch to Lawnchair Launcher
+
+=======================
+     07-15-2020
+=======================
+
+
+   * frameworks/base
+d70f4fbf041 base: overlays: Add new icon shapes from Android R
+d68f227d981 base: Add some fonts
+92655f71cb7 base: Fix navbar when IME space is hidden
+1affdd185ba base: Add ZenHub Settings [1/2]
+
+   * kernel/xiaomi/sdm845
+c266d43a4642 defconfig: Sync MiPa Kernel v9.4
+2f13c502ee80 stock_defconfig: Sync last changes
+2dd3adefa224 Revert "kbuild: Increase automatic inline instruction limit to 1000 for gcc-10"
+
+   * packages/apps/XiaomiHub
+525b414 XiaomiHub: Rework Restore logic after reboot
+
+=======================
+     07-14-2020
 =======================
 
 
    * device/xiaomi/sdm845-common
-e487666 sdm845-common: media: Fix rank of QC OMX components
-76e1125 sdm845-common: Increase ro.lmk.medium to prevent kills at medium vmpressure
-
-   * frameworks/base
-11f4175c791 SystemUI: Simple Dual systeminfo row
-594bb340c6d RebootTile: Remember last mode
-ced892b6d67 SystemUI: Improve Battery options
-fc358236a5b SystemUI: Fix data usage layout visibility
-acb61df16ed base: Use a proper settings validator for qs_datausage
-0ad0727ae98 SystemUI: QSFooterDataUsage: hide usage if device is disconnected
-f55cddc128e SystemUI: QSFooterDataUsage: show Wi-Fi usage when connected to Wi-Fi
-96820adc22d QSFooterDataUsage: add icon and improve view
-b57bf055cf3 SystemUI: QSFooterDataUsage: update view immediately after change
-fab419dfae9 QSFooterDataUsage: add ability to show daily/monthly [1/2]
-f69dd39a3d5 SystemUI: QS Footer data usage info: improve initialisation
-da7cf99b21f ZenxUtils: add method to check if device is connected to Wi-Fi
-d59542710fb ZenxUtils: add method to get today's passed time
-42bc9bee482 ZenxUtils: Add method to check for both wifi and mobile connections
-787884b2f4f SystemUI: QS Header data usage info: don't show used
-34bd841d72a SystemUI: Simple Dual statusbar row mod [1/2]
-4225f11e0a1 Keyguard: Make clock widgets great again
-
-   * frameworks/native
-159be85e2 surfaceflinger: change usageBits type to uint64_t
-56b76f4f0 surfaceflinger: Add support for extension lib
-
-   * packages/apps/ZenHub
-0d302a22 ZenHub: Initialize Battery modes correctly
-
-   * prebuilts/clang/host/linux-x86/clang-11
-9b695de Update to 20200620 build
+a9f2102 sdm845-common: Disable bluetooth whitelist for AAC codec
+5685136 Revert "sdm845-common: enable GL comp backpressure"
 
    * vendor/zenx
-76c56843 Export qcom UM hal root to soong
-cad35ab6 partner_gms: Support TV GMS
-09eadf66 kernel: Add bison and flex to build environment
-0febd759 extract-utils: Fix usage for ETC files which need sub_dir
-33c048e2 vendor: Cleanup QCOM flags
-f2317319 vendor: Update PixelThemesStub2019 from QQ3A.200605.001
-cc36de82 Export qcom UM hal root to soong
-4ea1479b vendor: ZenX-OS v1.6
-ba3d29b6 vendor: Add ZenX bootanimation
+e0f78792 vendor: Add some fonts
+0c7b0d9f vendor: ZenX-OS v1.7
 
 =======================
-     06-20-2020
+     07-13-2020
 =======================
 
 
-   * packages/apps/ZenHub
-0237059c ZenHub: Fix Datausage settings prop
-7a01cb91 ZenHub: Datausage : Add ability to show daily/monthly [2/2]
-e8bd14ed ZenHub: Simple Dual statusbar row [2/2]
+   * build/make
+80e7b5d2c Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/native
+825fc4d9b Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * manifest
+0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+
+   * packages/apps/CustomDoze
+ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
+97942b8 CustomDoze: Add OnPreferenceChangeListener to AOD on charge preference
+30cc0d7 CustomDoze: Allow to wake the screen instead of pulsing
+
+   * packages/services/Telephony
+68d7c9360 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
 
 =======================
-     06-19-2020
-=======================
-
-
-   * frameworks/base
-0c5b33790fd OronosClock: Improve and use default Date Style
-fa43590499e SystemUI: Correct TypeClockAlt position
-cf1bac8fad7 MNMLMinimalClock: Improve and use default Date Style
-3359fefbe4e SystemUI: Resolve faulty keyguard clock logs outputs
-97cbe363d74 [BACKPORT] Config of LTE signal strength default value remove SNR
-b1699d87300 SystemUI: Fix pink progress animation color in expanded Wi-Fi tile
-c0b3e17fc89 SystemUI: Add transparent FOD icon [1/2]
-e9b1e3450f1 SystemUI: Add PureView recognizing FP animations [1/2]
-14b47964c1c Add OP Recognizing FP animations [1/2]
-6c1bbba4619 FODCircleView: cleanup FOD customization techniques
-03364ec44fb SystemUI: Recognizing fingerprint animation picker [1/2]
-91c164b36cd FODCircleView: Recognizing fingerprint animation [1/2]
-b7f5e07218a Revert "SystemUI: Recognizing fingerprint animation"
-60bd730b153 FODCircleView: Dont change alpha of fod on AOD
-0983f92b5da SystemUI: Add more FOD icons [1/2]
-7c8cce3cf2b SystemUI: FOD icon picker [1/2]
-975a0e44b79 FODCircleView: Fix FOD recognisation at low brightness
-a31851324da SystemUI: Add Samsung Big Hour Clock
-
-=======================
-     06-18-2020
+     07-12-2020
 =======================
 
 
-=======================
-     06-17-2020
-=======================
-
-
-=======================
-     06-16-2020
-=======================
-
-
-=======================
-     06-15-2020
-=======================
-
-
-   * packages/apps/ThemePicker
-8754512 ThemePicker: Use only Portriat Orientation
-e14736a ThemePicker: Fix preview tile in grid option picker
-8783ff2 ThemePicker: Specify we read and write launcher settings
-04310d7 ThemePicker: Allow enabling Accent Hour and Minute clock color
-
-   * packages/apps/ZenHub
-33d7b827 ZenHub: Improve statusbar preference
-0a2acf7c ZenHub: Improve card style
-
-=======================
-     06-14-2020
-=======================
-
-
-   * packages/apps/XiaomiHub
-bf54012 XiaomiHub: Rework Restore logic after reboot
+   * kernel/xiaomi/sdm845
+cbd2e9e4fbb5 Revert "mutex: Add a delay into the SPIN_ON_OWNER wait loop."
+e12a9c5e7f09 arm64: Inline the spin lock function family
+1e4d65cc948e ANDROID: kbuild: don't select LD_DEAD_CODE_DATA_ELIMINATION with LTO
+d4b3c7150867 Fix build break for Argument list too long
+374084add6b2 kbuild: clear LDFLAGS in the top Makefile
+612c6695253b Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into mipa-q-rebase
 
    * prebuilts/clang/host/linux-x86/clang-11
-0e8da7c Update to 20200613 build
+c0229e8 Update to 20200711 build
 
 =======================
-     06-13-2020
-=======================
-
-
-   * packages/apps/Settings
-a51fea4855 Settings: Fix NPE on DataUsageInfo
-
-   * packages/apps/XiaomiHub
-6ef2303 XiaomiHub: Use percent values for vibrations strength
-
-=======================
-     06-12-2020
+     07-11-2020
 =======================
 
 
-   * packages/apps/Settings
-a63c1f4210 Settings: Update GameMode path
-
-   * packages/apps/ZenHub
-df384540 ZenHub: Hide FOD options conditionally
-b60123d0 ZenHub: Fix Telegram group links
-c98db689 ZenHub: Add transparent FOD icon [2/2]
-7d061a90 ZenHub: Add PureView recognizing FP animations [2/2]
-3a6c3222 ZenHub: Add OP Recognizing FP animations [2/2]
-faa6fad7 ZenHub: Recognizing fingerprint animation picker [2/2]
-669718ad fix Recognizing fingerprint animation
-7ebd0f99 ZenHub: Add more FOD icons [2/2]
-35b07971 ZenHub: FOD icon picker [2/2]
-f3f3f140 ZenHub: Add accent color to icons
-958c65ab Status bar notification ticker [2/2]
-cb46380e Recognizing fingerprint animation [2/2]
-fb99637e Show icon when Screen Off FOD is enabled [2/2]
-9f3044bd Conditionally hide the Screen off FOD preference
-dcd702a3 Screen off FOD [3/3]
-79684ba0 Conditionally hide the FOD animation preference
-5fb82982 ZenHub: Add UI Tab
-ca7722cf ZenHub: Add Rom Info section
-7d1add78 ZenHub: Improve Misc and Battery screen
-ebf79fd7 XuiMod: Toast Animations [2/2]
-02573114 ZenHub: Improve Screen screen
-cdbfb5d4 ZenHub: Improve Notifications screen
-20ecc74d ZenHub: Improve Quicksettings screen
+   * kernel/xiaomi/sdm845
+8c06e8e80535 ANDROID: cuttlefish_defconfig: Drop built-in cmdline (except nopti)
 
 =======================
-     06-11-2020
+     07-10-2020
+=======================
+
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2ca8b3cbd Clean up duplicate uses-permission entries
+
+=======================
+     07-09-2020
+=======================
+
+
+   * hardware/qcom-caf/sdm845/display
+42deb8b76 gralloc: Add option for unaligned YCrCb pixel format
+
+   * kernel/xiaomi/sdm845
+65f1d995dcb2 Merge 4.9.230 into android-4.9-q
+eb5d955823b5 Linux 4.9.230
+1535f26e259d efi: Make it possible to disable efivar_ssdt entirely
+396ba2fc4f27 netfilter: nf_conntrack_h323: lost .data_len definition for Q.931/ipv6
+dd54eb64ba65 MIPS: Add missing EHB in mtc0 -> mfc0 sequence for DSPen
+28f47e06af79 cifs: Fix the target file was deleted when rename failed.
+2c3356591713 SMB3: Honor persistent/resilient handle flags for multiuser mounts
+063a6248f23e SMB3: Honor 'seal' flag for multiuser mounts
+ab0b5e92fc36 Revert "ALSA: usb-audio: Improve frames size computation"
+ac518a269385 i2c: algo-pca: Add 0x78 as SCL stuck low status for PCA9665
+0733b1a2be5d virtio-blk: free vblk-vqs in error path of virtblk_probe()
+a56fe733f4b7 hwmon: (acpi_power_meter) Fix potential memory leak in acpi_power_meter_add()
+25c99651712a hwmon: (max6697) Make sure the OVERT mask is set correctly
+69d3042df664 cxgb4: parse TC-U32 key values and masks natively
+0c199348cfaf sched/rt: Show the 'sched_rr_timeslice' SCHED_RR timeslice tuning knob in milliseconds
+04d462a6f413 crypto: af_alg - fix use-after-free in af_alg_accept() due to bh_lock_sock()
+2968445b3d80 kgdb: Avoid suspicious RCU usage warning
+4ea5c9091d62 usb: usbtest: fix missing kfree(dev->buf) in usbtest_disconnect
+ba9950ac9c36 mm/slub: fix stack overruns with SLUB_STATS
+96b0120962e1 mm/slub.c: fix corrupted freechain in deactivate_slab()
+3cc5b83185ba usbnet: smsc95xx: Fix use-after-free after removal
+5960439a0785 EDAC/amd64: Read back the scrub rate PCI register on F15h
+b647889f050c mm: fix swap cache node allocation mask
+b6a357f58949 btrfs: fix data block group relocation failure due to concurrent scrub
+8714d9b4aed8 btrfs: cow_file_range() num_bytes and disk_num_bytes are same
+a39010dcd316 btrfs: fix a block group ref counter leak after failure to remove block group
+b86c9570418b Revert "qcacld: disable CONFIG_WLAN_HANG_EVENT"
+
+=======================
+     07-08-2020
 =======================
 
 
    * frameworks/base
-54f33c65e4a Revert "Add cutout support in QSDetail"
-18da625832c StatusBar: Fix setColorOverride on r39
-8a8dc1ef6ac StatusBar: Check if getBackground is null too
-411afb388ac Merge tag 'android-10.0.0_r37' into ten
+e5ce6e6608e base: custom config to force custom doze brightness [1/2]
+ccdbe51f503 base: Allow to wake the screen instead of pulsing [1/2]
+b75f6f653d8 SystemUI: Add a toggle for the new QS tint [1/2]
+48842f3ed66 SystemUI: Tint QSTile icon with accent color
+545083289ea SystemUI: Fix Biometric dialog corner radius
+5dfa666ba4e SystemUI: Fix Textcolor disorder on dual statusbar
+
+   * packages/apps/Messaging
+7a73648 Merge pull request #1 from hamaminatu/patch-1
+cf824b4 Messaging: Fix duplicate value for resource
 
    * packages/apps/Settings
-ee16310e55 Settings: Add notification log to search index
-a7ad67ff52 Settings: Add notification log to 'App notifications' menu
-d0a08d8f32 Settings: Fix NPE if default supervisor is not defined
-33114fdfb4 Settings: Improve Rom banner
+ea2f9daf5a Merge pull request #1 from Lokesh773/ten
+18cf3394d4 Settings: Bring back on/off toggle for physical SIMs
 
    * packages/apps/ZenHub
-25e3e97a ZenHub: Improve Buttons and Powermenu screen
-850513da Add always show QS settings icon toggle
-852fbdd5 ZenHub: Disable SELinux switch if unrooted
-b3d0112d ZenHub: Add SELinux switch
-66b01d01 Add Blur Powermenu switch and intensity[2/2]
-e32403e2 ZenHub: Add QS Footer Network traffic location
-387811ae Hide swap keys preference on unsupported devices
-0dffe30c  Allow to disable navbar on all devices
-9b534a24 Network Traffic: Customize refresh interval [2/2]
-d1b45920  Replace old Network traffic code with new one
-1f45091c  Extended suspend actions (3/3)
-368b77b8 Smart Pulldown [2/2]
-9f6d8cec Add 3 mode display cutout handler
-75a04dba Add back qs pulldown on lockscreen switch
-401d2844 Use proper values for round corner
-bb472543 Cleanup Battery styles
-dc79c7fe ZenHub: Improve and cleanup Lockscreen widgets
+77b96816 ZenHub: Add a toggle for the new QS tint [2/2]
 
 =======================
-     06-10-2020
+     07-07-2020
+=======================
+
+
+   * kernel/xiaomi/sdm845
+5943e1d8d167 Merge tag 'LA.UM.8.3.r1-08100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into mipa-q-rebase
+eef91be0c528 Merge tag 'LA.UM.8.3.r1-08100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into mipa-q-rebase
+0522acf18236 Merge tag 'LA.UM.8.3.r1-08100-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into mipa-q-rebase
+3a071eec86e1 Merge tag 'LA.UM.8.3.r1-08100-sdm845.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9 into mipa-q-rebase
+5f23271dbeef Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into mipa-q-rebase
+
+   * manifest
+05efc32 Track: BlurView
+520632c Merge pull request #1 from merser2005/ten
+821616b manifest: Track android_external_asus_stitchimage
+5c67eb3 manifest: Track  android_packages_apps_UnifiedEmail
+ae92721 manifest: Sync sm8250 HALs
+4b56194 manifest: Track QTI BT repos
+a1d05ac manifest: Track some LOS 17.1 branches
+0ed43a1 manifest: Track ExactCalculator from los
+1295793 Update script ten
+
+   * packages/apps/Messaging
+164f058 Remove dublicate method definition
+
+   * packages/apps/Settings
+cfae6c6906 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
+35810fb7e3 Theme settings dashboard icons [2/3]
+4884ca524e Settings: Add hotspot setting to allow VPN upstreams
+
+   * packages/apps/ZenHub
+23f52964 ZenHub: Add change maintainer names
+aef5fa5c Merge pull request #5 from CakesTwix/ten
+
+=======================
+     07-06-2020
 =======================
 
 
    * device/xiaomi/dipper
-8619fbd Revert "dipper: Add FOSS config"
-0e740e1 dipper: clean up hdr props
-
-   * device/xiaomi/sdm845-common
-4295b02 Revert "sdm845-common: Enable qti-telephony-common aosp_usr_pref_sel"
-61424c9 sdm845-common: Update ANX to v184
-
-   * frameworks/av
-887cf0108 Camera: Make originalDataSpace be const upon stream creation
-eee7d7a58 avc/hevc: Align 128 everywhere
-eec6695d3 Fix android.media.cts.ImageReaderDecoderTest fail on MT6580    *
-8a8a6c058 mediaswcodec: Set "default" as preferred service
-e20fa2850 Codec2Client: Add function to set preferred store
-
-   * kernel/xiaomi/sdm845
-afebfa138140 defconfig: Sync ZenX-Core v1.8
-d952b44ad79e gpu: drm: use power efficient workingqueues
-afa935e6101f platform: ipa: use power efficient workingqueues
-a14858f0fabc block: queue work on power efficient wq
-99127a54dbb1 Optimize some kernel default settings
-336eb8b85c68 defconfig: disable CONFIG_RELR
-7447c2b6dc43 Revert "net/wireguard: add wireguard importer"
-816687097912 mm: Set swappiness to 30
-7ed7292b8ba7 blk: Disable IO_STAT completely
-393ac7222379 Add USB HID Support for 4.9 Kernels
-9ea38ef437b1 sched/fair: Optimize Schedtune boosted task placement
-5ba9d1153886 sched/fair: improve big task placement
-a69948e94940 sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS
-aa42a3932a38 msm: kgsl: Relax CPU latency requirements to save power
-3d8c6e949d41 arch:arm64: GPU set initial Frequency @180 Mhz
-d1713f3b4109 arch:arm64:dts GPU Underclock to 180 Mhz
-89cd740c9fa7 kernel:power: enter sleep quicker
-86d287077715 sdm845-gpu-dtsi: enable NAP power saving state for Adreno 630 GPU
-ecd85aacb7df enable audit log
-f864fa8b1bd4 leds-qpnp-haptics: add vibration control support Squash of autor mod @flar2
-23ca343fe423 defonfig: remove CONFIG_CC_STACKPROTECTOR_STRONG
-bb4a77e27aee [BACKPORT]: drm/msm/sde: add sysfs node in dpu driver to provide fps
-73cc990819d2 defconfig: Enable Unwanted Files Blocker
-1a436d1b24cd fs: add a /system/ path to file blocker
-178cfbe2a60a fs: block MAGNETAR
-8d106376a90f fs: add a simplified file blocker
-0345043b57cb drivers: misc: implement usb fast charge mode
-
-   * vendor/xiaomi
-1db6da4f dipper: copy display calibration again
-
-=======================
-     06-09-2020
-=======================
-
-
-   * bootable/recovery
-d55b799f Move bootctrl.default to /vendor
-
-   * build/make
-24de103cd Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/build/make into HEAD
-
-   * development
-2bd54d37d Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/development into HEAD
-
-   * frameworks/av
-73aeb7f8a Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/frameworks/av into HEAD
-
-   * frameworks/native
-3f91e7e3e Merge tag 'android-10.0.0_r37' into ten
-90e15d763 sf: Exclude VDS use of HWC on non-UM platforms
-d42a7a936 sf: Remove redundant allocateVirtualDisplay.
-ff7452ad2 sf: Allow VDS to use HWC
-9f057bfb1 SF:Report active config to java framework
-6d935e69b add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
-97ce14d63 Correct PowerManager transaction IDs. These transaction IDs must be kept in sync with the method order from IPowerManager.aidl.
-e53e63551 Don't destroy ART profiles after package move.
-db325ee04 Add a separate flag in the installer for keeping ART profiles
-6970c7d21 input: Adjust priority
-10ab0c644 native: Screen Stabilization [2/2]
-8aaf45017 Add dalvik-heap device configs for 8/12/16 GiB devices
-f225a0dd0 Change the position of addAndGetFrameTimestamps when queueBuffer
-9f4ba2e5d Fix testVerifyStatsExternalConsistent case
-c09e9eea4 Vulkan: Improve error translation in CreateSwapChainKHR
-
-   * frameworks/opt/telephony
-079219161 Merge tag 'android-10.0.0_r37' into ten
-
-   * manifest
-208edf6 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/manifest into HEAD
-
-   * packages/apps/CertInstaller
-d910787 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/CertInstaller into HEAD
-
-   * packages/apps/PackageInstaller
-14d58579 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
-
-   * packages/apps/Settings
-f8d26ee5d0 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
-
-   * packages/providers/MediaProvider
-add25b1 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD
-
-   * packages/services/Telephony
-d64799788 Merge tag 'android-10.0.0_r37' into ten
-
-   * platform_testing
-a224b13b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/platform_testing into HEAD
-
-   * system/core
-41890c0b3 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/system/core into HEAD
-
-   * system/sepolicy
-1d8408d4 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD
-
-=======================
-     06-08-2020
-=======================
-
-
-   * art
-fa501d8af5 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/art into HEAD
-
-   * build/soong
-0e4c7c79 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/build/soong into HEAD
+32767b6 dipper: disable vendor mismatch message
 
    * frameworks/base
-c39701ac871 Sasmung Clock: Seperate for Bold hour and bold minute style
-838a499e362 SystemUI: Don't forcefully convert wallpaper to SRGB
-efd923d4fbe AlarmManagerService.setKernelTime: fix incorrect limit.
-90940a45434 Check user unlocked before write to /data/system_ce/0/snapshots
-bcf80009502 Fix: Media volume bar indicates a wrong value
-31aeb332433 TextClock: Fix NPE in TextClock
-d172a041462 Add center style Typographic clock
-51ba36011d5 base: Adapt Ticker for MasterSwitch
-08e4c32ac64 SystemUI: Fix Ticker layout
-39579618260 Bring back ticker for music ticker and Android 10 fixes
-86986638031 Status bar notification ticker [1/2]
-af01ee92a11 KeyguardClockSwitch: Fix missing status view on custom clocks
-7eaca49330a Add rounded hexagon icon overlay
-6fdcef5343d Fix NPE when resizing with transferring focus failed
-15dd3ba05e7 Fix freeform window moving/resizing doesn't work
-69e931e74b3 Revert "Freedom windows: fix drag [1/2]"
-ff049b762e2 Fix other lights when backlight uses SurfaceController API
-35835513cf8 translate="false" -> translatable="false"
-47f3a009559 Add Light/Dark theme for bugreport warning dialog
-c1b77ca9d17 Fix bugreport warning dialog
-112220057d6 SystemUI: Prevent loop with display timeout
-0ea35f92494 fixup! fixup! lockscreen: Add support for showing unlock screen directly
-84fb1b79ee0 KeyguardUpdateMonitor: Fix race condition before listening for biometrics
-8e37c398ede fixup - Camera: Ignore torch status update for aux or compsite camera
-49ca0a741bb camera: Support exposing aux camera to apps
-16a3b45c542 Camera: Revert old code for aux camera exposing
-d130bc23e92 DozeSensors: only use proximity sensor if supported
-b39d3dd11c9 Revert "Fix status bar for network traffic icon holder"
-c49b69fb199 SystemUI: Fix text clock translations
-eaef6797ce4 TextClock: Bring back the translations
-02b969216d1 Base: Allow defining device parts package name
-ca4e94695d7 MTP: Fix MTP SD card issue
-964dde4e1cc SettingsProvider: Resolve package name that requires permission
-f199553fa03 FODCircleView: Add support for pressed fod layer
-80ab95ddd3f Revert "FODCircleView: Dispatch onPress to HAL only after dimming is applied"
-fb7fbd002be Revert "FODCircleView: Let displaymanager handle brightness"
-a8b808529e5 SystemUI: Nuke Lockscreen Clock size and font style
-68feaf88dcd FW_Base - XuiMod: Toast Animations [1/2]
-0207be93657 core: Keep recent tasks for more time in memory
-4863ebecd56 base: Introduce Default Bold Hour Clock
-48539d3e370 base: Use bold for complete DefaultBoldClock style
-414b0efd3d1 base: Introduce Default Bold Minute Clock
-fcabec3586f SystemUI: Order Lockscreen Clock styles more logically
-6d5043de7b3 base: Add always show QS settings icon toggle
-7c61681c80f SamsungClock: Set proper size and fix small clock issue
-e8f8704f0b5 OroÃ±o clock: Allow Accent color and improve layout
-f7d6ec816be MNML clocks: Allow using accent color and improve layout
-36c00eac6dd base: Introduce MNML clocks
-3f045516589 sFunyClock: Allow Accent color and improve layout
-31e5752b244 DevidedLineClock: Allow using Accent color and improve layout
-231d419adae Lockscreen: Adapt Accent color to use ZenxUtils
-e84f9ed1770 SystemUI: Accent color for Lockscreen ClockWidgets [1/2]
-c88afd21522 base: Add Blur Powermenu switch and intensity[1/2]
-0a7da5cc617 SystemUI: Initialize proper visibility for notification icons container
-88d8117143b Grant storage permission to Google Backup Transport
-f3ce36dc76b Shorten wait time for shutdown time optimization
-79ba9ef8330 PackageInstaller: Show current and new version on APK installation
-c4552a84d3e WindowManagerService: earlier boot animation exit
-8c16b77a2f2 base: Fixing the quick_qs_total_height
-e3f797b3f9a base: Blur behind powermenu
-7591cbb3b12 ViewConfiguration: misc changes (rev)
-ccd2fac2a6b Add Sammy highlight clock
-5c0ced23b96 Add OroÃ±o Clock
-c8a66b8f494 base: Add Divided Lines Clock
-f843c6f8c1c BinaryClock: Use same color behavior as AOSP clocks
-18973653dd5 Add Custom Sneeky Analog Clock
-a3483a294ab Add Custom dotOS Analog Clock
-293438e0ca2 Add Custom Spectrum Analog Clock
-00c0ee18c21 Add Custom Spidey Analog Clock
-1d1009763f4 Add Analog Clock with Numbers
+c508e823fe9 base: Add Linotte font [1/2]
+628ee8d839b SystemUI: Do not condition VoWiFi icon change on calls
+2ada5424d0b SystemUI: Add EMUI VoLTE icon [1/2]
+6fd65237ea3 SystemUI: Add more VoWiFi icon styles [1/2]
+2d764143f17 SystemUI: Optional VoWiFi icon [1/2]
+c8b3188fdf9 [SQUASH] Cleanup VoWiFi toggle commits for better implementation
+00386677972 SystemUI: Don't show VoLTE icon when VoWiFi is showing
+81d31914dec base: Allow hiding VoWiFi StatusBar icon [1/2]
+8407a224777 SystemUI: support VoWIFI icons
+47bb5726d25 SystemUI: Add MIUI 11 VoLTE icon [1/2]
+cb8ffc1fc63 SystemUI: Add CAF VoLTE HD icon [1/2]
+f15f72832a2 base: Refactor Data disabled icon switch
+38261485b7c base: Refactor VoLTE icon switch [1/2]
+62e7163dc79 SystemUI: Add Asus VoLTE Icon [1/2]
+e6de80004cf SystemUI: Add VoLIT icon [1/2]
+f2e670b5490 SystemUI: User Selectable VoLTE Icon [1/2]
+c657a1ad767 base: SystemUI: Add optional notch friendly VoLTE icon
+b2422fe137b Add VoLTE icon toggle [1/2]
+00e215f3bd7 base: Fix padding for VoLTE icon
+5ddfaaeb78a SystemUI: Use VoLTE icon from OOS pie
+d32928b5ea2 Fix VOLTE icon color on Light statusbar
+01e2749235e SystemUI: Enhancement for volte icon
+9ad303d1b54 SystemUI: Query IMS state after CapabilityCallback is regisered
+402bd9d5759 SystemUI: Fix HD icon missing
+73076f63af9 Adapt to IMS registration changes.
+54bb19b3535 SystemUI: Refactor the feature of volte icon
+0cadb783b2a SystemUI: Fix volte icon doesn't update in real time
+ee37391b117 SystemUI: Add new configuration for displaying Volte icon
+15623b107f6 [SQUASCH] Cleanup VoLTE implementation
+421a08db2b2 Fix up statusbar paddings for devices with display cutouts
+a7bd69918ce StitchImageUtility: Fix editor on multi user
+7c907e4ed5d fwb: Port long screenshot implementation from Asus
+d936b328f51 Revert "base: Port extended screenshot function from OOS"
+aaefc8009d7 Revert "base: Increase Longshot timeout to 2 seconds"
+ba269ed3da5 Don't crash if there is IR HAL is not declared
+d93a57ff7cc wm: Passing a new ArraySet instance to avoid crash
+7a8edf47e03 Extend the watchdog timeout of main thread
+e4fd4a56d2f QsPanel: Remove the excess padding
+b3732c45726 DragSurface: destroy surfacecontrol in view site
+dd8325e15cb FloatingToolbar must end animation immediately when parent window gone
+2641c46bd78 InputWrapper: Opt out early if session == null
+eaab4c2cde5 Prevent deadlock when going out of idle state
+639f0721566 Avoid needless Integer.valueOf() object allocation.
+2f21c0047cd SystemUI: fix notification overlap with PIN screen
+f9dfdf0ed21 base: kill some log spam
+e47110c33f4 base: Bringup QS Background color styles [1/2]
 
-   * frameworks/opt/net/wifi
-fe2b5806b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD
+   * manifest
+5383244 Manifest for Android 10.0.0 Release 40
 
-   * hardware/interfaces
-a24aa38ed Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/hardware/interfaces into HEAD
+   * packages/apps/ZenHub
+b0a749fa ZenHub: Add translations for Spanish
+7cc96bf7 ZenHub: Add translations for Portuguese
+7a7cbb19 ZenHub: Add translations for Russian
+e389626a ZenHub:  Add more VoWiFi icon styles [2/2]
+cd374ada ZenHub: Optional VoWiFi icon [2/2]
+99d9750c ZenHub: User Selectable VoLTE Icon [2/2]
+ac3e5e6c ZenHub: Add VOLTE icon toggle [2/2]
+2d619a84 ZenHub: Nuke Show HD icons
 
-   * kernel/xiaomi/sdm845
-514dbd49c6dc defconfig: Sync MiPa Kernel v9.2
+   * vendor/zenx
+aa63b0ce vendor: Add Linotte font [2/2]
 
-   * packages/apps/Bluetooth
-5dce059d Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
+=======================
+     07-05-2020
+=======================
 
-   * packages/apps/DocumentsUI
-892774de8 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD
 
-   * packages/apps/Nfc
-2c87e2d5 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD
+   * frameworks/base
+884e1cafa33 Graphics: Fix NPE on GradientDrawable
+8869dfff849 SystemUI: Fix DataUsage dark theme color issue
+f46e2550341 base: Bringup QS header color styles [1/2]
 
-   * packages/apps/PhoneCommon
-c40872b Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into HEAD
+   * packages/apps/ZenHub
+38835435 ZenHub: Bringup QS Background color styles [2/2]
+1403cae4 ZenHub: Bringup QS header color styles [2/2]
 
-   * packages/providers/DownloadProvider
-48874075 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
+   * prebuilts/clang/host/linux-x86/clang-11
+ce095cc Update to 20200704 build
 
-   * packages/services/Telecomm
-fcac4eae Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD
+   * vendor/zenx
+f47d158c vendor: Build StitchImage
+6ce9d349 Revert "Add Longhshot app"
 
-   * system/bt
-a0e2168d5 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/system/bt into HEAD
+=======================
+     07-04-2020
+=======================
 
-   * system/extras
-d7909507 Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/system/extras into HEAD
 
-   * system/vold
-6d638ce Merge tag 'android-10.0.0_r37' of https://android.googlesource.com/platform/system/vold into HEAD
+=======================
+     07-03-2020
+=======================
+
+
+   * device/xiaomi/dipper
+43112cc dipper: Unset VINTF target level
+
+   * device/xiaomi/sdm845-common
+b8372a6 sdm845-common: Commonize VINTF target level and set it to Android Q
+
+   * frameworks/base
+4bdfb0fa76b Revert "SystemUI: Accent gradient QS Header Background [1/2]"
+09b4efd7435 Revert "SystemUI: Adapt HeaderImage to play nice with AccentHeaderBackground"
+6298f2fcd7a Settings dashboard icons: Fix theme for external icons on 10 [1/2]
+baaed8520ce Theme settings dashboard icons [1/3]
+2135e5e8aaa Switch Styles: Add Retro and MD2
+8f1b79de33b base: Switch styles [1/3]
+bb83e8c724c FWB: Dialer auto proximity speakerphone [1/2]
+d0c16bdcac0 core: Make sensor block package list configurable [1/2]
+cf188744773 overlays: Fix inactive state Wifi Icon in Circular & Filled Icon Pack
+39f4e4eb5ba Fix SystemUI wallpaper crash
+281fb792581 AudioDeviceInventory: launch default music player on headset connect [1/2]
+dc0fc6149c2 SystemUI: QS: Add VPN tile
+372beb89cb7 Keyguard: Allow setting top padding for animations and charging info
+1f972a3622a Fix build errors
+60efe013916 Fix BLE transport discovery scan filter
+91f4ff0bf7a BT: Relocate A2DP codec strings for translation
+b6136fd1845 Enable codec change request when mode changes in aptX-adaptive
+5f92aa36955 Keep a null check before accessing the BluetoothA2dpWrapper APIs.
+a2441f337e6 Bluetooth: Fix for out of bound exception
+896c4c2d5ef BT Dev: Increase array size for codec selection in Dev Op
+a6c3515d7dc Keep the BluetoothHeadset finalize() method protected
+1ac66bea51b Bluetooth: Fix for Global reference table overflow issue[1/2]
+c7372da0884 BT: Add new intent to broadcast IOT device details
+8afaaf8c414 BT_Audio: Updated Check for TWS+ switch
+bdf7edb9f19 TWS_A2DP: Handle active device change between TWS+ earbuds
+45a0cb172fd audio: Add support for APTX TWSP audio codec
+2b09a385982 audio: Add support for audio extended codecs
+3636d6ef871 Use BluetoothUtils instead of Utils
+403ba5a270a GAP: Handle the race condition cases in auto connect logic
+330c8aad20f Obex: Squashed commit of the following
+c57c8a2ed2a Add scan filter for Transport Discovery data
+52f70ac7b46 Support CALLBACK_TYPE_SENSOR_ROUTING
+14aa3e296d3 Add support for Transport discovery AD type (1/2)
+1f67456b622 Bluetooth: TWSP: Support Battery Status information display
+b7fe5fb79aa GAP: Reset bondingInitiatedLocally flag(1/3)
+36f703df146 Bluetooth-TWS: Disable outgoing connection to 2nd earbud
+23f1ee9b411 Bluetooth-TWS: Disable outgoing connection for 2nd earbud.
+7edca767c98 Bluetooth: Rename bluetooth property to support new P Treble rules
+62731489018 Bluetooth: Unpair both earbuds on unpair.
+dc372b84a77 Bluetooth: Add SDK API support for TWS feature (2)
+17def8c0bd5 Revert the change: AudioService: remove dead BT code.
+ef4bea742d7 TWS-A2DP: Add TWS+ codec to DevUI support
+407d5c41701 BT: Adding aptX-Adaptive codec entry to Framework
+feb5557ac88 Add BluetoothQualityReport class(1/2)
+3d63825dda2 Calm down attention service logspam
+8b2b32fa933 TextureView rebind GL texture, if AHB content has changed
+a1f345c95be SystemUI: Extend SystemInfo DualRow [1/2]
+
+   * packages/apps/ZenHub
+768637bb ZenHub: Theme settings dashboard icons [3/3]
+d2b194b5 ZenHub: Add more Switch styles
+
+   * vendor/zenx
+e9376d19 Refactor and add more switch styles
+3ed38dbe Switch Styles : telegram style [3/3]
 
