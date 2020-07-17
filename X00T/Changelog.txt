@@ -1,0 +1,240 @@
+=======================
+     07-17-2020
+=======================
+
+
+   * frameworks/base
+b8d854c base: overlays: Add new icon shapes from Android R
+f7a7859c base: Add some fonts
+
+   * vendor/zenx
+d537fcd vendor:  Switch to Lawnchair Launcher
+
+=======================
+     07-16-2020
+=======================
+
+
+   * build/soong
+637913a soong: allow ping and curl tools
+
+   * frameworks/base
+92655f7 base: Fix navbar when IME space is hidden
+1affdd1 base: Add ZenHub Settings [1/2]
+
+   * hardware/qcom-caf/sdm845/display
+95a2d7c gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+
+   * packages/apps/ZenHub
+f1dbff8 ZenHub: Add ZenHub Settings [2/2]
+
+=======================
+     07-15-2020
+=======================
+
+
+=======================
+     07-14-2020
+=======================
+
+
+   * packages/apps/CustomDoze
+ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
+97942b8 CustomDoze: Add OnPreferenceChangeListener to AOD on charge preference
+30cc0d7 CustomDoze: Allow to wake the screen instead of pulsing
+
+   * vendor/zenx
+e0f7879 vendor: Add some fonts
+0c7b0d9 vendor: ZenX-OS v1.7
+
+=======================
+     07-13-2020
+=======================
+
+
+   * build/make
+80e7b5d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/native
+825fc4d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * manifest
+0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+
+   * packages/services/Telephony
+68d7c93 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+=======================
+     07-12-2020
+=======================
+
+
+=======================
+     07-11-2020
+=======================
+
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2ca8b3c Clean up duplicate uses-permission entries
+
+=======================
+     07-10-2020
+=======================
+
+
+=======================
+     07-09-2020
+=======================
+
+
+   * frameworks/base
+e5ce6e6 base: custom config to force custom doze brightness [1/2]
+ccdbe51 base: Allow to wake the screen instead of pulsing [1/2]
+b75f6f6 SystemUI: Add a toggle for the new QS tint [1/2]
+48842f3 SystemUI: Tint QSTile icon with accent color
+545083289 SystemUI: Fix Biometric dialog corner radius
+5dfa666 SystemUI: Fix Textcolor disorder on dual statusbar
+
+   * hardware/qcom-caf/sdm845/display
+42deb8b gralloc: Add option for unaligned YCrCb pixel format
+
+   * packages/apps/Settings
+ea2f9da Merge pull request #1 from Lokesh773/ten
+
+=======================
+     07-08-2020
+=======================
+
+
+   * packages/apps/Messaging
+7a73648 Merge pull request #1 from hamaminatu/patch-1
+cf824b4 Messaging: Fix duplicate value for resource
+
+   * packages/apps/Settings
+18cf339 Settings: Bring back on/off toggle for physical SIMs
+
+   * packages/apps/ZenHub
+77b9681 ZenHub: Add a toggle for the new QS tint [2/2]
+
+=======================
+     07-07-2020
+=======================
+
+
+   * frameworks/base
+c508e82 base: Add Linotte font [1/2]
+628ee8d SystemUI: Do not condition VoWiFi icon change on calls
+2ada542 SystemUI: Add EMUI VoLTE icon [1/2]
+6fd65237 SystemUI: Add more VoWiFi icon styles [1/2]
+2d76414 SystemUI: Optional VoWiFi icon [1/2]
+c8b3188 [SQUASH] Cleanup VoWiFi toggle commits for better implementation
+
+   * manifest
+05efc32 Track: BlurView
+520632c Merge pull request #1 from merser2005/ten
+821616b manifest: Track android_external_asus_stitchimage
+5c67eb3 manifest: Track  android_packages_apps_UnifiedEmail
+ae92721 manifest: Sync sm8250 HALs
+4b56194 manifest: Track QTI BT repos
+a1d05ac manifest: Track some LOS 17.1 branches
+0ed43a1 manifest: Track ExactCalculator from los
+1295793 Update script ten
+5383244 Manifest for Android 10.0.0 Release 40
+
+   * packages/apps/Messaging
+164f058 Remove dublicate method definition
+
+   * packages/apps/Settings
+cfae6c6 Settings dashboard icons: Fix theme for external icons on 10 [2/2]
+35810fb Theme settings dashboard icons [2/3]
+4884ca5 Settings: Add hotspot setting to allow VPN upstreams
+
+   * packages/apps/ZenHub
+23f5296 ZenHub: Add change maintainer names
+aef5fa5 Merge pull request #5 from CakesTwix/ten
+b0a749f ZenHub: Add translations for Spanish
+7cc96bf ZenHub: Add translations for Portuguese
+7a7cbb1 ZenHub: Add translations for Russian
+e389626 ZenHub:  Add more VoWiFi icon styles [2/2]
+cd374ad ZenHub: Optional VoWiFi icon [2/2]
+99d9750 ZenHub: User Selectable VoLTE Icon [2/2]
+ac3e5e6 ZenHub: Add VOLTE icon toggle [2/2]
+2d619a8 ZenHub: Nuke Show HD icons
+
+   * vendor/zenx
+aa63b0c vendor: Add Linotte font [2/2]
+
+=======================
+     07-06-2020
+=======================
+
+
+   * frameworks/base
+0038667 SystemUI: Don't show VoLTE icon when VoWiFi is showing
+81d3191 base: Allow hiding VoWiFi StatusBar icon [1/2]
+8407a22 SystemUI: support VoWIFI icons
+47bb572 SystemUI: Add MIUI 11 VoLTE icon [1/2]
+cb8ffc1 SystemUI: Add CAF VoLTE HD icon [1/2]
+f15f728 base: Refactor Data disabled icon switch
+3826148 base: Refactor VoLTE icon switch [1/2]
+62e7163 SystemUI: Add Asus VoLTE Icon [1/2]
+e6de800 SystemUI: Add VoLIT icon [1/2]
+f2e670b SystemUI: User Selectable VoLTE Icon [1/2]
+c657a1a base: SystemUI: Add optional notch friendly VoLTE icon
+b2422fe Add VoLTE icon toggle [1/2]
+00e215f base: Fix padding for VoLTE icon
+5ddfaae SystemUI: Use VoLTE icon from OOS pie
+d32928b Fix VOLTE icon color on Light statusbar
+01e2749 SystemUI: Enhancement for volte icon
+9ad303d SystemUI: Query IMS state after CapabilityCallback is regisered
+402bd9d SystemUI: Fix HD icon missing
+73076f6 Adapt to IMS registration changes.
+54bb19b SystemUI: Refactor the feature of volte icon
+0cadb78 SystemUI: Fix volte icon doesn't update in real time
+ee37391 SystemUI: Add new configuration for displaying Volte icon
+15623b1 [SQUASCH] Cleanup VoLTE implementation
+421a08d Fix up statusbar paddings for devices with display cutouts
+a7bd699 StitchImageUtility: Fix editor on multi user
+7c907e4 fwb: Port long screenshot implementation from Asus
+d936b32 Revert "base: Port extended screenshot function from OOS"
+aaefc80 Revert "base: Increase Longshot timeout to 2 seconds"
+ba269ed Don't crash if there is IR HAL is not declared
+d93a57f wm: Passing a new ArraySet instance to avoid crash
+7a8edf4 Extend the watchdog timeout of main thread
+e4fd4a5 QsPanel: Remove the excess padding
+b3732c4 DragSurface: destroy surfacecontrol in view site
+dd8325e FloatingToolbar must end animation immediately when parent window gone
+2641c46 InputWrapper: Opt out early if session == null
+eaab4c2 Prevent deadlock when going out of idle state
+639f072 Avoid needless Integer.valueOf() object allocation.
+2f21c00 SystemUI: fix notification overlap with PIN screen
+f9dfdf0 base: kill some log spam
+e47110c base: Bringup QS Background color styles [1/2]
+884e1ca Graphics: Fix NPE on GradientDrawable
+8869dff SystemUI: Fix DataUsage dark theme color issue
+
+   * vendor/zenx
+f47d158 vendor: Build StitchImage
+6ce9d34 Revert "Add Longhshot app"
+
+=======================
+     07-05-2020
+=======================
+
+
+   * frameworks/base
+f46e255 base: Bringup QS header color styles [1/2]
+
+   * packages/apps/ZenHub
+3883543 ZenHub: Bringup QS Background color styles [2/2]
+1403cae ZenHub: Bringup QS header color styles [2/2]
+
+=======================
+     07-04-2020
+=======================
+
+
+   * frameworks/base
+4bdfb0f Revert "SystemUI: Accent gradient QS Header Background [1/2]"
+09b4efd Revert "SystemUI: Adapt HeaderImage to play nice with AccentHeaderBackground"
+
