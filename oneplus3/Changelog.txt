@@ -1,0 +1,109 @@
+=======================
+     07-17-2020
+=======================
+
+
+   * vendor/zenx
+d537fcd vendor: [SQUASCH]  Switch to Lawnchair Launcher
+
+=======================
+     07-16-2020
+=======================
+
+
+   * build/soong
+637913a soong: allow ping and curl tools
+
+   * frameworks/base
+d70f4fbf base: overlays: Add new icon shapes from Android R
+
+   * hardware/qcom-caf/sdm845/display
+95a2d7c gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+
+   * packages/apps/ZenHub
+f1dbff8 ZenHub: Add ZenHub Settings [2/2]
+
+=======================
+     07-15-2020
+=======================
+
+
+=======================
+     07-14-2020
+=======================
+
+
+   * packages/apps/CustomDoze
+ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
+
+=======================
+     07-13-2020
+=======================
+
+
+   * build/make
+80e7b5d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/native
+825fc4d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * manifest
+0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+
+   * packages/services/Telephony
+68d7c93 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+=======================
+     07-12-2020
+=======================
+
+
+=======================
+     07-11-2020
+=======================
+
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2ca8b3c Clean up duplicate uses-permission entries
+
+=======================
+     07-10-2020
+=======================
+
+
+=======================
+     07-09-2020
+=======================
+
+
+   * packages/apps/Settings
+ea2f9da Merge pull request #1 from Lokesh773/ten
+
+=======================
+     07-08-2020
+=======================
+
+
+   * packages/apps/Messaging
+7a73648 Merge pull request #1 from hamaminatu/patch-1
+
+=======================
+     07-07-2020
+=======================
+
+
+=======================
+     07-06-2020
+=======================
+
+
+=======================
+     07-05-2020
+=======================
+
+
+=======================
+     07-04-2020
+=======================
+
+
