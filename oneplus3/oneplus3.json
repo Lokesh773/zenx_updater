@@ -1,1 +1,8 @@
-{\n  "response": [\n    {\n      "filename": "ZenX-OS-v1.7-Official-oneplus3-20200717.zip",\n      "version": "v",\n      "romtype": "",\n      "size": "742329572",\n      "datetime": 1594993873,\n      "id": "d923a10759781bbc97e90411f56f47a795f5780d0ba16ab14a2ebe62ab54760b",\n      "url": "https://sourceforge.net/projects/zenx-os/files/oneplus3/ZenX-OS-v1.7-Official-oneplus3-20200717.zip/download"\n    }\n  ]\n}
+{
+  "response": [
+    {
+      "datetime": 1594993873,
+      "filename": "ZenX-OS-v1.7-Official-oneplus3-20200717.zip"
+    }
+  ]
+}
