@@ -1,27 +1,118 @@
 =======================
-     07-17-2020
+     07-25-2020
 =======================
 
 
+   * frameworks/base
+85d7fcdd Revert "base: Add some fonts"
+
+   * manifest
+9de9786 Track android_vendor_oplauncher
+
+   * packages/apps/Settings
+ef6f662 Settings: Adapt some preferences for ColorPicker
+
+   * packages/apps/ZenHub
+4cc3e67 ZenHub: Forward-port notification counters
+
+   * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+
    * vendor/zenx
-d537fcd vendor: [SQUASCH]  Switch to Lawnchair Launcher
+40796ed Revert "vendor: Add some fonts"
+
+=======================
+     07-24-2020
+=======================
+
+
+   * device/qcom/sepolicy-legacy
+5311245 sepolicy: cnd: Allow access to wifi_prop
+
+   * device/qcom/sepolicy-legacy-um
+0f7f137 sepolicy: cnd: Fix wifi_prop neverallow for compatible props
+
+   * device/zenx/sepolicy
+26463ce common: Remove no longer needed uncrypt rule
+
+   * frameworks/opt/net/wifi
+0042e65 wifi: Add StaState API
+
+   * frameworks/opt/telephony
+b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into ten
+
+   * hardware/interfaces
+1778df7 Add interface info in boot@1.0-service.rc
+
+   * packages/apps/ThemePicker
+0ba0ad0 ThemePicker: Increase Margin top to avoid Text overlap
+
+   * packages/services/Telecomm
+2b8b5f2 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
+
+   * packages/services/Telephony
+85bc645 Telephony: Break more qti-telephony-framework dependency
+
+   * system/core
+51c1016 Boost init priority before main loop
+
+=======================
+     07-23-2020
+=======================
+
+
+=======================
+     07-22-2020
+=======================
+
+
+   * external/airbnb-lottie
+2df8bfa Revert "Add Screen On/Off Check"
+
+=======================
+     07-21-2020
+=======================
+
+
+   * build/soong
+81a7bf0 Re-allow relative paths for modules
+
+   * frameworks/opt/net/ims
+b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
+
+=======================
+     07-20-2020
+=======================
+
+
+=======================
+     07-19-2020
+=======================
+
+
+   * vendor/oplauncher
+1ba7f19 Updated OPLauncher mod to v3.0
+
+=======================
+     07-18-2020
+=======================
+
+
+=======================
+     07-17-2020
+=======================
+
 
 =======================
      07-16-2020
 =======================
 
 
-   * build/soong
-637913a soong: allow ping and curl tools
-
-   * frameworks/base
-d70f4fbf base: overlays: Add new icon shapes from Android R
-
    * hardware/qcom-caf/sdm845/display
 95a2d7c gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
-
-   * packages/apps/ZenHub
-f1dbff8 ZenHub: Add ZenHub Settings [2/2]
 
 =======================
      07-15-2020
@@ -33,77 +124,25 @@ f1dbff8 ZenHub: Add ZenHub Settings [2/2]
 =======================
 
 
+=======================
+     07-13-2020
+=======================
+
+
    * build/make
 80e7b5d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
 
    * frameworks/native
 825fc4d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
 
-   * manifest
-0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
-
    * packages/apps/CustomDoze
 ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
-
-   * packages/services/Telephony
-68d7c93 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
-
-=======================
-     07-13-2020
-=======================
-
 
 =======================
      07-12-2020
 =======================
 
 
-=======================
-     07-11-2020
-=======================
-
-
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-2ca8b3c Clean up duplicate uses-permission entries
-
-=======================
-     07-10-2020
-=======================
-
-
-=======================
-     07-09-2020
-=======================
-
-
-   * packages/apps/Settings
-ea2f9da Merge pull request #1 from Lokesh773/ten
-
-=======================
-     07-08-2020
-=======================
-
-
-   * packages/apps/Messaging
-7a73648 Merge pull request #1 from hamaminatu/patch-1
-
-=======================
-     07-07-2020
-=======================
-
-
-=======================
-     07-06-2020
-=======================
-
-
-=======================
-     07-05-2020
-=======================
-
-
-=======================
-     07-04-2020
-=======================
-
+   * external/pulse
+668d645 Pulse: Add automatic album art color mode [2/3]
 
