@@ -1,0 +1,428 @@
+=======================
+     07-26-2020
+=======================
+
+
+=======================
+     07-25-2020
+=======================
+
+
+   * frameworks/base
+85d7fcdd658 Revert "base: Add some fonts"
+0b4cfd678ac base: add Mallow QS style [1/3]
+cbcfb39eb78 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
+151fd299259 TypeClockAlt: Align owner info
+8e24559a755 base: Add ZenHub Settings Icon Type [1/2]
+e7c7c2969b2 SystemUI: Fix owner info alignment for centered type clock
+d86ef7bf9d1 base: clipboard toast toggle [1/2]
+787dd5581aa base: iOS-like toast notification for clipboard access
+aaa0b4a543b StatubarIconList: Fix Network traffic visibility on overlayChange()
+e705868ca2a Screenstabilization: Catch DeadObjectException
+66742eef630 Purge unused native memory before Zygote fork events
+037ccf6ef6b Fix color mismatch of pointers
+33ee9eda7fc Teaches the ProcessCpuTracker about USAPs.
+f8f6f653ab3 Fixed an issue Zygote initialization.
+69edf17d608 Improved timekeeping logic for USAP Pool refill mechanism.
+7d3dea16f90 Resets the refill action/timing info after a pool fill event.
+12f06bc2013 Make the USAP Pool refill delay configurable.
+c8c13ec4459 Re-adds a trace  point that was accidentally removed.
+b82bf656ec5 Moved some thread priority changes.
+f94557d6ce3 Adjust Java Language thread priority in new processes.
+fa7803435fc Adjusts the USAP pool refill mechanism.
+01d32f82718 Change USAP name to application name as soon as possible.
+50a12e07868 ScreenDecoration: Fix crash on few devices
+f80b1c65b2e SystemUI: notch-city: Do not apply immersive rules to 180 rotation
+03aced4bafd SystemUI: notch-city: Dejank immersive mode with QS panel
+b20356c1a3a SystemUI: notch-city: Make it smarter with orientation [1/2]
+
+   * manifest
+9de9786 Track android_vendor_oplauncher
+771ef4c Track own android_external_pulse
+
+   * packages/apps/Settings
+ef6f662177 Settings: Adapt some preferences for ColorPicker
+b9ff00dedc Settings: Clipboard toast toggle [2/2]
+
+   * packages/apps/ZenHub
+4cc3e67 ZenHub: Forward-port notification counters
+8949680 ZenHub: add Mallow QS style [2/3]
+
+   * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+d4644aa Revert "support: Import Custom switch and category"
+
+   * vendor/zenx
+40796ed3 Revert "vendor: Add some fonts"
+df7b263c vendor: add Mallow QS style [1/3]
+
+=======================
+     07-24-2020
+=======================
+
+
+   * device/qcom/sepolicy-legacy
+5311245f sepolicy: cnd: Allow access to wifi_prop
+
+   * device/qcom/sepolicy-legacy-um
+0f7f1370 sepolicy: cnd: Fix wifi_prop neverallow for compatible props
+e5dcdf6c sepolicy: cnd: Allow access to wifi_prop
+b6b72c32 sepolicy: Unlabel aux camera whitelist prop
+ef8a51a2 Sepolicy: add define for lksecapp vbmeta and dtbo
+
+   * device/zenx/sepolicy
+26463ce common: Remove no longer needed uncrypt rule
+
+   * frameworks/base
+dfe14da23e9 ScreenDecorations: Account notch-city for custom cutout
+0fc5477cc45 ScreenDecorations: Simplify rounded size selection
+efb6e412e9e SystemUI: Revert few changes in notch-city
+4dd1eb51a51 SystemUI: notch-city: Reduce code redundancy
+b972e717bda ScreenStabilizationTile: Fix velocity amplitude format
+0a9724c563a Fix typos related to sortSelectionIndices
+1f03bbb23a0 Fix app crash if the selection is from reverse direction.
+0db929bc458 TypeClock: Align owner info as per the clock style
+c759ae3db20 fixup - telephony: Conditionally ignore RSSNR signal level
+3efd77d52c5 Telephony: IMS: Cache subscriber associated uri
+3519e9405b4 Set Assistant UID of the current user.
+e6261e1baa0 BLE: Fix NPE during start advertising
+0f2eec7b937 BT: Relocate A2DP codec strings for translation
+f75c433bb6d ConnectivityService: prevent setting net.hostname to null
+2a293dfc558 SystemUI: Don't reload tiles when auto brightness is toggled
+838b7930cba SystemUI: Allow setting custom rounded corner shapes
+60599471eb8 ScreenDecorations: Don't draw cutouts in immerse
+4665d2db919 ScreenDecorations: Check setting if newValue is null, respect defaults
+2af721b39a4 ScreenDecorations: Remove the red debug color
+2bdcc42cddd base: Rework corner handling in notch-city immerse mode
+c9c2df0169c base: Remove current immserse corner impl
+75110f771f0 SystemUI: Show infinity for large notification counts
+27980bafd9b SystemUI: Forward-port notification counters [1/2]
+b780289989d Add JustIcons QS Tile style [1/3]
+4ed36693bf3 TypographicCLock: Fix missing minute entry for german language
+b19162e50d6 Adds Zygote policy flags to control how applications are launched
+ea2775134b0 Start process of next activity with top priority in advance
+c15f1a4e2fe SystemUI: Improve QS Background
+eb3719a7602 Don't request render in GLSurfaceView.GLThread ctr
+023bb2b34cd Add synchronization for invokeForAllObservers call
+80c3e0fa3bc Return null on failed insert due to permissions
+3c3c8b3a423 Fixes crash/race condition when destroyActivity
+f1177e6f1ae NotificationPanelView: Fix initial touch co-ordinates
+21f19e37c0b base: Reduce keyguard delay
+fd32e6fa359 API changes due to importing RI BigInteger
+912ed0d749d Send top-app's render thread tid to perf HAL
+f69de06b8c2 Remove unused / unimplemented CorePlatformAPI methods.
+1335c3f8776 Remove references to Dalvik logger.
+d942c9b42d7 trigger file removal when slice permission is removed
+e72bf3ba7c1 Throw XmlParserException when client tag cannot be found when parsing slice permissions.
+77ac41e8c40 [viewcompiler] Switch to slicer DEX opcode definitions
+363b2411c0f PackageInstallerSession: Minor refactorings and cleanups
+8eb53769583 Simplifying callback calls in PackageInstallerSession
+35f17e733a1 Fix PackageWatchdog::syncRequestsAsync and related code
+eb7ae3134c7 framework/base: add parallel verifyV1
+4ff8162a18a Perf: Boost UI thread during app launching
+66b98edd6d7 framework: add boost for package installation
+dda8e006c47 BoostFramework: New hintType for App Starting from BG.
+05df6643490 remove obsoleted cgroup follow option
+87fec57ef82 perf: Load performance lib from Zygote
+f551b8ea4b8 BoostFramework: Add debug to hide logcat spam on devices without QPerformance
+739114af838 perf: enable gesture fling boost by default
+1d26f116c7b [SQUASH] BoostFramework: To Enhance performance.
+34e59e3dc77 Makes the loading "spinner" animation smoother
+d66ea0e071b DO NOT MERGE Make the disconnecting list from activity up-to-date
+7a26450d3bc Filter preferred activities before committing to storage
+36b05a3e69c Avoid potential fd leaks from jniCreateFileDescriptor (2/2)
+ca090d1e819 Avoid potential fd leak from jniCreateFileDescriptor (1/2)
+949897d53a7 Bluetooth: Avoid reentrant lock in getService method
+9d31b565f82 Clock: Ensure mHandler is not null
+9dfeed08a2b Clock: Fix seconds not updating
+1951230008d Clock: Use handler optimizations wherever possible
+d5280f4c8db Fix typos related to sortSelectionIndices
+e49e17f2e95 Fix app crash if the selection is from reverse direction.
+6e62b5a76c4 SystemUI: Fix NPE on notification ambient pulse
+f9223d30450 QSTile: Clean up
+b7774da7874 QsLabel: make QsLabel Tint Optional [1/2] Corvus: Adapt with our code
+2242c5fd15d QSTileHost: add reloadAllTiles() public function
+383f0611beb QS Tile : fix the issue of icons disappearing
+5933cd95e31 disco dingo the qs [1/2]
+3b7bdfcff1b Random Qs Tint: tint active QS Tiles with random colors [1/2]
+b063aa7b0a0 SystemUI: Tint active qs tile expand indicator with accent color
+0d77b9b0d5e QSTile: tint second line of active tile as well
+14e4a91ee32 QS tile label: tint it with accent color and use bolder font @idoybh (DerpFest) edits: Make it toggleable by the switch introduced in: 3472eab234a465e0a95c8f42fdf8dc74d50921ee
+67ff13d6fd9 SystemUI: Add a toggle for the new QS tint [1/2] idoybh (DerpFest) edits: Use current SettingsObserver
+c00792fcbcb SystemUI: Tint QSTile icon with accent color
+d6c2d7c75b9 QSTileBaseView: Add random color from ColorUtils
+443d750d9c5 Revert "SystemUI: Tint QSTile icon with accent color"
+12ac59393e2 Revert "SystemUI: Add a toggle for the new QS tint [1/2]"
+bb06d1c5fd2 base: Make 'R style' notification headers toggleable [1/2]
+835ec3c229d Implement R style notification section headers
+231bc57f4d3 SystemUI: Allow enabling Gradient QS Header [1/2]
+58ff7d6e8fc WIP: SystemUI: QS Background modification
+7e632cbfe23 QStilestyle: Remove Teardrop [1/3]
+67a3a63c4cd base: QSTiles: Add a few more designs[1/3]
+b94c26d05d1 QSTiles: Add CircleOutline styles [1/3]
+cee86a5742f base: add Cookie QS style [1/3]
+6d4fb3f3613 Make Qs tile style actually work
+4d06bb399b8 Add more QS tile style [1/3]
+45311dfd6d4 Add sun custom QS tile [1/3]
+ef58ad91405 Add 5 new QS Tile style [1/3]
+de65ae2ea92 Introduce QS tile style picker [1/3] *Crvs: Clean up some overlay code
+ab5353fb79c EdgeLighting: Add option for random colors [1/2] Corvus: Adapt for our code
+e8d16434295 SystemUI: Ambient Edge Pulse layout [1/2]
+e87339f6b8f NotificationLights: add reverse animation direction
+d427910ea01 Let's cut Max Excape Animation in Half
+45fab579e4c base: Add automatic album art color mode for navbar pulse [1/2]
+a4164de07e3 base: Pulse navbar audio gfx visualizer for Android 10 [1/2]
+9d4a419aaf8 IMS: Add new carrier config.
+6d65a3d5f5f IMS: Add new Carrier Config.
+d54dba6f86c Telephony: Rename VoWiFi Emergency notification intent.
+c9c0f2a53ec base: Make lockscreen timeout configurable [1/2]
+
+   * frameworks/opt/net/wifi
+0042e6582 wifi: Add StaState API
+
+   * frameworks/opt/telephony
+b52fe1dd9 Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into ten
+
+   * hardware/interfaces
+1778df7bb Add interface info in boot@1.0-service.rc
+
+   * packages/apps/ThemePicker
+0ba0ad0 ThemePicker: Increase Margin top to avoid Text overlap
+
+   * packages/apps/ZenHub
+2161749 ZenHub: Add JustIcons QS Tile style [3/3]
+ba9d066 ZenHub: Improve QS settings
+0f6597f ZenHub: Fix Ambient ColorMode hiding Colorpicker
+996c4dc ZenHub: Add ZenHub Settings Icon Type [2/2]
+
+   * packages/services/Telecomm
+2b8b5f25 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
+c92efb16 Telecomm: Break more qti-telephony-framework dependency
+
+   * packages/services/Telephony
+85bc6450b Telephony: Break more qti-telephony-framework dependency
+377bdb0a0 Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into ten
+
+   * system/core
+51c1016f0 Boost init priority before main loop
+
+   * vendor/support
+4e15448 support: Add VibrationUtils to reduce code redundancy
+9c0d285 support: CustomSeekbarPreference: Code cleanup
+8b827e9 support: CustomSeekbarPreference: Add haptic feedback to actions
+c04ab93 support: ColorPicker: Add haptic feedback to some buttons
+8530390 support: ColorPicker: Hide buttons when the preference is disabled
+8649821 support: ColorPicker: Disable dividers by default
+2add1a5 support: ColorPicker: Use material design layout
+9af6147 support: ColorPicker: Add attrs to show/hide reset and preview icons
+dfcf902 support: ColorPicker: Cleanup code
+1d02fb8 support: ColorPicker: Allow to use it with only xml calls
+475214e support: Import Custom switch and category
+
+   * vendor/zenx
+3eea0aeb vendor: notch-city: Make it smarter with orientation [2/2]
+c7e83e09 vendor: update GMS updater component disable list
+74f0a638 Add JustIcons QS Tile style [2/3]
+ce9e6828 vendor: Include OP Launcher
+
+=======================
+     07-23-2020
+=======================
+
+
+   * packages/apps/Settings
+6d47ddf898 Settings: Remove top padding from ZenX-Logo
+c2262e878e Settings: Update some animations
+
+   * packages/apps/ZenHub
+bb8e199 ZenHub: Update maintainers and devices
+cb3b3eb ZenHub: Beautify
+90b7f8d ZenHub: make QsLabel Tint Optional [2/2]
+1ace26c ZenHub: disco dingo the qs [2/2]
+c388d3f ZenHub: tint active QS Tiles with random colors [2/2]
+f0ed3d6 Revert "ZenHub: Add a toggle for the new QS tint [2/2]"
+cea5757 ZenHub: Add OnePlus dashboard icons [2/2]
+4f85f25 ZenHub: Settings Dashboard Icons : get Random Color for dashboard icons [2/2]
+5cffeab Pulse: Add automatic album art color mode [3/3]
+8d2953c Pulse navbar audio gfx visualizer for Android 10 [3/4]
+84cc1cd ZenHub: Gradient QS  Background
+a557714 ZenHub: Make 'R style' notification headers toggleable [2/2]
+9f9c3b4 ZenHub: Remove teardrop qs style [3/3]
+15f107c ZenHub: Add a few more qstile designs[3/3]
+e111746 ZenHub: Add CircleOutline styles [3/3]
+4c2aee7 ZenHub: add Cookie QS style [3/3]
+9fa6420 ZenHub: Add more QS tile style [3/3]
+b70fa0f ZenHub: Introduce QS tile style picker [3/3]
+
+=======================
+     07-22-2020
+=======================
+
+
+   * external/airbnb-lottie
+2df8bfac Revert "Add Screen On/Off Check"
+f61fa036 Add Screen On/Off Check
+
+   * packages/apps/Settings
+1cf10db2b1 Settings: Add OnePlus dashboard icons [1/2]
+4dcd058ee6 Settings Dashboard Icons : get Random Color for dashboard icons [1/2]
+8d07c6b7e0 Settings: Make lockscreen timeout configurable [2/2]
+071d803612 Settings: more layout improvements
+793bd354ac Settings: Lottie Animations
+23c071d85e Settings: Redesign PreferenceCategory
+0ddd3d38c5 Settings: add bool to ignore icon space reserved
+9b0f381638 Settings: Categorise!
+7b11e370a6 Settings: import airbnb-lottie
+
+   * system/core
+4d4d2fd88 adb: daemon: Drop privileges on userdebug and user builds
+e342ca1fb libprocessgroup: Prevent SetProcessProfiles from using cached fd
+e5c80ec29 libprocessgroup: refactor constant strings and reformat for clang-format
+1b6fa0e97 libprocessgroup: Prevent aggregate profiles from referencing stale ones
+9af6e7432 sched_policy: add get_cpuset/sched_policy_profile_name
+95adf2a50 libprocessgroup: add support to set aggregate profiles
+14ef38403 Allow to drop existing fd cache of cgroup path
+ed3cda79b Let blkio cgroup follow sched_policy
+40aa6d690 Add support for freezer cgroup
+
+=======================
+     07-21-2020
+=======================
+
+
+   * build/soong
+81a7bf0d Re-allow relative paths for modules
+
+   * frameworks/opt/net/ims
+b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
+
+   * packages/apps/ZenHub
+8226e65 ZenHub: Add some Edge light settings
+f84a1ca Edgelight: Add random color[2/2]
+
+   * system/core
+75e4028ce Remove more duplicated symlinks
+5b70d9a46 Remove duplicated debugfs symlink
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
+
+   * vendor/zenx
+aa87c6c6 Revert "vendor: [SQUASCH]  Switch to Lawnchair Launcher"
+3dd76112 QStile: Update packages
+c711a286 Qstilestyle: Remove teardrop [2/3]
+604a60d1 QSTiles: Add a few more designs[2/3]
+8fc9ca03 QSTiles: Add CircleOutline styles [2/3]
+6f303b06 Shishufied: add Cookie QS style [2/3]
+fb8e98f4 Add more QS tile style [3/3]
+becae367 Add sun custom QS tile [3/3]
+f4f8fbd9 Add 5 new QS Tile style [3/3]
+1fda1114 Introduce QS tile style picker [3/3]
+
+=======================
+     07-20-2020
+=======================
+
+
+=======================
+     07-19-2020
+=======================
+
+
+   * packages/apps/ZenHub
+c322aa7 ZenHub: Toggle QS Footer security information [2/2]
+a426621 ZenHub: Remove QS Background Transparency
+
+   * vendor/oplauncher
+1ba7f19 Updated OPLauncher mod to v3.0
+
+=======================
+     07-18-2020
+=======================
+
+
+   * frameworks/base
+700becca929 SystemUI: Reset PUK StateMachine after PUK is unlocked
+16810302071 SystemUI: there is unexpected SIM PIN input dialog.
+09ca986e967 Close file descriptor to avoid socket leak
+aec3ca723c4 bluetooth: fixup! communication / icon after clean flash and first pairing
+be9acd39eed bluetooth: fix communication / icon after clean flash and first pairing
+90fba5c2311 base: Fix NPE on some devices by checking for null client (#24)
+faeb6c87814 SystemUI: Fix issue with Bluetooth tile
+e742e7d8b6e SystemUI: Toggle QS Footer security information [1/2]
+
+   * packages/apps/Settings
+af0c58a384 Settings: Bind Pickup Gesture to Doze Tilt sensor
+
+   * packages/apps/ZenHub
+c04fc50 ZenHub: Fix Lockscreen BatteryBar default state
+a59ae26 ZenHub: Add ZenHub Settings [2/2]
+
+   * vendor/zenx
+1cb69cee vendor: Fit updater script for our OTA
+f38f8b9e vendor: [SQUASCH]  Switch to Lawnchair Launcher
+
+=======================
+     07-17-2020
+=======================
+
+
+   * frameworks/base
+259a12315fe base: overlays: Add new icon shapes from Android R
+2164681aa9b base: Add some fonts
+d5ee762bab4 base: Fix navbar when IME space is hidden
+5fc8404b6b5 base: Add ZenHub Settings [1/2]
+8fc4961f0c1 base: custom config to force custom doze brightness [1/2]
+508a2aeacd2 base: Allow to wake the screen instead of pulsing [1/2]
+aca846b1a5c SystemUI: Add a toggle for the new QS tint [1/2]
+e2f215ce43e SystemUI: Tint QSTile icon with accent color
+96330d54b0d SystemUI: Fix Biometric dialog corner radius
+0e4027c92b9 SystemUI: Fix Textcolor disorder on dual statusbar
+
+=======================
+     07-16-2020
+=======================
+
+
+   * build/soong
+637913ab soong: allow ping and curl tools
+
+   * hardware/qcom-caf/sdm845/display
+95a2d7c71 gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+
+=======================
+     07-15-2020
+=======================
+
+
+=======================
+     07-14-2020
+=======================
+
+
+   * vendor/zenx
+e0f78792 vendor: Add some fonts
+0c7b0d9f vendor: ZenX-OS v1.7
+
+=======================
+     07-13-2020
+=======================
+
+
+   * build/make
+80e7b5d2c Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/native
+825fc4d9b Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * manifest
+0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+
+   * packages/apps/CustomDoze
+ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
+97942b8 CustomDoze: Add OnPreferenceChangeListener to AOD on charge preference
+30cc0d7 CustomDoze: Allow to wake the screen instead of pulsing
+
+   * packages/services/Telephony
+68d7c9360 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
