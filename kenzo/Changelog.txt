@@ -1,0 +1,202 @@
+=======================
+     07-30-2020
+=======================
+
+
+   * frameworks/av
+af39257e6 fix Miracast for devices using HDCP method
+
+   * frameworks/base
+d81cb516 Clock Style: Add lockscreen Fire circle animation clock
+
+   * packages/apps/Settings
+abcd84d Settings: Change ZenHub summary
+
+   * system/bt
+b8ddc4aa6 Add support force disable sco enhanced sync commands
+fee55f227 Revert "Add support to force disable enhanced sco commands"
+
+   * vendor/zenx
+2874362 vendor: Add some fonts
+
+=======================
+     07-29-2020
+=======================
+
+
+   * packages/apps/Bluetooth
+76e727c Add switch to select SBC HD by default [2/3]
+
+   * packages/apps/ThemePicker
+e5300cc ThemePicker: Increase Margin top to avoid Text overlap
+
+   * packages/apps/ZenHub
+677f663 ZenHub: Increase bottom margin to avoid icon overlap
+
+=======================
+     07-28-2020
+=======================
+
+
+   * build/soong
+3f6640a Allow arm-linux-androidkernel-ld
+
+   * manifest
+e2c01f9 Revert "Track android_vendor_oplauncher"
+
+=======================
+     07-27-2020
+=======================
+
+
+   * external/pulse
+0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
+
+   * device/xiaomi/msm8956-common
+42c5408 Dont Build Perf
+998cd6a Revert "AdvancedControls: Disable spectrum"
+9888742 Revert "msm8956-common : Some tweak"
+
+   * vendor/xiaomi
+693115d4 Dont Build Perf
+
+=======================
+     07-26-2020
+=======================
+
+
+=======================
+     07-25-2020
+=======================
+
+   * device/xiaomi/kenzo
+af14e74 Revert "kenzo: opt-out lawnchair"
+
+   * device/xiaomi/msm8956-common
+19f597d msm8956-common : Some tweak
+08da316 AdvancedControls: Disable spectrum
+af15258 Revert "Revert "msm8956-common: props: Enable zygote preforking""
+
+   * device/qcom/sepolicy-legacy
+5311245 sepolicy: cnd: Allow access to wifi_prop
+
+   * device/qcom/sepolicy-legacy-um
+0f7f137 sepolicy: cnd: Fix wifi_prop neverallow for compatible props
+
+   * device/zenx/sepolicy
+26463ce common: Remove no longer needed uncrypt rule
+
+   * frameworks/opt/net/wifi
+0042e65 wifi: Add StaState API
+
+   * frameworks/opt/telephony
+b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into ten
+
+   * hardware/interfaces
+1778df7 Add interface info in boot@1.0-service.rc
+
+   * packages/services/Telecomm
+2b8b5f2 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
+
+   * packages/services/Telephony
+85bc645 Telephony: Break more qti-telephony-framework dependency
+
+   * system/core
+51c1016 Boost init priority before main loop
+
+   * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+
+=======================
+     07-24-2020
+=======================
+
+
+=======================
+     07-23-2020
+=======================
+
+
+   * external/airbnb-lottie
+2df8bfa Revert "Add Screen On/Off Check"
+
+=======================
+     07-22-2020
+=======================
+
+
+   * frameworks/opt/net/ims
+b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
+
+=======================
+     07-21-2020
+=======================
+
+
+=======================
+     07-20-2020
+=======================
+
+   * device/xiaomi/msm8956-common
+b5a22fb msm8956: Pin hacked IMS apk to get rid of the stupid HD notification
+9fef8ce Revert "Revert "msm8956-common: kang blobs from mata QP1A.190502.046""
+006c369 Revert "Dont Build Perf"
+
+=======================
+     07-19-2020
+=======================
+
+   * device/xiaomi/kenzo
+e2d4073 kenzo:overlay: fix QS total height
+3352d88 kenzo: opt-out lawnchair
+
+   * device/xiaomi/msm8956-common
+4b398a3 Revert "msm8956-common: props: Enable zygote preforking"
+
+
+=======================
+     07-18-2020
+=======================
+
+   * device/xiaomi/kenzo
+1d98921 kenzo: add retromusicplayer
+
+   * device/xiaomi/msm8956-common
+5200cfb Revert "msm8956-common: Add local override package to remove standart apps again"
+
+=======================
+     07-17-2020
+=======================
+
+
+   * device/xiaomi/msm8956-common
+aaccbac msm8956-common: lower down the lcd density
+af60501 msm8956-common: Add local override package to remove standart apps again
+5d132af msm8956: common changes
+ba0e8f9 msm8956: set qseecom daemon service
+a4e49eb msm8956-common: Enable AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
+623764a msm8956-common: init.qcom.usb.rc: Fix the incorrect mtp property
+353006d msm8956-common: init.qcom.usb.rc: Set the sys.mtp.device_type property
+14c322f msm8956-common: media: Update opus omx codec ranking
+001d75d msm8956-common: fix rank of OMX audio codec components
+7d3f442 msm8956-common: audio: Add Telephony Rx to surround_sound sink
+9676620 msm8956: remove unused libs and add search function
+1aa55d4 msm8956: vndk: Correct properly vndk for our platform
+d0fb163 Revert "msm8956: vndk: Update from marlin"
+636a5c9 Revert "msm8956: vndk-sp: Add gralloc dependencies to vndk-sp list"
+4afe817 Revert "msm8956-common: Switch to IMapper 2.1"
+0d80b6f msm8956: Sepolicy update
+28a5bb1 msm8956: Change FM system
+5065175 msm8956-common: Enable config_avoidGfxAccel for 2GB variants
+
+   * kernel/xiaomi/msm8956
+6d5b399d2c1 wireguard: Update to version 1.0.20200712
+9e814b345af Kbuild.include : disable wireguard auto fetch scripts from auto running
+468596b4c12 scripts/wireguard: Auto apply wireguard updates as a commit
+7345fcf9512 scripts/wireguard : Remove the lock / timeout mechanism
+84ac4aad7ba Revert "Merge git.zx2c4.com/wireguard-linux-compact"
+fb43ee1d3a0 Revert "Kbuild.include : disable wireguard auto fetch scripts from auto running"
+
