@@ -13,33 +13,11 @@ eda9e8ffe86 Add a Tux clock controller
 a89ed143e51 NetworkTraffic: Fix insivible Icon on light theme
 f89e2e61ff0 Optimize AbsListView to reduce click operation latency
 3426cfe9986 Keyguard: Improve Pin dialog show/hide animations duration
-188229658d3 Allow SBC as HD audio codec in Bluetooth device configuration
-db453f5be83 Add switch to select SBC HD by default [1/3]
-445fb4cc5b1 Add missing strings for SBC Dual Channel
-50d86d46c42 A2DP codec priority [1/3]
-7a84f79596b Add CHANNEL_MODE_DUAL_CHANNEL constant
-ba309daf48b The surface hang up when screen on and screen off
-6d5886ec7ed BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
-1fec15a8f56 SystemUI: Make clock truly invisible
-578248a0a7a Add USSD codes over IMS feature
-b5641b0e641 SystemUI: Fix SystemUI failed to go to doze issue
-
-   * packages/apps/Bluetooth
-76e727c7 Add switch to select SBC HD by default [2/3]
-8e4284c7 Disable Dual channel for SBC by default
-b3569b67 A2DP codec priority [2/3]
-a00351fb Assume optional codecs are supported if were supported previously
-bf8da871 SBC Dual Channel (SBC HD Audio) support
 
    * packages/apps/Settings
 abcd84d867 Settings: Change ZenHub summary
 04d64c1584 fixup! BasebandVersionPreferenceController: Trim baseband if needed
 1182348b5e Add switch to select SBC HD by default [3/3]
-a139d0885b Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
-047eac4945 A2DP codec priority [3/3]
-
-   * packages/apps/ZenHub
-677f6638 ZenHub: Increase bottom margin to avoid icon overlap
 
    * vendor/zenx
 28743625 vendor: Add some fonts
@@ -67,12 +45,33 @@ fcd6dffe vendor: Fit updater script for our OTA
 =======================
 
 
-   * build/soong
-3f6640a6 Allow arm-linux-androidkernel-ld
-
    * frameworks/base
+188229658d3 Allow SBC as HD audio codec in Bluetooth device configuration
+db453f5be83 Add switch to select SBC HD by default [1/3]
+445fb4cc5b1 Add missing strings for SBC Dual Channel
+50d86d46c42 A2DP codec priority [1/3]
+7a84f79596b Add CHANNEL_MODE_DUAL_CHANNEL constant
+ba309daf48b The surface hang up when screen on and screen off
+6d5886ec7ed BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
+1fec15a8f56 SystemUI: Make clock truly invisible
+578248a0a7a Add USSD codes over IMS feature
+b5641b0e641 SystemUI: Fix SystemUI failed to go to doze issue
 bb8fd597ca8 gzosp: bring back the utils
 9e3294de884 SystemInfo: Add FileCheck to prevent system crash
+
+   * packages/apps/Bluetooth
+76e727c7 Add switch to select SBC HD by default [2/3]
+8e4284c7 Disable Dual channel for SBC by default
+b3569b67 A2DP codec priority [2/3]
+a00351fb Assume optional codecs are supported if were supported previously
+bf8da871 SBC Dual Channel (SBC HD Audio) support
+
+   * packages/apps/Settings
+a139d0885b Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
+047eac4945 A2DP codec priority [3/3]
+
+   * packages/apps/ZenHub
+677f6638 ZenHub: Increase bottom margin to avoid icon overlap
 
 =======================
      07-27-2020
@@ -80,18 +79,12 @@ bb8fd597ca8 gzosp: bring back the utils
 
 
    * build/soong
+3f6640a6 Allow arm-linux-androidkernel-ld
 1b22395e Allow arm-linux-androidkernel-as
 
    * device/xiaomi/sdm845-common
 0a8ebd2 audio: increase volume and mic
 fc83d24 Revert "sdm845-common: Remove dummy HIDL libs"
-
-   * external/pulse
-0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
-
-   * frameworks/base
-649c6dacc0f base: Add IconShapeMallowOverlay
-95acd60a446 base: add BottomTriangle QS style [1/3]
 
    * manifest
 e2c01f9 Revert "Track android_vendor_oplauncher"
@@ -101,7 +94,12 @@ e2c01f9 Revert "Track android_vendor_oplauncher"
 =======================
 
 
+   * external/pulse
+0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
+
    * frameworks/base
+649c6dacc0f base: Add IconShapeMallowOverlay
+95acd60a446 base: add BottomTriangle QS style [1/3]
 5e3d0dbe2d4 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
 
    * prebuilts/clang/host/linux-x86/clang-11
@@ -152,10 +150,6 @@ b9ff00dedc Settings: Clipboard toast toggle [2/2]
    * packages/apps/ZenHub
 4cc3e67d ZenHub: Forward-port notification counters
 89496804 ZenHub: add Mallow QS style [2/3]
-
-   * vendor/support
-70f08df Revert "support: ColorPicker: Use material design layout"
-d4644aa Revert "support: Import Custom switch and category"
 
 =======================
      07-24-2020
@@ -305,6 +299,8 @@ c92efb16 Telecomm: Break more qti-telephony-framework dependency
 51c1016f0 Boost init priority before main loop
 
    * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+d4644aa Revert "support: Import Custom switch and category"
 4e15448 support: Add VibrationUtils to reduce code redundancy
 9c0d285 support: CustomSeekbarPreference: Code cleanup
 8b827e9 support: CustomSeekbarPreference: Add haptic feedback to actions
@@ -346,24 +342,10 @@ e111746c ZenHub: Add CircleOutline styles [3/3]
 9fa6420b ZenHub: Add more QS tile style [3/3]
 b70fa0f1 ZenHub: Introduce QS tile style picker [3/3]
 
-   * system/core
-4d4d2fd88 adb: daemon: Drop privileges on userdebug and user builds
-e342ca1fb libprocessgroup: Prevent SetProcessProfiles from using cached fd
-e5c80ec29 libprocessgroup: refactor constant strings and reformat for clang-format
-1b6fa0e97 libprocessgroup: Prevent aggregate profiles from referencing stale ones
-9af6e7432 sched_policy: add get_cpuset/sched_policy_profile_name
-95adf2a50 libprocessgroup: add support to set aggregate profiles
-14ef38403 Allow to drop existing fd cache of cgroup path
-ed3cda79b Let blkio cgroup follow sched_policy
-40aa6d690 Add support for freezer cgroup
-
 =======================
      07-22-2020
 =======================
 
-
-   * build/soong
-81a7bf0d Re-allow relative paths for modules
 
    * external/airbnb-lottie
 2df8bfac Revert "Add Screen On/Off Check"
@@ -380,10 +362,24 @@ f61fa036 Add Screen On/Off Check
 9b0f381638 Settings: Categorise!
 7b11e370a6 Settings: import airbnb-lottie
 
+   * system/core
+4d4d2fd88 adb: daemon: Drop privileges on userdebug and user builds
+e342ca1fb libprocessgroup: Prevent SetProcessProfiles from using cached fd
+e5c80ec29 libprocessgroup: refactor constant strings and reformat for clang-format
+1b6fa0e97 libprocessgroup: Prevent aggregate profiles from referencing stale ones
+9af6e7432 sched_policy: add get_cpuset/sched_policy_profile_name
+95adf2a50 libprocessgroup: add support to set aggregate profiles
+14ef38403 Allow to drop existing fd cache of cgroup path
+ed3cda79b Let blkio cgroup follow sched_policy
+40aa6d690 Add support for freezer cgroup
+
 =======================
      07-21-2020
 =======================
 
+
+   * build/soong
+81a7bf0d Re-allow relative paths for modules
 
    * frameworks/opt/net/ims
 b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
@@ -424,13 +420,6 @@ bddccf2 Update to 20200719 build
 =======================
 
 
-   * device/xiaomi/dipper
-9133ca2 dipper: Update source of blobs to reflect vendor bump
-
-   * device/xiaomi/sdm845-common
-6eba55f sdm845-common: Remove dummy HIDL libs
-a9e9147 sdm845-common: Switch to common QTI power HAL
-
    * frameworks/base
 700becca929 SystemUI: Reset PUK StateMachine after PUK is unlocked
 16810302071 SystemUI: there is unexpected SIM PIN input dialog.
@@ -439,17 +428,6 @@ aec3ca723c4 bluetooth: fixup! communication / icon after clean flash and first p
 be9acd39eed bluetooth: fix communication / icon after clean flash and first pairing
 90fba5c2311 base: Fix NPE on some devices by checking for null client (#24)
 faeb6c87814 SystemUI: Fix issue with Bluetooth tile
-e742e7d8b6e SystemUI: Toggle QS Footer security information [1/2]
-259a12315fe base: overlays: Add new icon shapes from Android R
-2164681aa9b base: Add some fonts
-d5ee762bab4 base: Fix navbar when IME space is hidden
-5fc8404b6b5 base: Add ZenHub Settings [1/2]
-8fc4961f0c1 base: custom config to force custom doze brightness [1/2]
-508a2aeacd2 base: Allow to wake the screen instead of pulsing [1/2]
-aca846b1a5c SystemUI: Add a toggle for the new QS tint [1/2]
-e2f215ce43e SystemUI: Tint QSTile icon with accent color
-96330d54b0d SystemUI: Fix Biometric dialog corner radius
-0e4027c92b9 SystemUI: Fix Textcolor disorder on dual statusbar
 
    * packages/apps/Settings
 af0c58a384 Settings: Bind Pickup Gesture to Doze Tilt sensor
@@ -469,8 +447,25 @@ f38f8b9e vendor: [SQUASCH]  Switch to Lawnchair Launcher
 =======================
 
 
-   * kernel/xiaomi/sdm845
-6042e08ad2ab defconfig: disable LTO
+   * device/xiaomi/dipper
+9133ca2 dipper: Update source of blobs to reflect vendor bump
+
+   * device/xiaomi/sdm845-common
+6eba55f sdm845-common: Remove dummy HIDL libs
+a9e9147 sdm845-common: Switch to common QTI power HAL
+
+   * frameworks/base
+e742e7d8b6e SystemUI: Toggle QS Footer security information [1/2]
+259a12315fe base: overlays: Add new icon shapes from Android R
+2164681aa9b base: Add some fonts
+d5ee762bab4 base: Fix navbar when IME space is hidden
+5fc8404b6b5 base: Add ZenHub Settings [1/2]
+8fc4961f0c1 base: custom config to force custom doze brightness [1/2]
+508a2aeacd2 base: Allow to wake the screen instead of pulsing [1/2]
+aca846b1a5c SystemUI: Add a toggle for the new QS tint [1/2]
+e2f215ce43e SystemUI: Tint QSTile icon with accent color
+96330d54b0d SystemUI: Fix Biometric dialog corner radius
+0e4027c92b9 SystemUI: Fix Textcolor disorder on dual statusbar
 
 =======================
      07-16-2020
@@ -484,6 +479,7 @@ f38f8b9e vendor: [SQUASCH]  Switch to Lawnchair Launcher
 95a2d7c71 gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
 
    * kernel/xiaomi/sdm845
+6042e08ad2ab defconfig: disable LTO
 e88dce82470e defconfig: Sync ZenX-Core v2.0
 9692a14c23bc gpu: drm: use power efficient workingqueues
 6bafa99e3765 platform: ipa: use power efficient workingqueues
