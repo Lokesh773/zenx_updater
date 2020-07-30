@@ -1,28 +1,57 @@
 =======================
-     07-25-2020
+     07-30-2020
 =======================
 
 
    * frameworks/base
-85d7fcdd Revert "base: Add some fonts"
-
-   * manifest
-9de9786 Track android_vendor_oplauncher
-
-   * packages/apps/Settings
-ef6f662 Settings: Adapt some preferences for ColorPicker
+d81cb516 Clock Style: Add lockscreen Fire circle animation clock
 
    * packages/apps/ZenHub
-4cc3e67 ZenHub: Forward-port notification counters
-
-   * vendor/support
-70f08df Revert "support: ColorPicker: Use material design layout"
+1a69daa ZenHub: Update maintainer for Lavender
 
    * vendor/zenx
-40796ed Revert "vendor: Add some fonts"
+2874362 vendor: Add some fonts
 
 =======================
-     07-24-2020
+     07-29-2020
+=======================
+
+
+   * packages/apps/Bluetooth
+76e727c Add switch to select SBC HD by default [2/3]
+
+   * packages/apps/Settings
+abcd84d Settings: Change ZenHub summary
+
+   * packages/apps/ThemePicker
+e5300cc ThemePicker: Increase Margin top to avoid Text overlap
+
+=======================
+     07-28-2020
+=======================
+
+
+   * build/soong
+3f6640a Allow arm-linux-androidkernel-ld
+
+=======================
+     07-27-2020
+=======================
+
+
+   * external/pulse
+0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
+
+   * manifest
+e2c01f9 Revert "Track android_vendor_oplauncher"
+
+=======================
+     07-26-2020
+=======================
+
+
+=======================
+     07-25-2020
 =======================
 
 
@@ -44,9 +73,6 @@ b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org
    * hardware/interfaces
 1778df7 Add interface info in boot@1.0-service.rc
 
-   * packages/apps/ThemePicker
-0ba0ad0 ThemePicker: Increase Margin top to avoid Text overlap
-
    * packages/services/Telecomm
 2b8b5f2 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
 
@@ -56,13 +82,16 @@ b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org
    * system/core
 51c1016 Boost init priority before main loop
 
+   * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+
+=======================
+     07-24-2020
+=======================
+
+
 =======================
      07-23-2020
-=======================
-
-
-=======================
-     07-22-2020
 =======================
 
 
@@ -70,18 +99,20 @@ b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org
 2df8bfa Revert "Add Screen On/Off Check"
 
 =======================
-     07-21-2020
+     07-22-2020
 =======================
 
-
-   * build/soong
-81a7bf0 Re-allow relative paths for modules
 
    * frameworks/opt/net/ims
 b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
 
    * vendor/qcom/opensource/data-ipa-cfg-mgr
 4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
+
+=======================
+     07-21-2020
+=======================
+
 
 =======================
      07-20-2020
@@ -93,9 +124,6 @@ b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.or
 =======================
 
 
-   * vendor/oplauncher
-1ba7f19 Updated OPLauncher mod to v3.0
-
 =======================
      07-18-2020
 =======================
@@ -105,44 +133,4 @@ b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.or
      07-17-2020
 =======================
 
-
-=======================
-     07-16-2020
-=======================
-
-
-   * hardware/qcom-caf/sdm845/display
-95a2d7c gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
-
-=======================
-     07-15-2020
-=======================
-
-
-=======================
-     07-14-2020
-=======================
-
-
-=======================
-     07-13-2020
-=======================
-
-
-   * build/make
-80e7b5d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
-
-   * frameworks/native
-825fc4d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
-
-   * packages/apps/CustomDoze
-ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
-
-=======================
-     07-12-2020
-=======================
-
-
-   * external/pulse
-668d645 Pulse: Add automatic album art color mode [2/3]
 
