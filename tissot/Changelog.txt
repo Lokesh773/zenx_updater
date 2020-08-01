@@ -1,0 +1,142 @@
+=======================
+     08-01-2020
+=======================
+
+
+   * build/make
+a5eb04e5b build: support using a prebuilt recovery ramdisk
+
+   * packages/apps/ZenHub
+a2962c8 ZenHub: Update maintainers and devices
+
+=======================
+     07-31-2020
+=======================
+
+
+   * hardware/lineage/livedisplay
+ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
+
+=======================
+     07-30-2020
+=======================
+
+
+   * frameworks/base
+d81cb516 Clock Style: Add lockscreen Fire circle animation clock
+
+   * packages/apps/Settings
+abcd84d Settings: Change ZenHub summary
+
+   * vendor/zenx
+2874362 vendor: Add some fonts
+
+=======================
+     07-29-2020
+=======================
+
+
+   * packages/apps/Bluetooth
+76e727c Add switch to select SBC HD by default [2/3]
+
+   * packages/apps/ThemePicker
+e5300cc ThemePicker: Increase Margin top to avoid Text overlap
+
+=======================
+     07-28-2020
+=======================
+
+
+   * build/soong
+3f6640a Allow arm-linux-androidkernel-ld
+
+   * manifest
+e2c01f9 Revert "Track android_vendor_oplauncher"
+
+=======================
+     07-27-2020
+=======================
+
+
+   * external/pulse
+0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
+
+=======================
+     07-26-2020
+=======================
+
+
+=======================
+     07-25-2020
+=======================
+
+
+   * device/qcom/sepolicy-legacy
+5311245 sepolicy: cnd: Allow access to wifi_prop
+
+   * device/qcom/sepolicy-legacy-um
+0f7f137 sepolicy: cnd: Fix wifi_prop neverallow for compatible props
+
+   * device/zenx/sepolicy
+26463ce common: Remove no longer needed uncrypt rule
+
+   * frameworks/opt/net/wifi
+0042e65 wifi: Add StaState API
+
+   * frameworks/opt/telephony
+b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into ten
+
+   * hardware/interfaces
+1778df7 Add interface info in boot@1.0-service.rc
+
+   * packages/services/Telecomm
+2b8b5f2 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
+
+   * packages/services/Telephony
+85bc645 Telephony: Break more qti-telephony-framework dependency
+
+   * system/core
+51c1016 Boost init priority before main loop
+
+   * vendor/support
+70f08df Revert "support: ColorPicker: Use material design layout"
+
+=======================
+     07-24-2020
+=======================
+
+
+=======================
+     07-23-2020
+=======================
+
+
+   * external/airbnb-lottie
+2df8bfa Revert "Add Screen On/Off Check"
+
+=======================
+     07-22-2020
+=======================
+
+
+   * frameworks/opt/net/ims
+b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
+
+=======================
+     07-21-2020
+=======================
+
+
+=======================
+     07-20-2020
+=======================
+
+
+=======================
+     07-19-2020
+=======================
+
+
