@@ -1,33 +1,101 @@
 =======================
-     07-30-2020
+     08-08-2020
 =======================
 
 
    * frameworks/base
-d81cb516 Clock Style: Add lockscreen Fire circle animation clock
+93810b69 SystemUI: Fix cutted Notification icons on dual statusbar mod
 
    * packages/apps/ZenHub
-1a69daa ZenHub: Update maintainer for Lavender
+3ad9f85 ZenHub: Introduce UI Style Picker [2/3]
 
    * vendor/zenx
-2874362 vendor: Add some fonts
+0a6a13e vendor: ZenX-OS v1.8
+
+=======================
+     08-07-2020
+=======================
+
+
+=======================
+     08-06-2020
+=======================
+
+
+=======================
+     08-05-2020
+=======================
+
+
+=======================
+     08-04-2020
+=======================
+
+
+   * build/make
+bb9b14c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/av
+62f3e94 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
+
+   * manifest
+8af4c19 Revert "Revert "Track android_vendor_oplauncher""
+
+   * packages/apps/Settings
+ce9ef10 BatteryHealth: Add seperated Category
+
+   * packages/services/Telephony
+8a0411c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+   * system/sepolicy
+ad6de2f Uncrypt: Allow uncrypt to write on ota_package_file.
+
+=======================
+     08-03-2020
+=======================
+
+
+=======================
+     08-02-2020
+=======================
+
+
+=======================
+     08-01-2020
+=======================
+
+
+=======================
+     07-31-2020
+=======================
+
+
+=======================
+     07-30-2020
+=======================
+
+
+   * hardware/lineage/livedisplay
+ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
 
 =======================
      07-29-2020
 =======================
 
 
+=======================
+     07-28-2020
+=======================
+
+
    * packages/apps/Bluetooth
 76e727c Add switch to select SBC HD by default [2/3]
-
-   * packages/apps/Settings
-abcd84d Settings: Change ZenHub summary
 
    * packages/apps/ThemePicker
 e5300cc ThemePicker: Increase Margin top to avoid Text overlap
 
 =======================
-     07-28-2020
+     07-27-2020
 =======================
 
 
@@ -35,102 +103,10 @@ e5300cc ThemePicker: Increase Margin top to avoid Text overlap
 3f6640a Allow arm-linux-androidkernel-ld
 
 =======================
-     07-27-2020
+     07-26-2020
 =======================
 
 
    * external/pulse
 0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
-
-   * manifest
-e2c01f9 Revert "Track android_vendor_oplauncher"
-
-=======================
-     07-26-2020
-=======================
-
-
-=======================
-     07-25-2020
-=======================
-
-
-   * device/qcom/sepolicy-legacy
-5311245 sepolicy: cnd: Allow access to wifi_prop
-
-   * device/qcom/sepolicy-legacy-um
-0f7f137 sepolicy: cnd: Fix wifi_prop neverallow for compatible props
-
-   * device/zenx/sepolicy
-26463ce common: Remove no longer needed uncrypt rule
-
-   * frameworks/opt/net/wifi
-0042e65 wifi: Add StaState API
-
-   * frameworks/opt/telephony
-b52fe1d Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into ten
-
-   * hardware/interfaces
-1778df7 Add interface info in boot@1.0-service.rc
-
-   * packages/services/Telecomm
-2b8b5f2 Telecomm: Add intent TelecomManager.ACTION_CALL_TYPE as protected broadcast
-
-   * packages/services/Telephony
-85bc645 Telephony: Break more qti-telephony-framework dependency
-
-   * system/core
-51c1016 Boost init priority before main loop
-
-   * vendor/support
-70f08df Revert "support: ColorPicker: Use material design layout"
-
-=======================
-     07-24-2020
-=======================
-
-
-=======================
-     07-23-2020
-=======================
-
-
-   * external/airbnb-lottie
-2df8bfa Revert "Add Screen On/Off Check"
-
-=======================
-     07-22-2020
-=======================
-
-
-   * frameworks/opt/net/ims
-b74456d Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into ten
-
-   * vendor/qcom/opensource/data-ipa-cfg-mgr
-4125e5e Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into ten
-
-=======================
-     07-21-2020
-=======================
-
-
-=======================
-     07-20-2020
-=======================
-
-
-=======================
-     07-19-2020
-=======================
-
-
-=======================
-     07-18-2020
-=======================
-
-
-=======================
-     07-17-2020
-=======================
-
 
