@@ -1,109 +1,253 @@
 =======================
-     07-17-2020
+     08-09-2020
 =======================
 
 
-   * vendor/zenx
-d537fcd vendor: [SQUASCH]  Switch to Lawnchair Launcher
-
 =======================
-     07-16-2020
+     08-08-2020
 =======================
 
-
-   * build/soong
-637913a soong: allow ping and curl tools
 
    * frameworks/base
-d70f4fbf base: overlays: Add new icon shapes from Android R
+93810b69511 SystemUI: Fix cutted Notification icons on dual statusbar mod
+ccb85e3bc4e base: Introduce UI Style Picker [1/3]
+6d294b21e93 overlay: Improve DerpClear Theme
+f40fcc65b18 SystemUI: Add OOS 10 VoLTE icon [1/2]
+2ead4afaf89 SystemUI: Start ZenHub on longpress on SettingsIcon in QS
+67fb2e46ddc SystemUI: Fix Drag and settings icon overlap
+4ed48f54328 overlay: Add Derp Clear Primary and Oneplus Dark
+332eae3b925 SystemUI: Custom Statusbar height [1/2]
 
-   * hardware/qcom-caf/sdm845/display
-95a2d7c gralloc: Add option for unaligned YCrCb/YCbCr pixel format height
+   * hardware/qcom-caf/sm8250/display
+4ab176b0e Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
 
    * packages/apps/ZenHub
-f1dbff8 ZenHub: Add ZenHub Settings [2/2]
+3ad9f85 ZenHub: Introduce UI Style Picker [2/3]
+
+   * vendor/zenx
+0a6a13ea vendor: ZenX-OS v1.8
+146469fb vendor: Introduce UI Style Picker [2/3]
 
 =======================
-     07-15-2020
+     08-07-2020
+=======================
+
+
+   * frameworks/base
+f1e4e67b451 Merge pull request #7 from Raaj52/vooc
+fb4803c1e77 BatteryService: Add VOOC charging support
+
+   * packages/apps/ZenHub
+3317a8b ZenHub: Enable all VoLTE we have
+bcfba21 ZenHub: Custom Statusbar height [2/2]
+
+=======================
+     08-06-2020
 =======================
 
 
 =======================
-     07-14-2020
+     08-05-2020
 =======================
 
 
-   * packages/apps/CustomDoze
-ffffb04 CustomDoze: Custom config to force custom doze brightness [2/2]
-
 =======================
-     07-13-2020
+     08-04-2020
 =======================
 
 
    * build/make
-80e7b5d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+bb9b14c85 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
 
-   * frameworks/native
-825fc4d Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/frameworks/native into HEAD
+   * frameworks/av
+62f3e94e1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
+
+   * frameworks/base
+e08b9ccbacd Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD
 
    * manifest
-0a5f392 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+8af4c19 Revert "Revert "Track android_vendor_oplauncher""
+2eff3c3 Merge pull request #2 from Lokesh773/ten
+74a4c05 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/manifest into HEAD
+
+   * packages/apps/Settings
+ce9ef10821 BatteryHealth: Add seperated Category
+ee7ed07fb1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
 
    * packages/services/Telephony
-68d7c93 Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+8a0411c83 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+   * system/sepolicy
+ad6de2fe Uncrypt: Allow uncrypt to write on ota_package_file.
+676e3594 Export missing audio volume properties
+fde2b64d Ignore the denial when system_other is erased
+a9374362 Don't require seinfo for priv-apps
+b154e70f Allow reading dt fstab in boot control HAL.
+99e5f7a5 Add sepolicy for IBootControl 1.0 and the default HAL.
+fb2dce67 global_macros: trim back various watch* permissions
+ae09c98c update sepolicy for fs notification hooks
+51e419a9 sepolicy: Allow installd to setattr media data
+1934d360 HACK: allow system apps to modify system props
+
+   * vendor/zenx
+096b978a vendor: Add OP launcher optionaly
 
 =======================
-     07-12-2020
+     08-03-2020
 =======================
 
 
-=======================
-     07-11-2020
-=======================
+   * frameworks/base
+34b6dd8a1f2 Clock Style: Add lockscreen Fire circle animation clock
+f38a0ae416b Clock Style : Add lockscreen Rainbow circle animation clock
+e7a35bd41b4 Clock Style : Add lockscreen Bubbles animation clock
+8772f704e0d Clock Style : Add lockscreen Loading animation clock
+eb81c3feb60 Clock Style : Add lockscreen Swing animation clock
+c103511f824 Add a Tux clock controller
 
+   * manifest
+458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
 
-   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-2ca8b3c Clean up duplicate uses-permission entries
+   * packages/apps/Settings
+7a0be91780 BatteryHealth: Make it optional
+2bbe478fa1 BatteryHealth: show Charge Cycles Completed
+b54d87029d BatteryHealth: make resources overlayable
+514760c242 Settings: Add BatteryHealth section
 
 =======================
-     07-10-2020
-=======================
-
-
-=======================
-     07-09-2020
+     08-02-2020
 =======================
 
 
    * packages/apps/Settings
-ea2f9da Merge pull request #1 from Lokesh773/ten
+ca71beae89 Settings: Change ZenHub summary
 
 =======================
-     07-08-2020
-=======================
-
-
-   * packages/apps/Messaging
-7a73648 Merge pull request #1 from hamaminatu/patch-1
-
-=======================
-     07-07-2020
+     08-01-2020
 =======================
 
 
 =======================
-     07-06-2020
+     07-31-2020
 =======================
 
 
+   * manifest
+6741e7c Add zenx banner
+
+   * packages/apps/ZenHub
+a2962c8 ZenHub: Update maintainers and devices
+
 =======================
-     07-05-2020
+     07-30-2020
 =======================
 
 
+   * hardware/lineage/livedisplay
+ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
+b8ca32c livedisplay: sysfs: Modularize all components
+22462db livedisplay: sysfs: Refine interface registration
+8a01e72 livedisplay: sysfs: Miscellaneous clean-ups
+d0580f3 livedisplay: sysfs: Use POSIX api to check file access
+b1a97e0 livedisplay: sysfs: Move string literals to anonymous namespace
+8888a4b livedisplay: sysfs: Follow naming rules of Google C++ Style Guide
+44e1a1f livedisplay: sdm: Modularize all components
+5e27e56 livedisplay: sdm: Fix a mismatched data type
+4afd662 livedisplay: sdm: Miscellaneous clean-ups
+5c154dc livedisplay: sdm: Improve SendDppsCommand
+bb5ff4a livedisplay: sdm: Move constants and helpers to anonymous namespace
+b8a246a livedisplay: sdm: Move SDM feature version check to utils
+39b8735 livedisplay: sdm: Convert Utils class to namespace
+07e4ea4 livedisplay: sdm: Use default member initializers
+143150e livedisplay: sdm: Follow naming rules of Google C++ Style Guide
+9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
+a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
+7468c41 livedisplay: sdm: Use RAII semantics where possible
+
+   * manifest
+eb99272 readme:Clean up unwanted stuff
+
 =======================
-     07-04-2020
+     07-29-2020
 =======================
 
+
+   * frameworks/base
+a89ed143e51 NetworkTraffic: Fix insivible Icon on light theme
+f89e2e61ff0 Optimize AbsListView to reduce click operation latency
+3426cfe9986 Keyguard: Improve Pin dialog show/hide animations duration
+
+   * packages/apps/ZenHub
+1a69daa ZenHub: Update maintainer for Lavender
+
+   * vendor/zenx
+28743625 vendor: Add some fonts
+e091a287 vendor: update backup script
+779cb9a5 prebuilt: Add a script to simplify A-only recovery system mount
+a7559ece Revert "vendor: Add some fonts"
+b34ee157 vendor: add BottomTriangle QS style [1/3]
+b1185a5a vendor: notch-city: Make it smarter with orientation [2/2]
+65894174 vendor: update GMS updater component disable list
+ec2f1b16 Add JustIcons QS Tile style [2/3]
+db172ba6 Revert "vendor: [SQUASCH]  Switch to Lawnchair Launcher"
+afef06c7 QStile: Update packages
+1eba13f2 Qstilestyle: Remove teardrop [2/3]
+51638c61 QSTiles: Add a few more designs[2/3]
+714ec1b2 QSTiles: Add CircleOutline styles [2/3]
+54d7076e Shishufied: add Cookie QS style [2/3]
+5302ff3e Add more QS tile style [3/3]
+d7571d0b Add sun custom QS tile [3/3]
+d02836ad Add 5 new QS Tile style [3/3]
+667d1afd Introduce QS tile style picker [3/3]
+fcd6dffe vendor: Fit updater script for our OTA
+
+=======================
+     07-28-2020
+=======================
+
+
+   * frameworks/base
+188229658d3 Allow SBC as HD audio codec in Bluetooth device configuration
+db453f5be83 Add switch to select SBC HD by default [1/3]
+445fb4cc5b1 Add missing strings for SBC Dual Channel
+50d86d46c42 A2DP codec priority [1/3]
+7a84f79596b Add CHANNEL_MODE_DUAL_CHANNEL constant
+ba309daf48b The surface hang up when screen on and screen off
+6d5886ec7ed BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
+1fec15a8f56 SystemUI: Make clock truly invisible
+578248a0a7a Add USSD codes over IMS feature
+b5641b0e641 SystemUI: Fix SystemUI failed to go to doze issue
+bb8fd597ca8 gzosp: bring back the utils
+9e3294de884 SystemInfo: Add FileCheck to prevent system crash
+
+   * packages/apps/Bluetooth
+76e727c7 Add switch to select SBC HD by default [2/3]
+8e4284c7 Disable Dual channel for SBC by default
+b3569b67 A2DP codec priority [2/3]
+a00351fb Assume optional codecs are supported if were supported previously
+bf8da871 SBC Dual Channel (SBC HD Audio) support
+
+   * packages/apps/Settings
+04d64c1584 fixup! BasebandVersionPreferenceController: Trim baseband if needed
+1182348b5e Add switch to select SBC HD by default [3/3]
+a139d0885b Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
+047eac4945 A2DP codec priority [3/3]
+
+   * packages/apps/ThemePicker
+e5300cc ThemePicker: Increase Margin top to avoid Text overlap
+
+   * packages/apps/ZenHub
+677f663 ZenHub: Increase bottom margin to avoid icon overlap
+
+=======================
+     07-27-2020
+=======================
+
+
+   * build/soong
+3f6640a6 Allow arm-linux-androidkernel-ld
+1b22395e Allow arm-linux-androidkernel-as
+
+   * manifest
+e2c01f9 Revert "Track android_vendor_oplauncher"
 
