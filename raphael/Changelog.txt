@@ -1,0 +1,43 @@
+Device Changelog
+- Added OP Launcher as default
+- Added missing network props
+- Some overlay cleanup
+- Rounded corners for Keyboard
+
+ROM Changelog
+- Merged August security patch
+- Made Op Launcher optionally
+- Added UI Style Picker
+- Added Custom Statusbar height
+- Added Derp clear Primary Color
+- Added Oneplus Dark Primary Color
+- Added lots of new Volte icon ink. OOS 10
+- Added Batteryhealth section
+- Added VOOC support
+- Fixed cutted notification icon in statusbar on pulsing
+- Fixed QS settings long press not starting ZenHub
+- Fixed QS always on settings icon overlap
+- Uncrypt-  Allow uncrypt to write on ota_package_file
+- Many other fixes and improvements
+- Added BottomTriangle QS style
+- Added MallowIconshape thx to @Drew_69
+- Added SystemInfo check to prevent UI crashes
+- Added A2DP codec priority
+- Added switch to select SBC HD
+- Added Tux Clock style
+- Added Lockscreen clock swing animation style
+- Added Lockscreen clock loader animation style
+- Added Lockscreen clock blobls loader animation style
+- Added Lockscreen clock rainbow circle animation style
+- Added Lockscreen clock fire circle animation style
+- Fixed Fonts
+- Fixed pulse nav bar crashes
+- Unlock speed improvments
+- NetworkTraffic: Fix insivible Icon on light theme
+- Many other fixes and improvements
+
+Note : You need to flash the latest vendor version according to your region. Refer below,
+- V12.0.2.0 for India
+- V12.0.2.0 for China
+- V12.0.1.0 for Other device (global/eu/russia)
+
