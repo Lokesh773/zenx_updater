@@ -1,0 +1,109 @@
+=======================
+     08-11-2020
+=======================
+
+
+   * packages/apps/ThemePicker
+69cb269 ThemePicker: Fix some NPEs
+
+=======================
+     08-10-2020
+=======================
+
+
+=======================
+     08-09-2020
+=======================
+
+
+   * frameworks/base
+93810b69 SystemUI: Fix cutted Notification icons on dual statusbar mod
+
+   * hardware/qcom-caf/sm8250/display
+4ab176b Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
+
+   * vendor/zenx
+0a6a13e vendor: ZenX-OS v1.8
+
+=======================
+     08-08-2020
+=======================
+
+
+   * packages/apps/ZenHub
+3ad9f85 ZenHub: Introduce UI Style Picker [2/3]
+
+=======================
+     08-07-2020
+=======================
+
+
+=======================
+     08-06-2020
+=======================
+
+
+=======================
+     08-05-2020
+=======================
+
+
+   * manifest
+8af4c19 Revert "Revert "Track android_vendor_oplauncher""
+
+=======================
+     08-04-2020
+=======================
+
+
+   * build/make
+bb9b14c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/av
+62f3e94 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
+
+   * packages/apps/Settings
+ce9ef10 BatteryHealth: Add seperated Category
+
+   * packages/services/Telephony
+8a0411c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+   * system/sepolicy
+ad6de2f Uncrypt: Allow uncrypt to write on ota_package_file.
+
+=======================
+     08-03-2020
+=======================
+
+
+=======================
+     08-02-2020
+=======================
+
+
+=======================
+     08-01-2020
+=======================
+
+
+=======================
+     07-31-2020
+=======================
+
+
+   * hardware/lineage/livedisplay
+ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
+
+=======================
+     07-30-2020
+=======================
+
+
+=======================
+     07-29-2020
+=======================
+
+
+   * packages/apps/Bluetooth
+76e727c Add switch to select SBC HD by default [2/3]
+
