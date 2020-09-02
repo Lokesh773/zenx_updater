@@ -1,316 +1,654 @@
 =======================
-     08-08-2020
+     09-02-2020
 =======================
 
 
    * device/xiaomi/sdm845-common
-cb46a09 Revert "sdm845-common: Use Vulkan for UI rendering"
+794ca18 sdm845-common: Remove some useless files
 
    * frameworks/base
-3924936d6c3 SystemUI: Fix cutted Notification icons on dual statusbar mod
-a83674a44e6 base: Introduce UI Style Picker [1/3]
+95faf00e9a5 SystemUI: Remove BatteryBar background
+22dc732381c SystemUI: Fix NPE on Volume panel plugins
+a8fc99e3912 SystemUI: Fix Brightness slider overlap
+1dcc35c31b3 Clock Styles: Add explosion circle animation clock
+d19a01c1c0c Clock Styles: Add two blue circle animation clocks
+dc95ac9f71c Merge pull request #10 from theOverpoweredGuy/screenoff-fod
 
-   * kernel/xiaomi/sdm845
-4e39314110ec defconfig: disable LTO
-a1bba425171c defconfig: Sync ZenX-Core v2.1
-e8fda1222bf8 gpu: drm: use power efficient workingqueues
-b44d3f3815cf platform: ipa: use power efficient workingqueues
-2a30b4d2a73d block: queue work on power efficient wq
-17981fba4757 Optimize some kernel default settings
-49b45485d06a defconfig: disable CONFIG_RELR
-171d198feeb3 Revert "net/wireguard: add wireguard importer"
-a0638ebe6c3d mm: Set swappiness to 30
-b722238c1b92 blk: Disable IO_STAT completely
-90a023ebc45a Add USB HID Support for 4.9 Kernels
-8fdf56b7bce1 sched/fair: Optimize Schedtune boosted task placement
-a027102157a6 sched/fair: improve big task placement
-b9ecee2d2d92 sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS
-e8ebcfbc7d09 msm: kgsl: Relax CPU latency requirements to save power
-a458c1976a36 arch:arm64: GPU set initial Frequency @180 Mhz
-0660f3305e99 arch:arm64:dts GPU Underclock to 180 Mhz
-abb8e1da29a0 kernel:power: enter sleep quicker
-a00bb37a771c sdm845-gpu-dtsi: enable NAP power saving state for Adreno 630 GPU
-f570ca5a7e2e enable audit log
-829019e7e98b leds-qpnp-haptics: add vibration control support Squash of autor mod @flar2
-2bbf3a65d449 defonfig: remove CONFIG_CC_STACKPROTECTOR_STRONG
-dec68c4b965c [BACKPORT]: drm/msm/sde: add sysfs node in dpu driver to provide fps
-dfe9f34b98bd defconfig: Enable Unwanted Files Blocker
-d04de1dddc37 fs: add a /system/ path to file blocker
-f9e05db571a3 fs: block MAGNETAR
-a1e98658c27c fs: add a simplified file blocker
-f40a28158540 drivers: misc: implement usb fast charge mode
+   * packages/apps/OmniStyle
+481a4e4 Omnistyle: Compress images
 
    * packages/apps/ZenHub
-3ad9f855 ZenHub: Introduce UI Style Picker [2/3]
-3317a8b9 ZenHub: Enable all VoLTE we have
-bcfba216 ZenHub: Custom Statusbar height [2/2]
-
-   * vendor/zenx
-0a6a13ea vendor: ZenX-OS v1.8
-146469fb vendor: Introduce UI Style Picker [2/3]
+9ea66a8a Revert "ZenHub: Nuke Oreo Volume Panel"
 
 =======================
-     08-07-2020
+     09-01-2020
 =======================
 
-
-   * device/xiaomi/sdm845-common
-5311cb7 sdm845-common: Fix denials for clear speaker feature
-
-   * frameworks/base
-f3956bd5449 overlay: Improve DerpClear Theme
-21a24c443e7 SystemUI: Add OOS 10 VoLTE icon [1/2]
-d903670a9da SystemUI: Start ZenHub on longpress on SettingsIcon in QS
-069e78f2f2d SystemUI: Fix Drag and settings icon overlap
-
-   * packages/apps/XiaomiHub
-6328d42 XiaomiHub: Implement Clear Speaker
-
-=======================
-     08-06-2020
-=======================
-
-
-   * frameworks/base
-ce79632129c overlay: Add Derp Clear Primary and Oneplus Dark
-afeb8857c11 SystemUI: Custom Statusbar height [1/2]
-
-=======================
-     08-05-2020
-=======================
-
-
-   * device/xiaomi/sdm845-common
-9a0b1a6 overlay: Add BatteryHealth and permission
-
-=======================
-     08-04-2020
-=======================
-
-
-   * build/make
-bb9b14c85 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
 
    * device/xiaomi/dipper
-76592fe dipper: Use OP launcher
-
-   * frameworks/av
-62f3e94e1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
+0306f63 Revert "dipper: Use OP launcher"
+65fc867 Build minimal apps
 
    * frameworks/base
-e08b9ccbacd Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD
-
-   * manifest
-8af4c19 Revert "Revert "Track android_vendor_oplauncher""
-2eff3c3 Merge pull request #2 from Lokesh773/ten
-74a4c05 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/manifest into HEAD
-458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
+818459445d3 fwb: Optimise how plugins are applied
+58b95184917 SystemUI: Improve HeaderImage background
+3f742369869 Revert "BoostFramework: New hintType for App Starting from BG."
+822947df929 Revert "framework: add boost for package installation"
+4ad86364c0e Revert "Perf: Boost UI thread during app launching"
+962f793dcff SystemUI: Fix multiple issues with hiding unprovisioned SIMs
+eb438ddc42f StatusBarSignalPolicy: Hide signal icons for disabled SIMs
 
    * packages/apps/Settings
-ce9ef10821 BatteryHealth: Add seperated Category
-ee7ed07fb1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+de3f5fab39 Settings: Improve text padding
 
-   * packages/services/Telephony
-8a0411c83 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
-
-   * system/sepolicy
-ad6de2fe Uncrypt: Allow uncrypt to write on ota_package_file.
-676e3594 Export missing audio volume properties
-fde2b64d Ignore the denial when system_other is erased
-a9374362 Don't require seinfo for priv-apps
-b154e70f Allow reading dt fstab in boot control HAL.
-99e5f7a5 Add sepolicy for IBootControl 1.0 and the default HAL.
-fb2dce67 global_macros: trim back various watch* permissions
-ae09c98c update sepolicy for fs notification hooks
-51e419a9 sepolicy: Allow installd to setattr media data
-1934d360 HACK: allow system apps to modify system props
+   * packages/apps/ZenHub
+4ea8f669 Merge pull request #9 from theOverpoweredGuy/screenoff-fod
 
    * vendor/zenx
-096b978a vendor: Add OP launcher optionaly
+b722c60c vendor: Copy files to product properly
+38df11db Merge pull request #2 from Raaj52/ten
+a20ac2e6 build: phony: Enhancement
+6f8ed967 build: Colours makes things vibrant!
+fb404c80 vendor: ZenX-OS 1.9
 
 =======================
-     08-03-2020
-=======================
-
-
-   * frameworks/base
-34b6dd8a1f2 Clock Style: Add lockscreen Fire circle animation clock
-f38a0ae416b Clock Style : Add lockscreen Rainbow circle animation clock
-e7a35bd41b4 Clock Style : Add lockscreen Bubbles animation clock
-8772f704e0d Clock Style : Add lockscreen Loading animation clock
-eb81c3feb60 Clock Style : Add lockscreen Swing animation clock
-c103511f824 Add a Tux clock controller
-
-   * packages/apps/Settings
-7a0be91780 BatteryHealth: Make it optional
-2bbe478fa1 BatteryHealth: show Charge Cycles Completed
-b54d87029d BatteryHealth: make resources overlayable
-514760c242 Settings: Add BatteryHealth section
-
-=======================
-     08-02-2020
+     08-31-2020
 =======================
 
 
-   * packages/apps/Settings
-ca71beae89 Settings: Change ZenHub summary
-
-   * prebuilts/clang/host/linux-x86/clang-11
-45c59ca Update to 20200801 build
-
-=======================
-     08-01-2020
-=======================
-
-
-   * packages/apps/ZenHub
-a2962c8c ZenHub: Update maintainers and devices
-
-=======================
-     07-31-2020
-=======================
-
-
-   * hardware/lineage/livedisplay
-ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
-b8ca32c livedisplay: sysfs: Modularize all components
-22462db livedisplay: sysfs: Refine interface registration
-8a01e72 livedisplay: sysfs: Miscellaneous clean-ups
-d0580f3 livedisplay: sysfs: Use POSIX api to check file access
-b1a97e0 livedisplay: sysfs: Move string literals to anonymous namespace
-8888a4b livedisplay: sysfs: Follow naming rules of Google C++ Style Guide
-44e1a1f livedisplay: sdm: Modularize all components
-5e27e56 livedisplay: sdm: Fix a mismatched data type
-4afd662 livedisplay: sdm: Miscellaneous clean-ups
-5c154dc livedisplay: sdm: Improve SendDppsCommand
-bb5ff4a livedisplay: sdm: Move constants and helpers to anonymous namespace
-b8a246a livedisplay: sdm: Move SDM feature version check to utils
-39b8735 livedisplay: sdm: Convert Utils class to namespace
-07e4ea4 livedisplay: sdm: Use default member initializers
-143150e livedisplay: sdm: Follow naming rules of Google C++ Style Guide
-9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
-a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
-7468c41 livedisplay: sdm: Use RAII semantics where possible
-
-   * kernel/xiaomi/sdm845
-10d46e6bb902 defconfig: Sync MiPa Kernel v9.5
+   * frameworks/opt/telephony
+2e146c1bb TelephonyExtUtils: Handle extphone binder death
+ca095bb2b TelephonyExtUtils: Set timeout for (de)activating provision
+8a73f74cd Introduce TelephonyExtUtils
 
    * manifest
-6741e7c Add zenx banner
-eb99272 readme:Clean up unwanted stuff
+b624243 manifest:Track chromium-webview from los
 
-=======================
-     07-30-2020
-=======================
+   * packages/apps/CustomDoze
+8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
 
+   * packages/apps/OmniStyle
+9b8c767 OmniStyle:Add marvel and DC superohero headers
+880bb58 Revert "OmniStyle: Add itsaalex poison headers"
+a427ca1 Revert "OmniStyle: Add 'Space' headers"
+0027a47 Revert "OmniStyle: Add 'Colorful' headers"
+f22d169 Bring Animeness to the world of Custom Roms (#1)
+1aa983d Omnistyle: Add more scenery headers
+f3dd62b OmniStyle: Added SAO headers
+83b170f OmniStyle: Add scenery headers
+c2575e8 OmniStyle: Add Naruto Headers
 
-   * packages/apps/ZenHub
-1a69daa4 ZenHub: Update maintainer for Lavender
-
-=======================
-     07-29-2020
-=======================
-
-
-   * frameworks/base
-a89ed143e51 NetworkTraffic: Fix insivible Icon on light theme
-f89e2e61ff0 Optimize AbsListView to reduce click operation latency
-3426cfe9986 Keyguard: Improve Pin dialog show/hide animations duration
-188229658d3 Allow SBC as HD audio codec in Bluetooth device configuration
-db453f5be83 Add switch to select SBC HD by default [1/3]
-445fb4cc5b1 Add missing strings for SBC Dual Channel
-50d86d46c42 A2DP codec priority [1/3]
-7a84f79596b Add CHANNEL_MODE_DUAL_CHANNEL constant
-ba309daf48b The surface hang up when screen on and screen off
-6d5886ec7ed BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
-1fec15a8f56 SystemUI: Make clock truly invisible
-578248a0a7a Add USSD codes over IMS feature
-b5641b0e641 SystemUI: Fix SystemUI failed to go to doze issue
-
-   * packages/apps/Bluetooth
-76e727c7 Add switch to select SBC HD by default [2/3]
-8e4284c7 Disable Dual channel for SBC by default
-b3569b67 A2DP codec priority [2/3]
-a00351fb Assume optional codecs are supported if were supported previously
-bf8da871 SBC Dual Channel (SBC HD Audio) support
+   * packages/apps/Plugins
+565ff4f plugins: adapt to work with our UI styler
 
    * packages/apps/Settings
-04d64c1584 fixup! BasebandVersionPreferenceController: Trim baseband if needed
-1182348b5e Add switch to select SBC HD by default [3/3]
-a139d0885b Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
-047eac4945 A2DP codec priority [3/3]
+dabf585484 Merge pull request #3 from theOverpoweredGuy/screenoff-fod
+
+   * packages/apps/TouchGestures
+7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
 
    * packages/apps/ZenHub
-677f6638 ZenHub: Increase bottom margin to avoid icon overlap
-
-   * vendor/zenx
-28743625 vendor: Add some fonts
-e091a287 vendor: update backup script
-779cb9a5 prebuilt: Add a script to simplify A-only recovery system mount
-a7559ece Revert "vendor: Add some fonts"
-b34ee157 vendor: add BottomTriangle QS style [1/3]
-b1185a5a vendor: notch-city: Make it smarter with orientation [2/2]
-65894174 vendor: update GMS updater component disable list
-ec2f1b16 Add JustIcons QS Tile style [2/3]
-db172ba6 Revert "vendor: [SQUASCH]  Switch to Lawnchair Launcher"
-afef06c7 QStile: Update packages
-1eba13f2 Qstilestyle: Remove teardrop [2/3]
-51638c61 QSTiles: Add a few more designs[2/3]
-714ec1b2 QSTiles: Add CircleOutline styles [2/3]
-54d7076e Shishufied: add Cookie QS style [2/3]
-5302ff3e Add more QS tile style [3/3]
-d7571d0b Add sun custom QS tile [3/3]
-d02836ad Add 5 new QS Tile style [3/3]
-667d1afd Introduce QS tile style picker [3/3]
-fcd6dffe vendor: Fit updater script for our OTA
+28bf9352 ZenHub: Allow hiding Device Parts from ZenHub [1/2]
 
 =======================
-     07-28-2020
+     08-30-2020
 =======================
 
-
-   * build/soong
-3f6640a6 Allow arm-linux-androidkernel-ld
-
-   * frameworks/base
-bb8fd597ca8 gzosp: bring back the utils
-9e3294de884 SystemInfo: Add FileCheck to prevent system crash
-
-=======================
-     07-27-2020
-=======================
-
-
-   * build/soong
-1b22395e Allow arm-linux-androidkernel-as
 
    * device/xiaomi/sdm845-common
-0a8ebd2 audio: increase volume and mic
-fc83d24 Revert "sdm845-common: Remove dummy HIDL libs"
-
-   * external/pulse
-0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
+9d05737 sdm845-common: Check strncmp return value properly
 
    * frameworks/base
-649c6dacc0f base: Add IconShapeMallowOverlay
-95acd60a446 base: add BottomTriangle QS style [1/3]
-5e3d0dbe2d4 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
+1997aea0852 PackageInstaller: Fix crash when uninstalling apps with fragile data
+a6f1038700c Skip screen on animation when wake and unlock via biometrics
+f91fcb6cd98 Navbar: Introduce navbar styles [1/3]
+ac1755e60fe base: Q seekbar: Tweak it's size
+da894217941 Revert "base: media_seekbar: make it sexy"
+ad77a6b4307 base: Introduce awesome brightness slider style [1/3]
+48560cf6410 SystemUI:Add new v(O)lte icon[1/2] *@Lokesh773:Bringup to ZenX-OS *Icon by @yashdevelops
+a0982b40ad4 base: Allow hiding Device Parts from ZenHub [1/2]
+64d04461ca4 Quick Brightness Slider: Fix padding issues
+dafa246e77a SystemUI: adapt to work with our UI styler
+e0eb5887bbd base: Separate vibrate drawable for vol panel from common icon
+635932eecff Notification: Fix no icon shown for data limit notification
+e2d00aa8d75 ChooserActivity: fix android crash from null object
+af8227193f4 services: LightsService: Mute an annoying error message.
+97926e9fd4c webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+43e04036ff1 Gracefully handle integer overflows.
+5c24069b1a1 Taskhelper api: fix NPE
+20de8f60b5a Refactor killapp implementation into a Dependency controller class
+dc058d64c37 base: Add overlay to Enable/Disable Home button wake
+cc2264d3b44 base: Enable home button wake
+e998808b6a2 [SQUASH] base: Cleanup for new screen off fod implementation
+f4fee0aa26d fwb: Add screen off fod [1/2]
+
+   * packages/apps/ZenHub
+6fb9d92c ZenHub: Introduce navbar styles [2/3]
+d6a6c0e6 ZenHub:Add new v(O)lte icon[2/2]
+28ac74c2 ZenHub: Introduce awesome brightness slider style picker [3/3]
+d3e551d1 Revert "Revert "QSPanel Visualizer [2/2]""
+
+   * vendor/zenx
+1cb2125f Navbar: Introduce navbar styles [3/3]
+1d4595fd vendor: Introduce awesome brightness slider style [2/3]
+f3c01a1b vendor: apns-conf: Drop proxy for Movistar
+7ad369b8 repopick: Address PEP8 warnings regarding indentations and variable naming
+8bb8d0d7 repopick: Use empty metavar parameter to fix help's indentation
+3cc9a883 kernel: Bail-out if kernel config isn't set
+27d5b048 kernel: Add support for module aliases
+37500705 kernel: Allow installing modules on vendor_overlay
+a7783237 repopick: Use upstream instead of revision to determine branch
+
+=======================
+     08-29-2020
+=======================
+
+
+   * packages/apps/CustomDoze
+0ca0b57 Revert "CustomDoze: Don't pulse if Screen Off FOD is enabled"
+
+   * packages/apps/Settings
+6771ebe6a4 Settings: Screen-Off FOD [2/2]
+1ad1e1f3d2 Revert "Settings: Screen off FOD [2/3]"
+
+   * packages/apps/TouchGestures
+836b63d Revert "TouchGestures: Don't pulse if Screen Off FOD is enabled"
+
+   * packages/apps/ZenHub
+8684759f [SQUASH] ZenHub: Clean-Up for new Screen off FOD implementation
+
+=======================
+     08-28-2020
+=======================
+
+
+   * device/xiaomi/dipper
+47e915b dipper: Use OP launcher
 
    * kernel/xiaomi/sdm845
-2b7d7f4fcf88 cpufreq: schedutil: Fix for limits update with fast switch enabled
-0148c5fd7514 cpufreq: schedutil: Add fast switch to sugov_limits path
-32d6dd7cf2c0 arm64: vdso32: Fix '--prefix=' value for newer versions of clang
-59a1ec6a8272 Makefile: Fix GCC_TOOLCHAIN_DIR prefix for Clang cross compilation
+0f6d9ee5316c defconfig: Sync ZenX-Core v2.3
+5941d1cf17b4 defconfig: disable LTO
+57ea716c8f9e gpu: drm: use power efficient workingqueues
+356f8d361ed0 platform: ipa: use power efficient workingqueues
+c2a4941d50e3 block: queue work on power efficient wq
+28ef397e3136 Optimize some kernel default settings
+0a060a678212 defconfig: disable CONFIG_RELR
+87f4bfee888f Revert "net/wireguard: add wireguard importer"
+f605111dc6f7 mm: Set swappiness to 30
+f7cad3590a50 blk: Disable IO_STAT completely
+6d3ab5acc980 Add USB HID Support for 4.9 Kernels
+f96efe1965f3 sched/fair: Optimize Schedtune boosted task placement
+4239a3be432c sched/fair: improve big task placement
+bc9c2d741d66 sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS
+a49621421f0e msm: kgsl: Relax CPU latency requirements to save power
+d3294c28163c arch:arm64: GPU set initial Frequency @180 Mhz
+c89fe45e76dd arch:arm64:dts GPU Underclock to 180 Mhz
+c06d72158943 kernel:power: enter sleep quicker
+2c59607e2ed2 sdm845-gpu-dtsi: enable NAP power saving state for Adreno 630 GPU
+49c16dc4c9b6 enable audit log
+04fedbd532d8 leds-qpnp-haptics: add vibration control support Squash of autor mod @flar2
+c2c7bee008a5 defonfig: remove CONFIG_CC_STACKPROTECTOR_STRONG
+756b78286d99 [BACKPORT]: drm/msm/sde: add sysfs node in dpu driver to provide fps
+ad09680b5e2e defconfig: Enable Unwanted Files Blocker
+0f0e97099034 fs: add a /system/ path to file blocker
+6025b41afe4b fs: block MAGNETAR
+a929f51101ee fs: add a simplified file blocker
+353ba06959c5 drivers: misc: implement usb fast charge mode
 
-   * manifest
-e2c01f9 Revert "Track android_vendor_oplauncher"
+   * packages/apps/ZenHub
+1f2d2a4a Revert "Revert "QSPanel Visualizer [2/2]""
+47ff71b4 ZenHub: Nuke Oreo Volume Panel
+
+   * system/sepolicy
+8613098f sepolicy: allow reading theme prop
 
 =======================
-     07-26-2020
+     08-27-2020
 =======================
 
 
-   * prebuilts/clang/host/linux-x86/clang-11
-a819e2f readme: Document solutions for some common problems
-fa815f5 Update to 20200725 build
+   * frameworks/base
+86b19cb58c1 base: Separate vibrate drawable for vol panel from common icon
+4abd2cfae64 Notification: Fix no icon shown for data limit notification
+fad0cead0ea ChooserActivity: fix android crash from null object
+e202ea20df6 services: LightsService: Mute an annoying error message.
+d13732f9b8c webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+7f26e7d27b4 Gracefully handle integer overflows.
+6b423785190 Taskhelper api: fix NPE
+3899fd1fd5a Refactor killapp implementation into a Dependency controller class
+1ac3812e9dc base: Add overlay to Enable/Disable Home button wake
+d5a8eddeb42 base: Enable home button wake
+7c903585460 VolumeDialog: notifyVisible after the volume panel is fully hidden
+010941c574a VolumeDialog: display default row when active row is notification
+2c5d1d57021 SystemUI: fix size of icon of vibrate ringer mode
+de4fa6cc410 fixup - SystemUI: Allow device to override audio panel location
+f8b1a2e548e Add isFaceAuthEnabledForUser checks in KeyguardLiftController
+af4dbaea916 PocketJudge: allow register vendor pocket sensor
+541df69d95e SystemUI: Block face authentication when device is in pocket mode
+9eced9a7b74 avoid duplicate doFrame calls.
+28d79c1c48b make ui touch optimization work normally.
+b4c54dd19c1 add VSYNC scheduled flag and avoid two doFrame calls in one period
+91ff87e4aa5 core: touch response optimizations
+461adfb76ce Revert "ScreenDecorations: Account notch-city for custom cutout"
+
+   * frameworks/native
+30a969935 touch response optimizations
+66c029128 gui: Fix array out of bound
+a8ffa93f4 binder: Parcel avoid too small initial allocation
+89645573b gl: Reorder when ImageManager thread starts
+
+   * frameworks/opt/telephony
+f33c88850 Failed to show hold call when user click swap and merge simultaneously
+
+   * kernel/xiaomi/sdm845
+893d47a7cc06 defconfig: Sync MiPa Kernel v9.7
+
+=======================
+     08-26-2020
+=======================
+
+
+   * device/xiaomi/sdm845-common
+ff20f47 sdm845-common: Bring back still required dummy HIDL lib
+fc963ce sdm845-common: Remove dummy HIDL libs
+
+   * frameworks/base
+8144e21d01b base: Add support for MiSound FX
+0d6eeea26ef base: Add DiracSound and MiSound to current api
+6b202ee2d52 SystemUI: Fix QS tiles clipping when too many icons in view
+5fefad9e01d SystemUI: fix qs footer divider width and header image height
+26847f91b40 SystemUI: keep width on qs expand move
+bd58a2ed0f3 SystemUI: decrease margin between qs and text
+55ede5de56c Fix a race conditon in `incident`.
+82e7e7517bb SystemUI: use OnePlus drawables for autobrightness icon
+77c146cd871 BrightnessSlider: Correct the slider thumb
+ec0e2c43da2 base: SystemUI: fix brightness slider animation
+9cc15152262 QSBHeader: code clean-up n improvements
+ca40c4fe2c1 Fixup QSPanel Mess
+3e54b9ab9c4 Brightness slider: Visual improvements
+d471afe7ea0 SystemUI: Don't re add brightness slider if its already present
+13367774176 base: SystemUI: fix moving of qs brightness slider
+ed92261bd56 QSPanel: fix brightness slider logic
+0e4c82de7e7 base: SystemUI: Kill brightness mirror
+3e351949e71 SystemUI: extend quick qs slider position [1/3]
+0d623401c81 SystemUI: Add brightness buttons to quick qs brightness slider
+
+   * kernel/xiaomi/sdm845
+eeb744110b6a lib/string.c: implement stpcpy
+f5d04a9868d0 Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into mipa-q-rebase
+acdc56dd94d2 Merge 4.9.234 into android-4.9-q
+c6a15d151e35 Linux 4.9.234
+c0ca97bcfc0b KVM: arm/arm64: Don't reschedule in unmap_stage2_range()
+606c6eb9f8a9 xen: don't reschedule in preemption off sections
+fe5f83b16307 mm/hugetlb: fix calculation of adjust_range_if_pmd_sharing_possible
+b3ce6ca929dc do_epoll_ctl(): clean the failure exits up a bit
+9bbd20326fef epoll: Keep a reference on files added to the check list
+a7fef53a41da powerpc: Allow 4224 bytes of stack expansion for the signal frame
+13ad432444c1 powerpc/pseries: Do not initiate shutdown when system is running on UPS
+b1fea03057ef net: dsa: b53: check for timeout
+f46eec970530 ASoC: intel: Fix memleak in sst_media_open
+3f9f6b032d23 net: fec: correct the error path for regulator disable in probe
+f3926733dcdc i40e: Set RX_ONLY mode for unicast promiscuous on VLAN
+539ae3e03875 ext4: fix potential negative array index in do_split()
+cc0c6b17f948 alpha: fix annotation of io{read,write}{16,32}be()
+a7631e087f1e xfs: Fix UBSAN null-ptr-deref in xfs_sysfs_init
+057069c26fd3 virtio_ring: Avoid loop when vq is broken in virtqueue_poll
+958f6e406c1c scsi: libfc: Free skb in fc_disc_gpn_id_resp() for valid cases
+4afde5c2320a jffs2: fix UAF problem
+00d495ebd489 xfs: fix inode quota reservation checks
+aac5d7539f28 m68knommu: fix overwriting of bits in ColdFire V3 cache control
+609e9302f163 Input: psmouse - add a newline when printing 'proto' by sysfs
+0bd77f37daf7 media: vpss: clean up resources in init
+3264112eb59b media: budget-core: Improve exception handling in budget_register()
+e42d52cafb1a scsi: ufs: Add DELAY_BEFORE_LPM quirk for Micron devices
+f6f3fdf5052b ext4: fix checking of directory entry validity for inline directories
+b522f43beefc ext4: clean up ext4_match() and callers
+1a4029e931dc mm, page_alloc: fix core hung in free_pcppages_bulk()
+8c6a0bcb20a8 mm: include CMA pages in lowmem_reserve at boot
+6662601e5790 kernel/relay.c: fix memleak on destroy relay channel
+6d26d0821647 romfs: fix uninitialized memory leak in romfs_dev_read()
+daea4542b133 btrfs: don't show full path of bind mounts in subvol=
+ba33ed7e3d43 btrfs: export helpers for subvolume name/id resolution
+cdb3f8b6c5b7 khugepaged: adjust VM_BUG_ON_MM() in __khugepaged_enter()
+db63d1862181 khugepaged: khugepaged_test_exit() check mmget_still_valid()
+854cbc3db303 tracing/hwlat: Honor the tracing_cpumask
+ee458aa7a03a tracing: Clean up the hwlat binding code
+b907dd1d2ddb perf probe: Fix memory leakage when the probe point is not found
+71e7ac9ae8f0 drm/imx: imx-ldb: Disable both channels for split mode in enc->disable()
+7ee66a8a71cf x86/asm: Add instruction suffixes to bitops
+3f2bea782ec1 x86/asm: Remove unnecessary 
+	 in front of CC_SET() from asm templates
+
+=======================
+     08-25-2020
+=======================
+
+
+   * frameworks/base
+7c35d67c24a SystemUI: QQS brightness: get container padding directly
+d5e5c0728c6 Implement quick QS brightness slider [1/3]
+890cc97892a base: Fix another SystemUI crash
+b8fa5489db7 base: Remove Duplicate FOD animations [1/2]
+f851e2b5ba6 base: VolumePluginManager: Add default constructor
+35d9a98f9fa base: Allow using plugins even on production
+0890ad4d3a8 base: Implement VolumePluginManager
+4f56c071f89 base: Add Mi 10 Ultra FOD animations [1/2]
+73d062b81c8 Show the nearby chip for images and files too.
+85af5516b65 Allow navbar to work with hw keys
+589ec05f1ae RGB Accenter: Listen for more accent colors
+3df1fbad2c5 System UI: Restore correct Padding for qs Header
+daaf83220fd Add option to center "R style" notification headers [1/2]
+
+   * kernel/xiaomi/sdm845
+703c57c06db9 cpumask: Add cpumasks for big and LITTLE CPU clusters
+58de3dc51ddd posix_cpu_timer: Check cpu_clock_sample() return value
+bd0531c95534 cpuidle: Mark CPUs idle as late as possible to avoid unneeded IPIs
+bf3e3ef767f5 cpuidle: Optimize pm_qos notifier callback and IPI semantics
+d4614adbde5f Revert "cpuidle: Optimize pm_qos notifier callback and IPI semantics"
+40e18359afbe Revert "cpuidle: Mark CPUs idle as late as possible to avoid unneeded IPIs"
+
+   * packages/apps/ZenHub
+a644f560 ZenHub: Implement quick QS brightness slider [2/2]
+0bc98305 ZenHub: Remove duplicate FOD animations [2/2]
+40fe8d4e ZenHub: Don't translate Volume Panel Values
+1da8c1b8 ZenHub: Make all accent color presets 8 char long
+d01e7acc ZenHub: POSP Vol panel styles
+905516cd ZenHub: Add RGB accent presets
+b1c725a4 Revert "QSPanel Visualizer [2/2]"
+1a79a999 ZenHub: Add Mi 10 Ultra FOD animations [2/2]
+5c2f77f4 ZenHub: Allow to keep hw keys enabled [2/2]
+b942dc1c Add option to center "R style" notification headers [2/2]
+acc599f7 ZenHub:Update Maintainers and Devices
+33c3da70 Merge pull request #6 from Gasiyu/patch-1
+039a92a3 ZenHub: Add RGB Accent Picker
+817b027c QSPanel Visualizer [2/2]
+
+=======================
+     08-24-2020
+=======================
+
+
+   * kernel/xiaomi/sdm845
+5083d3779694 UPSTREAM: arm64/mmap: properly account for stack randomization in mmap_base
+8723fda968dc mm: consolidate page table accounting
+c47d29564c01 mm: introduce wrappers to access mm->nr_ptes
+
+=======================
+     08-23-2020
+=======================
+
+
+   * kernel/xiaomi/sdm845
+91140716f0af mm: account pud page tables
+2a967f288751 mm: fix recent merge errors
+20d44e9db5e0 mm: brk: downgrade mmap_sem to read when shrinking
+18089e3d63ec mm: mremap: downgrade mmap_sem to read when shrinking
+7bccf9e499f9 mm: unmap VM_PFNMAP mappings with optimized path
+66420fb2779b mm: unmap VM_HUGETLB mappings with optimized path
+0829056ecf34 mm: mmap: zap pages with read mmap_sem in munmap
+3267391d33c1 mm: call vm_munmap in munmap syscall instead of using open coded version
+8a01a9dc332d mm: alloc_contig: re-allow CMA to compact FS pages
+e2d335d2347e mm, slab: faster active and free stats
+88b94532ac05 mm, compaction: allow compaction for GFP_NOFS requests
+b810a5886180 mm: oom: print zspages and ion_heap, ion_heap pool
+5e6b4f0051e6 mm: don't TestClearPageError in __filemap_fdatawait_range
+f8e60e1e5292 ion: add movability support for page pools
+a04ea6bdfeae mm: add ION heap-pool allocation stat into vmstat
+910590968b78 mm: skip swap readahead when process is exiting
+8b8207b75229 mm, page_alloc: double zone's batchsize
+1b37d95ea21f mm: vmalloc: pass proper vm_start into debugobjects
+c8537f0dcf0d mm: vmalloc: clean up vunmap to avoid pgtable ops twice
+80a9acf119ef mm/page_owner: use kvmalloc instead of kmalloc
+7e9589c37b6f mm/shmem.c: fix unlikely() test of info->seals to test only for WRITE and GROW
+5d6585efccc0 sched/core: Remove unlikely() annotation from sched_move_task()
+01c95e099816 locking/rtmutex: Flip unlikely() branch to likely() in __rt_mutex_slowlock()
+18bd89f048d3 mm/page-writeback.c: place "not" inside of unlikely() statement in wb_domain_writeout_inc()
+8ce7e677c458 mm/mmzone.c: swap likely to unlikely as code logic is different for next_zones_zonelist()
+973701d3f9ea Revert "xt_quota2: Send netlink event on quota reach, without fail."
+f08ef057314f Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into mipa-q-rebase
+
+=======================
+     08-22-2020
+=======================
+
+
+   * packages/apps/Settings
+e3e1ab0c75 Settings: update lottie animations
+f824fb08db Settings: update some lottie animations
+94091e8e5f Settings: add icons for privacy settings
+8ea4bfd64a Settings: Add new face settings video
+9b30be3d0f Settings: Make Homepage great again - OOS Homepage
+
+=======================
+     08-21-2020
+=======================
+
+
+   * kernel/xiaomi/sdm845
+ea282bdf0d05 ANDROID: fix a bug in quota2
+1e7b6edbb5ae Merge 4.9.233 into android-4.9-q
+86ec9d414948 UPSTREAM: binder: Prevent context manager from incrementing ref 0
+8d71b6117b58 Linux 4.9.233
+23feab188cb8 mm: Avoid calling build_all_zonelists_init under hotplug context
+dc3ff4f698af khugepaged: retract_page_tables() remember to test exit
+11b29edeead7 sh: landisk: Add missing initialization of sh_io_port_base
+ca95679afe94 ALSA: echoaudio: Fix potential Oops in snd_echo_resume()
+2a428481c8fe mfd: dln2: Run event handler loop under spinlock
+e705251862f2 fs/ufs: avoid potential u32 multiplication overflow
+8973046648c4 nfs: Fix getxattr kernel panic and memory overflow
+a37ac4f12765 net: qcom/emac: add missed clk_disable_unprepare in error path of emac_clks_phase1_init
+c238f9aa9dd8 drm/vmwgfx: Fix two list_for_each loop exit tests
+ba25f41e747d Input: sentelic - fix error return when fsp_reg_write fails
+d0883cb88a80 pwm: bcm-iproc: handle clk_get_rate() return
+6ce0a352bcfb clk: clk-atlas6: fix return value check in atlas6_clk_init()
+d20170337cb2 i2c: rcar: slave: only send STOP event when we have been addressed
+b15fa8563e54 iommu/vt-d: Enforce PASID devTLB field mask
+bfe998e5c66e iommu/omap: Check for failure of a call to omap_iommu_dump_ctx
+248a9ca0dd2e gpu: ipu-v3: image-convert: Combine rotate/no-rotate irq handlers
+904d036f9196 USB: serial: ftdi_sio: clean up receive processing
+676879ac44dd USB: serial: ftdi_sio: make process-packet buffer unsigned
+347bbf448c3d mfd: arizona: Ensure 32k clock is put on driver unbind and error
+c1e2991705a2 pseries: Fix 64 bit logical memory block panic
+82ac16572b37 watchdog: f71808e_wdt: clear watchdog timeout occurred flag
+74ba310b526d watchdog: f71808e_wdt: remove use of wrong watchdog_info option
+3e81f909ddf2 watchdog: f71808e_wdt: indicate WDIOF_CARDRESET support in watchdog_info.options
+ad363ade8e83 kprobes: Fix NULL pointer dereference at kprobe_ftrace_handler
+ea3d57bcaa13 ftrace: Setup correct FTRACE_FL_REGS flags for module
+b26574812577 ocfs2: change slot number type s16 to u16
+7535e5e58805 ext2: fix missing percpu_counter_inc
+ed1c51274e2e MIPS: CPU#0 is not hotpluggable
+ae0f0b0924a2 mac80211: fix misplaced while instead of if
+bc69163e5921 bcache: allocate meta data pages as compound pages
+aefb61f0a322 md/raid5: Fix Force reconstruct-write io stuck in degraded raid5
+538f578b28f1 net/compat: Add missing sock updates for SCM_RIGHTS
+33c625460675 net: stmmac: dwmac1000: provide multicast filter fallback
+83c4c2aee0e0 net: ethernet: stmmac: Disable hardware multicast filter
+1ac889d93a18 powerpc: Fix circular dependency between percpu.h and mmu.h
+e05e0a9d3e11 xtensa: fix xtensa_pmu_setup prototype
+198de686fd9d iio: dac: ad5592r: fix unbalanced mutex unlocks in ad5592r_read_raw()
+fab88db1bd99 btrfs: fix memory leaks after failure to lookup checksums during inode logging
+802dff14b904 btrfs: only search for left_info if there is no right_info in try_merge_free_space
+52400aff9bba btrfs: don't allocate anonymous block device for user invisible roots
+b6a8f349563f PCI: hotplug: ACPI: Fix context refcounting in acpiphp_grab_context()
+91e7b49a44a8 smb3: warn on confusing error scenario with sec=krb5
+0fdcc4156ccd xen/balloon: make the balloon wait interruptible
+a888fea6bd0a xen/balloon: fix accounting in alloc_xenballooned_pages error path
+121b25adedbf ARM: 8992/1: Fix unwind_frame for clang-built kernels
+562744b2a2d0 parisc: mask out enable and reserved bits from sba imask
+3ce4ded54c8b 9p: Fix memory leak in v9fs_mount
+9579676df1db ALSA: usb-audio: work around streaming quirk for MacroSilicon MS2109
+48fcd08b90e3 fs/minix: reject too-large maximum file size
+5b5c362a4b2e fs/minix: don't allow getting deleted inodes
+e0aa9371fff5 fs/minix: check return value of sb_getblk()
+476c4a59e9f1 crypto: ccp - Fix use of merged scatterlists
+235c8e8745ab crypto: qat - fix double free in qat_uclo_create_batch_init_list
+6428ff53e4aa ALSA: usb-audio: add quirk for Pioneer DDJ-RB
+2254bff8c6c6 ALSA: usb-audio: fix overeager device match for MacroSilicon MS2109
+b25302e35019 ALSA: usb-audio: Creative USB X-Fi Pro SB1095 volume knob support
+acf87e45c814 USB: serial: cp210x: enable usb generic throttle/unthrottle
+0fd9f9e794bd USB: serial: cp210x: re-enable auto-RTS on open
+645086be4e07 net: Set fput_needed iff FDPUT_FPUT is set
+1b0eab4e8622 net/nfc/rawsock.c: add CAP_NET_RAW check.
+8fb9b364a71d drivers/net/wan/lapbether: Added needed_headroom and a skb->len check
+d3032a52732d pinctrl-single: fix pcs_parse_pinconf() return value
+da8baaeeecbc dlm: Fix kobject memleak
+54c0e11e368d fsl/fman: fix eth hash table allocation
+53e0648caaf7 fsl/fman: check dereferencing null pointer
+be574082999a fsl/fman: fix unreachable code
+0d2a776e60a8 fsl/fman: fix dereference null return value
+eb8119b993e3 fsl/fman: use 32-bit unsigned integer
+61e19d3aa52e net: spider_net: Fix the size used in a 'dma_free_coherent()' call
+5caca611a7cb wl1251: fix always return 0 error
+9c3150f0db63 s390/qeth: don't process empty bridge port events
+4b8b58edfe51 selftests/powerpc: Fix online CPU selection
+bdcc8443e1a7 selftests/powerpc: Fix CPU affinity for child process
+64867f474523 power: supply: check if calc_soc succeeded in pm860x_init_battery
+043392644c91 Smack: prevent underflow in smk_set_cipso()
+5edf79a812a0 Smack: fix another vsscanf out of bounds
+6bd5aeb62401 scsi: mesh: Fix panic after host or bus reset
+7d2a4749e158 usb: dwc2: Fix error path in gadget registration
+8ffade039603 USB: serial: iuu_phoenix: fix led-activity helpers
+6332fb84bcff drm/imx: tve: fix regulator_disable error path
+345037fe42cc PCI/ASPM: Add missing newline in sysfs 'policy'
+01af011f7f28 staging: rtl8192u: fix a dubious looking mask before a shift
+346ad216021d powerpc/vdso: Fix vdso cpu truncation
+7b9220b2e366 mwifiex: Prevent memory corruption handling keys
+37c72a6301f0 scsi: scsi_debug: Add check for sdebug_max_queue during module init
+17d48dda809e drm: panel: simple: Fix bpc for LG LB070WV8 panel
+426d0411c0f8 leds: core: Flush scheduled work for system suspend
+f5808a905d4e PCI: Fix pci_cfg_wait queue locking problem
+c41bc070d236 xfs: fix reflink quota reservation accounting error
+6596910c2f51 media: exynos4-is: Add missed check for pinctrl_lookup_state()
+e6ef9b254390 media: firewire: Using uninitialized values in node_probe()
+7aaed6c25bc2 scsi: eesox: Fix different dev_id between request_irq() and free_irq()
+35307235cfff scsi: powertec: Fix different dev_id between request_irq() and free_irq()
+f1485baed196 drm/radeon: fix array out-of-bounds read and write issues
+20c9d48eea37 cxl: Fix kobject memleak
+0e951a13f47e drm/mipi: use dcs write for mipi_dsi_dcs_set_tear_scanline
+0053f463eb2b scsi: cumana_2: Fix different dev_id between request_irq() and free_irq()
+3a08f46d3e05 media: omap3isp: Add missed v4l2_ctrl_handler_free() for preview_init_entities()
+36715442d86a leds: lm355x: avoid enum conversion warning
+254c8d4c4de4 iio: improve IIO_CONCENTRATION channel type description
+c49f21d3338b video: pxafb: Fix the function used to balance a 'dma_alloc_coherent()' call
+abb576c2721c console: newport_con: fix an issue about leak related system resources
+c1eda6187d1f video: fbdev: sm712fb: fix an issue about iounmap for a wrong address
+7d755eab2bcf agp/intel: Fix a memory leak on module initialisation failure
+0c486aeca44c ACPICA: Do not increment operation_region reference counts for field units
+bedcb630e0a4 bcache: fix super block seq numbers comparision in register_cache_set()
+eb8cbd8c2bc6 dyndbg: fix a BUG_ON in ddebug_describe_flags
+0750d0648431 bdc: Fix bug causing crash after multiple disconnects
+d0946f7ea7f0 usb: gadget: net2280: fix memory leak on probe error handling paths
+8963421f530d iwlegacy: Check the return value of pcie_capability_read_*()
+0984f86d0b35 brcmfmac: To fix Bss Info flag definition Bug
+261da4b2d3f2 mm/mmap.c: Add cond_resched() for exit_mmap() CPU stalls
+3432be3af5c2 drm/debugfs: fix plain echo to connector "force" attribute
+a6ea07556d0b drm/nouveau: fix multiple instances of reference count leaks
+e51f5c5d5a3f md-cluster: fix wild pointer of unlock_all_bitmaps()
+652cd9abdbdc video: fbdev: neofb: fix memory leak in neo_scan_monitor()
+0ba1cb622ad5 drm/radeon: Fix reference count leaks caused by pm_runtime_get_sync
+fc043bd90c63 fs/btrfs: Add cond_resched() for try_release_extent_mapping() stalls
+c35fd5684d0c Bluetooth: add a mutex lock to avoid UAF in do_enale_set
+74da79fc0b8b drm/tilcdc: fix leak & null ref in panel_connector_get_modes
+d3287d680f7c ARM: socfpga: PM: add missing put_device() call in socfpga_setup_ocram_self_refresh()
+b345f860b020 ARM: at91: pm: add missing put_device() call in at91_pm_sram_init()
+7ee70737bcb0 platform/x86: intel-vbtn: Fix return value check in check_acpi_dev()
+9a764fa04991 platform/x86: intel-hid: Fix return value check in check_acpi_dev()
+e85de1bc052a m68k: mac: Fix IOP status/control register writes
+f985002446e5 m68k: mac: Don't send IOP message until channel is idle
+a4f6a0f52a6d arm64: dts: exynos: Fix silent hang after boot on Espresso
+f71fba161523 arm64: dts: qcom: msm8916: Replace invalid bias-pull-none property
+91a1b253ed61 EDAC: Fix reference count leaks
+f3b1d647251a cgroup: add missing skcd->no_refcnt check in cgroup_sk_clone()
+e52c5a9ff960 gpio: fix oops resulting from calling of_get_named_gpio(NULL, ...)
+1c6da5bc56fc tracepoint: Mark __tracepoint_string's __used
+698080a23ea5 Smack: fix use-after-free in smk_write_relabel_self()
+95f108897214 usb: hso: check for return value in hso_serial_common_create()
+b901e8e4a572 Revert "vxlan: fix tos value before xmit"
+2edf94272590 net: lan78xx: replace bogus endpoint lookup
+d3c4938d366b vxlan: Ensure FDB dump is performed under RCU
+86e4cc08baf7 ipv6: fix memory leaks on IPV6_ADDRFORM path
+f81f591e1445 ipv4: Silence suspicious RCU usage warning
+1427acbb8b79 binder: Prevent context manager from incrementing ref 0
+419d10aec453 xattr: break delegations in {set,remove}xattr
+a710335bb958 tools lib traceevent: Fix memory leak in process_dynamic_array_len
+c8313917127d atm: fix atm_dev refcnt leaks in atmtcp_remove_persistent
+137e399ea8e0 igb: reinit_locked() should be called with rtnl_lock
+71a5362de8d9 cfg80211: check vendor command doit pointer before use
+705a601e0561 drm/nouveau/fbcon: fix module unload when fbcon init has failed for some reason
+edd90971717e net/9p: validate fds in p9_fd_open
+efde0ddb4e67 leds: 88pm860x: fix use-after-free on unbind
+ae1cd9f675b4 leds: lm3533: fix use-after-free on unbind
+6b3f0df8ff91 leds: da903x: fix use-after-free on unbind
+6de8169aad63 leds: wm831x-status: fix use-after-free on unbind
+583d42400532 mtd: properly check all write ioctls for permissions
+8c19b606e78a vgacon: Fix for missing check in scrollback handling
+2780c5e9674c omapfb: dss: Fix max fclk divider for omap36xx
+df6f71853abf Bluetooth: Prevent out-of-bounds read in hci_inquiry_result_with_rssi_evt()
+855a93a756ee Bluetooth: Prevent out-of-bounds read in hci_inquiry_result_evt()
+aea77913022b Bluetooth: Fix slab-out-of-bounds read in hci_extended_inquiry_result_evt()
+5a48144ef0b6 ALSA: seq: oss: Serialize ioctls
+0216f889f190 net/mlx5e: Don't support phys switch id if not in switchdev mode
+487862fd9d77 USB: serial: qcserial: add EM7305 QDL product ID
+c8e44688f931 ext4: fix direct I/O read error
+82461648c647 random32: move the pseudo-random 32-bit definitions to prandom.h
+8ce7dd3f42f4 random32: remove net_rand_state from the latent entropy gcc plugin
+746fe4967584 random: fix circular include dependency on arm64 after addition of percpu.h
+473b095f064a ARM: percpu.h: fix build error
+5aa78397e208 random32: update the net random state on interrupt and activity
+dfd6b6e82b18 x86/i8259: Use printk_deferred() to prevent deadlock
+575350ea1d69 KVM: LAPIC: Prevent setting the tscdeadline timer if the lapic is hw disabled
+6015a6922887 xen-netfront: fix potential deadlock in xennet_remove()
+0102ed8cafdb Revert "i2c: cadence: Fix the hold bit setting"
+94791d92b4c1 net: ethernet: ravb: exit if re-initialization fails in tx timeout
+78c4268bbb74 parisc: add support for cmpxchg on u8 pointers
+8be68d5cd20e nfc: s3fwrn5: add missing release on skb in s3fwrn5_recv_frame
+357f6ddcb4b7 qed: Disable "MFW indication via attention" SPAM every 5 minutes
+d9af6f8f2150 usb: hso: Fix debug compile warning on sparc32
+55402e177a52 arm64: csum: Fix handling of bad packets
+04c5d1c5d171 mac80211: mesh: Free pending skb when destroying a mpath
+3212d6248faf mac80211: mesh: Free ie data when leaving mesh
+7be8343a8260 ibmvnic: Fix IRQ mapping disposal in error path
+38823915a90d mlxsw: core: Free EMAD transactions using kfree_rcu()
+26ac4d0de574 mlxsw: core: Increase scope of RCU read-side critical section
+7a23750fa053 mlx4: disable device on shutdown
+1c7c7eb7fa79 net: lan78xx: fix transfer-buffer memory leak
+0e87ce58c496 net: lan78xx: add missing endpoint sanity check
+795a43148377 sh: Fix validation of system call number
+10ceab64db8b net/x25: Fix null-ptr-deref in x25_disconnect
+08560e93a2c1 net/x25: Fix x25_neigh refcnt leak when x25 disconnect
+d472b7e2f632 install several missing uapi headers
+5a41bdbb3450 uapi: includes linux/types.h before exporting files
+b18350450880 xfs: fix missed wakeup on l_flush_wait
+2b9c45b6dc95 rds: Prevent kernel-infoleak in rds_notify_queue_get()
+1231b93ef951 fbdev: Detect integer underflow at "struct fbcon_ops"->clear_margins.
+ce93e0169b6d x86, vmlinux.lds: Page-align end of ..page_aligned sections
+70061298864c x86/build/lto: Fix truncated .bss with -fdata-sections
+294711f902be 9p/trans_fd: Fix concurrency del of req_list in p9_fd_cancelled/p9_read_work
+e73153efdee7 9p/trans_fd: abort p9_read_work if req status changed
+7745e3c67b80 f2fs: check if file namelen exceeds max value
+f46a09b74aa3 f2fs: check memory boundary by insane namelen
+16d15f971c03 drm: hold gem reference until object is no longer accessed
+59395c4ef45f drm/amdgpu: Prevent kernel-infoleak in amdgpu_info_ioctl()
+544e9900da6c ARM: 8986/1: hw_breakpoint: Don't invoke overflow handler on uaccess watchpoints
+2d9dacf23511 PCI/ASPM: Disable ASPM on ASMedia ASM1083/1085 PCIe-to-PCI bridge
+f0b65fee921f ath9k: release allocated buffer if timed out
+86c3e3e5937f ath9k_htc: release allocated buffer if timed out
+fa5ac0514ec1 media: rc: prevent memory leak in cx23888_ir_probe
+65d77c8771d2 crypto: ccp - Release all allocated memory if sha type is invalid
+a7efa804e0f4 net: phy: mdio-bcm-unimac: fix potential NULL dereference in unimac_mdio_probe()
+beff051fa566 xfs: don't call xfs_da_shrink_inode with NULL bp
+42c59d544af9 xfs: validate cached inodes are free when allocated
+6de46e2c621e xfs: catch inode allocation state mismatch corruption
+
+=======================
+     08-20-2020
+=======================
+
+
+   * device/xiaomi/sdm845-common
+da14c26 sdm845-common: enable unspecialized app process pool
+388fa98 sdm845-common: add qs header panel height
+
+   * frameworks/base
+bab0b9f1a26 RGB Accenter: add more attrs for color changes
 
