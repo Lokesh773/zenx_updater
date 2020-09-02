@@ -1,18 +1,138 @@
 =======================
+     09-02-2020
+=======================
+
+
+   * frameworks/base
+dc95ac9 Merge pull request #10 from theOverpoweredGuy/screenoff-fod
+8184594 fwb: Optimise how plugins are applied
+58b9518 SystemUI: Improve HeaderImage background
+3f74236 Revert "BoostFramework: New hintType for App Starting from BG."
+822947d Revert "framework: add boost for package installation"
+4ad8636 Revert "Perf: Boost UI thread during app launching"
+962f793 SystemUI: Fix multiple issues with hiding unprovisioned SIMs
+eb438dd StatusBarSignalPolicy: Hide signal icons for disabled SIMs
+
+   * packages/apps/Settings
+de3f5fa Settings: Improve text padding
+
+   * packages/apps/ZenHub
+4ea8f66 Merge pull request #9 from theOverpoweredGuy/screenoff-fod
+
+   * vendor/zenx
+b722c60 vendor: Copy files to product properly
+38df11d Merge pull request #2 from Raaj52/ten
+a20ac2e build: phony: Enhancement
+6f8ed96 build: Colours makes things vibrant!
+fb404c8 vendor: ZenX-OS 1.9
+
+=======================
+     09-01-2020
+=======================
+
+
+   * frameworks/opt/telephony
+2e146c1 TelephonyExtUtils: Handle extphone binder death
+ca095bb TelephonyExtUtils: Set timeout for (de)activating provision
+8a73f74 Introduce TelephonyExtUtils
+
+   * manifest
+b624243 manifest:Track chromium-webview from los
+
+   * packages/apps/OmniStyle
+9b8c767 OmniStyle:Add marvel and DC superohero headers
+880bb58 Revert "OmniStyle: Add itsaalex poison headers"
+a427ca1 Revert "OmniStyle: Add 'Space' headers"
+0027a47 Revert "OmniStyle: Add 'Colorful' headers"
+f22d169 Bring Animeness to the world of Custom Roms (#1)
+1aa983d Omnistyle: Add more scenery headers
+f3dd62b OmniStyle: Added SAO headers
+83b170f OmniStyle: Add scenery headers
+c2575e8 OmniStyle: Add Naruto Headers
+
+   * packages/apps/ZenHub
+28bf935 ZenHub: Allow hiding Device Parts from ZenHub [1/2]
+
+=======================
+     08-31-2020
+=======================
+
+
+   * frameworks/base
+1997aea PackageInstaller: Fix crash when uninstalling apps with fragile data
+a6f1038 Skip screen on animation when wake and unlock via biometrics
+f91fcb6 Navbar: Introduce navbar styles [1/3]
+ac1755e base: Q seekbar: Tweak it's size
+da89421 Revert "base: media_seekbar: make it sexy"
+ad77a6b base: Introduce awesome brightness slider style [1/3]
+48560cf SystemUI:Add new v(O)lte icon[1/2] *@Lokesh773:Bringup to ZenX-OS *Icon by @yashdevelops
+a0982b4 base: Allow hiding Device Parts from ZenHub [1/2]
+64d0446 Quick Brightness Slider: Fix padding issues
+dafa246 SystemUI: adapt to work with our UI styler
+e0eb588 base: Separate vibrate drawable for vol panel from common icon
+635932ee Notification: Fix no icon shown for data limit notification
+e2d00aa ChooserActivity: fix android crash from null object
+af82271 services: LightsService: Mute an annoying error message.
+97926e9 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+43e0403 Gracefully handle integer overflows.
+5c24069 Taskhelper api: fix NPE
+20de8f6 Refactor killapp implementation into a Dependency controller class
+dc058d6 base: Add overlay to Enable/Disable Home button wake
+cc2264d base: Enable home button wake
+e998808 [SQUASH] base: Cleanup for new screen off fod implementation
+f4fee0a fwb: Add screen off fod [1/2]
+
+   * packages/apps/CustomDoze
+8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
+
+   * packages/apps/Plugins
+565ff4f plugins: adapt to work with our UI styler
+
+   * packages/apps/Settings
+dabf585 Merge pull request #3 from theOverpoweredGuy/screenoff-fod
+
+   * packages/apps/TouchGestures
+7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
+
+   * packages/apps/ZenHub
+6fb9d92 ZenHub: Introduce navbar styles [2/3]
+d6a6c0e ZenHub:Add new v(O)lte icon[2/2]
+28ac74c ZenHub: Introduce awesome brightness slider style picker [3/3]
+d3e551d Revert "Revert "QSPanel Visualizer [2/2]""
+
+   * vendor/zenx
+1cb2125 Navbar: Introduce navbar styles [3/3]
+1d4595f vendor: Introduce awesome brightness slider style [2/3]
+f3c01a1 vendor: apns-conf: Drop proxy for Movistar
+7ad369b repopick: Address PEP8 warnings regarding indentations and variable naming
+8bb8d0d repopick: Use empty metavar parameter to fix help's indentation
+3cc9a88 kernel: Bail-out if kernel config isn't set
+27d5b04 kernel: Add support for module aliases
+3750070 kernel: Allow installing modules on vendor_overlay
+a778323 repopick: Use upstream instead of revision to determine branch
+
+=======================
+     08-30-2020
+=======================
+
+
+   * packages/apps/CustomDoze
+0ca0b57 Revert "CustomDoze: Don't pulse if Screen Off FOD is enabled"
+
+   * packages/apps/Settings
+6771ebe Settings: Screen-Off FOD [2/2]
+1ad1e1f Revert "Settings: Screen off FOD [2/3]"
+
+   * packages/apps/TouchGestures
+836b63d Revert "TouchGestures: Don't pulse if Screen Off FOD is enabled"
+
+   * packages/apps/ZenHub
+8684759 [SQUASH] ZenHub: Clean-Up for new Screen off FOD implementation
+
+=======================
      08-29-2020
 =======================
 
-
-   * vendor/zenx
-c0dd400 vendor: apns-conf: Drop proxy for Movistar
-
-=======================
-     08-28-2020
-=======================
-
-
-   * packages/apps/Plugins
-ce87bb6 plugins: adapt to work with our UI styler
 
    * packages/apps/ZenHub
 1f2d2a4 Revert "Revert "QSPanel Visualizer [2/2]""
@@ -22,12 +142,25 @@ ce87bb6 plugins: adapt to work with our UI styler
 8613098 sepolicy: allow reading theme prop
 
 =======================
-     08-27-2020
+     08-28-2020
 =======================
 
 
    * frameworks/base
 86b19cb base: Separate vibrate drawable for vol panel from common icon
+
+   * frameworks/native
+30a9699 touch response optimizations
+66c0291 gui: Fix array out of bound
+a8ffa93 binder: Parcel avoid too small initial allocation
+8964557 gl: Reorder when ImageManager thread starts
+
+=======================
+     08-27-2020
+=======================
+
+
+   * frameworks/base
 4abd2cf Notification: Fix no icon shown for data limit notification
 fad0cea ChooserActivity: fix android crash from null object
 e202ea2 services: LightsService: Mute an annoying error message.
@@ -49,18 +182,13 @@ af4dbae PocketJudge: allow register vendor pocket sensor
 b4c54dd add VSYNC scheduled flag and avoid two doFrame calls in one period
 91ff87e core: touch response optimizations
 461adfb Revert "ScreenDecorations: Account notch-city for custom cutout"
-
-   * frameworks/native
-30a9699 touch response optimizations
-66c0291 gui: Fix array out of bound
-a8ffa93 binder: Parcel avoid too small initial allocation
-8964557 gl: Reorder when ImageManager thread starts
+8144e21 base: Add support for MiSound FX
+0d6eeea base: Add DiracSound and MiSound to current api
+6b202ee SystemUI: Fix QS tiles clipping when too many icons in view
+5fefad9 SystemUI: fix qs footer divider width and header image height
 
    * frameworks/opt/telephony
 f33c888 Failed to show hold call when user click swap and merge simultaneously
-
-   * packages/apps/Plugins
-2bb7adf plugins: nuke oreo panel
 
 =======================
      08-26-2020
@@ -68,10 +196,6 @@ f33c888 Failed to show hold call when user click swap and merge simultaneously
 
 
    * frameworks/base
-8144e21 base: Add support for MiSound FX
-0d6eeea base: Add DiracSound and MiSound to current api
-6b202ee SystemUI: Fix QS tiles clipping when too many icons in view
-5fefad9 SystemUI: fix qs footer divider width and header image height
 26847f9 SystemUI: keep width on qs expand move
 bd58a2e SystemUI: decrease margin between qs and text
 55ede5d Fix a race conditon in `incident`.
@@ -90,21 +214,6 @@ ed92261 QSPanel: fix brightness slider logic
 7c35d67 SystemUI: QQS brightness: get container padding directly
 d5e5c07 Implement quick QS brightness slider [1/3]
 890cc97 base: Fix another SystemUI crash
-
-   * packages/apps/ZenHub
-a644f56 ZenHub: Implement quick QS brightness slider [2/2]
-0bc9830 ZenHub: Remove duplicate FOD animations [2/2]
-40fe8d4 ZenHub: Don't translate Volume Panel Values
-1da8c1b ZenHub: Make all accent color presets 8 char long
-d01e7ac ZenHub: POSP Vol panel styles
-905516c ZenHub: Add RGB accent presets
-
-=======================
-     08-25-2020
-=======================
-
-
-   * frameworks/base
 b8fa548 base: Remove Duplicate FOD animations [1/2]
 f851e2b base: VolumePluginManager: Add default constructor
 35d9a98 base: Allow using plugins even on production
@@ -117,6 +226,12 @@ f851e2b base: VolumePluginManager: Add default constructor
 daaf832 Add option to center "R style" notification headers [1/2]
 
    * packages/apps/ZenHub
+a644f56 ZenHub: Implement quick QS brightness slider [2/2]
+0bc9830 ZenHub: Remove duplicate FOD animations [2/2]
+40fe8d4 ZenHub: Don't translate Volume Panel Values
+1da8c1b ZenHub: Make all accent color presets 8 char long
+d01e7ac ZenHub: POSP Vol panel styles
+905516c ZenHub: Add RGB accent presets
 b1c725a Revert "QSPanel Visualizer [2/2]"
 1a79a99 ZenHub: Add Mi 10 Ultra FOD animations [2/2]
 5c2f77f ZenHub: Allow to keep hw keys enabled [2/2]
@@ -125,6 +240,11 @@ acc599f ZenHub:Update Maintainers and Devices
 33c3da7 Merge pull request #6 from Gasiyu/patch-1
 039a92a ZenHub: Add RGB Accent Picker
 817b027 QSPanel Visualizer [2/2]
+
+=======================
+     08-25-2020
+=======================
+
 
 =======================
      08-24-2020
@@ -136,11 +256,6 @@ acc599f ZenHub:Update Maintainers and Devices
 =======================
 
 
-=======================
-     08-22-2020
-=======================
-
-
    * packages/apps/Settings
 e3e1ab0 Settings: update lottie animations
 f824fb0 Settings: update some lottie animations
@@ -149,12 +264,12 @@ f824fb0 Settings: update some lottie animations
 9b30be3 Settings: Make Homepage great again - OOS Homepage
 
 =======================
+     08-22-2020
+=======================
+
+
+=======================
      08-21-2020
-=======================
-
-
-=======================
-     08-20-2020
 =======================
 
 
@@ -162,25 +277,7 @@ f824fb0 Settings: update some lottie animations
 bab0b9f RGB Accenter: add more attrs for color changes
 
 =======================
-     08-19-2020
-=======================
-
-
-=======================
-     08-18-2020
-=======================
-
-
-=======================
-     08-17-2020
-=======================
-
-
-   * frameworks/base
-77a8b2a base: Introduce RGB accenter [1/2]
-
-=======================
-     08-16-2020
+     08-20-2020
 =======================
 
 
