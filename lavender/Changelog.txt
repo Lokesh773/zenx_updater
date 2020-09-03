@@ -1,112 +1,118 @@
 =======================
-     08-10-2020
-=======================
-
-
-=======================
-     08-09-2020
+     09-03-2020
 =======================
 
 
    * frameworks/base
-93810b69 SystemUI: Fix cutted Notification icons on dual statusbar mod
+95faf00e SystemUI: Remove BatteryBar background
 
-   * hardware/qcom-caf/sm8250/display
-4ab176b Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
+   * packages/apps/OmniStyle
+481a4e4 Omnistyle: Compress images
 
    * packages/apps/ZenHub
-3ad9f85 ZenHub: Introduce UI Style Picker [2/3]
-
-   * vendor/zenx
-0a6a13e vendor: ZenX-OS v1.8
+9ea66a8 Revert "ZenHub: Nuke Oreo Volume Panel"
 
 =======================
-     08-08-2020
+     09-02-2020
 =======================
 
 
-=======================
-     08-07-2020
-=======================
-
-
-=======================
-     08-06-2020
-=======================
-
-
-=======================
-     08-05-2020
-=======================
-
-
-   * build/make
-bb9b14c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
-
-   * frameworks/av
-62f3e94 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
-
-   * manifest
-8af4c19 Revert "Revert "Track android_vendor_oplauncher""
+   * device/xiaomi/sdm660-common
+4617460 sdm660-common: Set Clang 11.0.1 for kernel
 
    * packages/apps/Settings
-ce9ef10 BatteryHealth: Add seperated Category
+de3f5fa Settings: Improve text padding
 
-   * packages/services/Telephony
-8a0411c Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+   * vendor/zenx
+b722c60 vendor: Copy files to product properly
+
+=======================
+     09-01-2020
+=======================
+
+
+   * frameworks/opt/telephony
+2e146c1 TelephonyExtUtils: Handle extphone binder death
+
+   * manifest
+b624243 manifest:Track chromium-webview from los
+
+=======================
+     08-31-2020
+=======================
+
+
+   * packages/apps/CustomDoze
+8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
+
+   * packages/apps/Plugins
+565ff4f plugins: adapt to work with our UI styler
+
+   * packages/apps/TouchGestures
+7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
+
+=======================
+     08-30-2020
+=======================
+
+
+=======================
+     08-29-2020
+=======================
+
+
+   * device/xiaomi/lavender
+acafcdf lavender: shim libmmcamera_mg_facepp_lib and patch libmmcamera_imglib to use it
+
+   * kernel/xiaomi/sdm660
+295a4532 drivers: smb: add qc3.0 support for global boards
 
    * system/sepolicy
-ad6de2f Uncrypt: Allow uncrypt to write on ota_package_file.
+8613098 sepolicy: allow reading theme prop
 
 =======================
-     08-04-2020
-=======================
-
-
-=======================
-     08-03-2020
+     08-28-2020
 =======================
 
 
+   * frameworks/native
+30a9699 touch response optimizations
+
 =======================
-     08-02-2020
+     08-27-2020
 =======================
 
 
 =======================
-     08-01-2020
+     08-26-2020
 =======================
 
 
 =======================
-     07-31-2020
-=======================
-
-
-   * hardware/lineage/livedisplay
-ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
-
-=======================
-     07-30-2020
+     08-25-2020
 =======================
 
 
 =======================
-     07-29-2020
+     08-24-2020
 =======================
 
 
-   * packages/apps/Bluetooth
-76e727c Add switch to select SBC HD by default [2/3]
-
-   * packages/apps/ThemePicker
-e5300cc ThemePicker: Increase Margin top to avoid Text overlap
-
 =======================
-     07-28-2020
+     08-23-2020
 =======================
 
 
-   * build/soong
-3f6640a Allow arm-linux-androidkernel-ld
+=======================
+     08-22-2020
+=======================
+
+
+   * vendor/xiaomi/lavender
+7e09af6 lavender: patch libmmcamera_imglib to use shim
+
+=======================
+     08-21-2020
+=======================
+
 
