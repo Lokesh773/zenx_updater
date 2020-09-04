@@ -1,39 +1,34 @@
 Device Changelog
-- Added OP Launcher as default
-- Added missing network props
-- Some overlay cleanup
-- Rounded corners for Keyboard
+- Added new Screen-Off FOD.
+- Added Fluence Voice recorder (This must fix google recorder).
+- Disabled FOD Icon Dimming.
+- SEpolicy: Label new battery supply and usb supply nodes.
 
 ROM Changelog
-- Merged August security patch
-- Made Op Launcher optionally
-- Added UI Style Picker
-- Added Custom Statusbar height
-- Added Derp clear Primary Color
-- Added Oneplus Dark Primary Color
-- Added lots of new Volte icon ink. OOS 10
-- Added Batteryhealth section
-- Added VOOC support
-- Fixed cutted notification icon in statusbar on pulsing
-- Fixed QS settings long press not starting ZenHub
-- Fixed QS always on settings icon overlap
-- Uncrypt-  Allow uncrypt to write on ota_package_file
-- Many other fixes and improvements
-- Added BottomTriangle QS style
-- Added MallowIconshape thx to @Drew_69
-- Added SystemInfo check to prevent UI crashes
-- Added A2DP codec priority
-- Added switch to select SBC HD
-- Added Tux Clock style
-- Added Lockscreen clock swing animation style
-- Added Lockscreen clock loader animation style
-- Added Lockscreen clock blobls loader animation style
-- Added Lockscreen clock rainbow circle animation style
-- Added Lockscreen clock fire circle animation style
-- Fixed Fonts
-- Fixed pulse nav bar crashes
-- Unlock speed improvments
-- NetworkTraffic: Fix insivible Icon on light theme
+
+- Added list animations and interpolator
+- QS drag handle improvements
+- Added Default lockscreen clock font and text size options
+- Added QS panel visualizer
+- Added RGB Accent picker
+- Added volume panel styles
+- Added option to centre R type notification header
+- Added brightness slider in QQS
+- Allowed navbar to work with hw keys
+- Added screen off animations
+- Added new FOD animations
+- Added new settings home page
+- Added support for MiSound FX
+- Added nav bar styles
+- Added header images
+- Added new volte icon(by @im_monarK)
+- Added brightness bar styles
+- Added option to hide device parts
+- Improve media seekbar
+- Added option to allow home button wake
+- Make unlocking faster via biometric lock
+- Improvements to touch response
+- Decrease Battery drain
 - Many other fixes and improvements
 
 Note : You need to flash the latest vendor version according to your region. Refer below,
