@@ -1,30 +1,304 @@
 =======================
-     09-03-2020
+     09-07-2020
 =======================
 
 
    * frameworks/base
-95faf00e9a5 SystemUI: Remove BatteryBar background
-22dc732381c SystemUI: Fix NPE on Volume panel plugins
-a8fc99e3912 SystemUI: Fix Brightness slider overlap
-1dcc35c31b3 Clock Styles: Add explosion circle animation clock
-d19a01c1c0c Clock Styles: Add two blue circle animation clocks
+c84d9ea3dfc SystemUI: Adapt to our UI corner style picker
+fd8e577718b base: Separate vibrate drawable for vol panel from common icon
+9ca6ec462f4 SystemUI: Fix NPE on Volume panel plugins
+001bc291f7c fwb: Optimise how plugins are applied
+95be7e654f2 SystemUI: Disable some features per default [1/2]
+011cca2041f MediaCard: Optimize layout
+61e901b55d8 Add Volume Panel Plugins Customization and Media Card [1/3]
+f59b5beeb25 Add Media Card in Ambient [1/2]
+ec08c89e722 base: VolumePluginManager: Add default constructor
+f506c5fe7ff fwb: Implement VolumePluginManager
+6f74e4cd252 fwb: Allow using plugins even on production
+e0a29b11d30 Revert Volume Panel Styles
+4455fe8011d VolumeDialog: Launch Q expanded volume panel on arrow longpress
+c9c2f6a6baa VolumeDialog: Minor Additional Adjustments
+737c6ff15c4 VolumeDialog: Bicpr-ify
+23ab3d6a18f base: Volume dialog timeout (1/2)
+8a4106df140 Change location of Iota, Gamma and components
+
+   * packages/apps/Plugins
+8386231 Add Volume Panel Plugins Customization and Media Card [3/3]
 
    * packages/apps/ZenHub
-9ea66a8 Revert "ZenHub: Nuke Oreo Volume Panel"
+5178965 ZenHub: Add Stock aosp volume panel
+6f9a9f7 ZenHub: Disable some features per default [2/2]
+380d541 Revert "ZenHub: Screen Off Animation config & make screen off animation selection logical[2/2]"
+aff0b8c Add Media Card in Ambient [2/2]
+8e963ab Add Volume Panel Plugins Customization and Media Card [2/3]
+
+=======================
+     09-06-2020
+=======================
+
+
+   * frameworks/base
+b32656d0a28 Rework VolumePanel Themes and Music Text [1/2]
+dcae921c87f Add Iota
+8bb27736a08 Add Gamma and Components
+fcb80df106f Add VolumeDialog AOSPA Theme [1/2]
+b1a90d5c804 Add More VolumePanel Themes [1/2]
+a291afa7ae9 Add VolumePanel Location Customization [1/2]
+04afb14aa41 Add MusicText next to VolumePanel [1/2]
+6a0005b6bef Add VolumePanel Styles [1/2]
+85b97a828bb Hide Things below VolumePanel [1/2]
+147a993e42f VolumeDialog: update dimens
+6774e1dc7f6 Volumedialog: place volume row icon a bit lower
+dd12381ce90 Volumedialog: get rid of dnd icons
+39c028b3b39 Fix live captions toggle with redesigned volumepanel
+0e7e548dde1 volumedialog: adjust dark theme colors
+c9f441a6164 Volumedialog: fix colors after SystemUI crashes previously if systemui would crash, progressbar and progressbackground would be tinted the same color
+b2de19ac3be Volumedialog: fix last remaining bug apply tint to row icon on initRow() call Now all cases when updating tint based on progress is needed should be covered TODO: cleanup
+c6092a1213b Volumedialog: fix glitched animation on clicking ringer adding ripple background with proper corner radius fixes animation which previously was 'drawing' outside of rounded corners
+329f09a38e2 volumedialog: apply new tint to row icon on updateRowsH() call
+d50873727e0 Redesign volume dialog
+d6d26665ff3 VolumeDialog: Fix muting streams with a minimal volume of 1
+4fa2b08c6ab VolumeDialog: Hide the music row if there is an ally stream
+91986859524 VolumeDialog: Show the notification stream when unlinked
+b5045c75adf VolumeDialog: Redo expanded volume panel
+d5697a0ea49 Revert "base: Redo expanded volume panel for 10.x"
+10d57a5263a SystemUI: Make sure volume expand icon points correctly
+211fe658127 base: Redo expanded volume panel for 10.x
+ba914c2e895 Volume panel: avoid multiple animations on touch spam
+56617adccdc fwb: Add support for internal audio recording
+6dae71b64e0 Open Sound settings on long click at the panel button
+740091a82a8 Extended Audio Panel [1/2]
+cc2651a4e27 frameworks: Add unlinked ringtone and notification volumes [1/2]
+2df3dc1f8e7 [SQUASCH] Revert all VolumePanel changes
+7e9d95279b8 SystemUI: Remove BatteryBar background
+0aee298cf8b SystemUI: Fix Brightness slider overlap
+f8940e3a69d Clock Styles: Add explosion circle animation clock
+25f1c17b256 Clock Styles: Add two blue circle animation clocks
+acef01e4333 [SQUASH] base: Cleanup for new screen off fod implementation
+83d418155e6 fwb: Add screen off fod [1/2]
+3abb1f68086 SystemUI: Improve HeaderImage background
+10d9d711944 SystemUI: Fix multiple issues with hiding unprovisioned SIMs
+077f1a55c47 StatusBarSignalPolicy: Hide signal icons for disabled SIMs
+b748ae207f8 PackageInstaller: Fix crash when uninstalling apps with fragile data
+2124cd92783 Navbar: Introduce navbar styles [1/3]
+63dd6b60578 base: Q seekbar: Tweak it's size
+832e961d309 Revert "base: media_seekbar: make it sexy"
+17d917bddef base: Introduce awesome brightness slider style [1/3]
+8496de305a8 SystemUI:Add new v(O)lte icon[1/2] *@Lokesh773:Bringup to ZenX-OS *Icon by @yashdevelops
+51dfa718571 base: Allow hiding Device Parts from ZenHub [1/2]
+07fdbc237dd Quick Brightness Slider: Fix padding issues
+c650cd64eba SystemUI: adapt to work with our UI styler
+725d68ffe24 base: Separate vibrate drawable for vol panel from common icon
+6d35816196c Notification: Fix no icon shown for data limit notification
+87fd4cc93db ChooserActivity: fix android crash from null object
+fb521623743 services: LightsService: Mute an annoying error message.
+b870589404d webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+37740b54f62 Gracefully handle integer overflows.
+0cd930bee18 Taskhelper api: fix NPE
+4bfb96b852a Refactor killapp implementation into a Dependency controller class
+2189254c25f base: Add overlay to Enable/Disable Home button wake
+0b45ecc4216 base: Enable home button wake
+c461a1f11b5 Add isFaceAuthEnabledForUser checks in KeyguardLiftController
+69f67148e15 PocketJudge: allow register vendor pocket sensor
+cb3d8856625 SystemUI: Block face authentication when device is in pocket mode
+6aab82a65b4 Revert "ScreenDecorations: Account notch-city for custom cutout"
+7594fc5230e base: Add support for MiSound FX
+2b1808d372d base: Add DiracSound and MiSound to current api
+f9d8f45af0a SystemUI: Fix QS tiles clipping when too many icons in view
+878660b1998 SystemUI: fix qs footer divider width and header image height
+7e44260cba1 SystemUI: keep width on qs expand move
+08621b6f52c SystemUI: decrease margin between qs and text
+349a40fa6d0 Fix a race conditon in `incident`.
+54254e20fe9 SystemUI: use OnePlus drawables for autobrightness icon
+fb6b7a76f44 BrightnessSlider: Correct the slider thumb
+bbeb1d1f49e base: SystemUI: fix brightness slider animation
+c79ff00b83e QSBHeader: code clean-up n improvements
+12ed3ad3844 Fixup QSPanel Mess
+a09d2e32ced Brightness slider: Visual improvements
+8a0d515918f SystemUI: Don't re add brightness slider if its already present
+16a21cebeca base: SystemUI: fix moving of qs brightness slider
+9a52ef39767 QSPanel: fix brightness slider logic
+cbe907f543a base: SystemUI: Kill brightness mirror
+9fad042e703 SystemUI: extend quick qs slider position [1/3]
+3000f222b60 SystemUI: Add brightness buttons to quick qs brightness slider
+3f3498c4e1f SystemUI: QQS brightness: get container padding directly
+df33ee03e8f Implement quick QS brightness slider [1/3]
+82a006e445b base: Fix another SystemUI crash
+df6d4a8ac82 base: Remove Duplicate FOD animations [1/2]
+b0f3670e77b base: Add Mi 10 Ultra FOD animations [1/2]
+488927a72fd Show the nearby chip for images and files too.
+21578a02b17 Allow navbar to work with hw keys
+e4aa5f56e6e RGB Accenter: Listen for more accent colors
+21e47720469 System UI: Restore correct Padding for qs Header
+9e9d354e5ae Add option to center "R style" notification headers [1/2]
+544e2f55805 RGB Accenter: add more attrs for color changes
+65006796f27 base: Introduce RGB accenter [1/2]
+ada2a2a11ab QSPanel Visualizer [1/2]
+385866ac71c Revert "SystemUI: Nuke Lockscreen Clock size and font style"
+27313f73f82 Fix NullPointerException of AMS
+660ae9ff166 SystemUI: QS drag handle improvement
+d8d6dcde600 AbsListView: Fix widget couldn't find any view fc
+48408b0a57d Return: Listanimation Views and Interpolator [1/2]
+066f2a58842 SystemUI: Fix cutted Notification icons on dual statusbar mod
+a251919763f base: Introduce UI Style Picker [1/3]
+bc418d02410 overlay: Improve DerpClear Theme
+4a8ef1ea684 SystemUI: Add OOS 10 VoLTE icon [1/2]
+eb6d1ae56bf SystemUI: Start ZenHub on longpress on SettingsIcon in QS
+ec6f19d5480 SystemUI: Fix Drag and settings icon overlap
+003bb89f2d1 overlay: Add Derp Clear Primary and Oneplus Dark
+b852e04904c SystemUI: Custom Statusbar height [1/2]
+e2f19b637d6 BatteryService: Add VOOC charging support
+d4d3ac5652a Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD
+d3efa39ca26 More fixes towards the race conditions in AMS
+429e3c4bd1a DO NOT MERGE Prevent ImageWallpaper from crashing due to wide gamut
+a2d3f81ed32 Add back enforceReadPermission for getmetadata
+2c58087b9b0 RESTRICT AUTOMERGE
+fb02fdf2356 Drop supplementary groups for child zygotes.
+af4b44c141d Use killProcessGroup when killing app zygote.
+eb011d26ca1 Make implicit intent immutable.
+72a16cfa1fa Make intents immutable
+4a49685d7d4 Clock Style: Add lockscreen Fire circle animation clock
+e5ba50f4d5d Clock Style : Add lockscreen Rainbow circle animation clock
+76a42de3278 Clock Style : Add lockscreen Bubbles animation clock
+f57d81759bd Clock Style : Add lockscreen Loading animation clock
+0c8dcf929be Clock Style : Add lockscreen Swing animation clock
+3e0af4a4851 Add a Tux clock controller
+2d5e9f41825 NetworkTraffic: Fix insivible Icon on light theme
+dd102dc49eb Optimize AbsListView to reduce click operation latency
+b9d8f8c9939 Keyguard: Improve Pin dialog show/hide animations duration
+b3885bd73d9 Allow SBC as HD audio codec in Bluetooth device configuration
+bde05324ca2 Add switch to select SBC HD by default [1/3]
+cdf844533e4 Add missing strings for SBC Dual Channel
+f25a2615fa7 A2DP codec priority [1/3]
+5841c79750c Add CHANNEL_MODE_DUAL_CHANNEL constant
+830de521c92 The surface hang up when screen on and screen off
+7418c9e2042 BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
+1f21cd16b2e SystemUI: Make clock truly invisible
+7ddd099a10a Add USSD codes over IMS feature
+c8cd035854b SystemUI: Fix SystemUI failed to go to doze issue
+0238e05e601 gzosp: bring back the utils
+0a4dca46084 SystemInfo: Add FileCheck to prevent system crash
+0cf1ae0d11e base: Add IconShapeMallowOverlay
+27396a62ab3 base: add BottomTriangle QS style [1/3]
+0d104d8b602 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
+b95870ec1c3 base: Add ZenHub Settings Icon Type [1/2]
+7a39fd7eac8 SystemUI: Fix owner info alignment for centered type clock
+b2bb04b507e base: clipboard toast toggle [1/2]
+503cff75ed7 base: iOS-like toast notification for clipboard access
+ba2e1963b38 StatubarIconList: Fix Network traffic visibility on overlayChange()
+c90de42c6f2 Screenstabilization: Catch DeadObjectException
+28a42612b92 Purge unused native memory before Zygote fork events
+d821610e995 Fix color mismatch of pointers
+c29272afc05 Teaches the ProcessCpuTracker about USAPs.
+abbfd003699 Fixed an issue Zygote initialization.
+44f7094aaa6 Improved timekeeping logic for USAP Pool refill mechanism.
+0c7351f36b7 Resets the refill action/timing info after a pool fill event.
+d135224d1ad Make the USAP Pool refill delay configurable.
+a20e440f8df Re-adds a trace  point that was accidentally removed.
+e54934953d5 Moved some thread priority changes.
+7c2893b266b Adjust Java Language thread priority in new processes.
+ca767ae43a0 Adjusts the USAP pool refill mechanism.
+d7abb27b4e0 Change USAP name to application name as soon as possible.
+c8392a8540c ScreenDecoration: Fix crash on few devices
+533eb3de9a5 SystemUI: notch-city: Do not apply immersive rules to 180 rotation
+0b8f79adb35 SystemUI: notch-city: Dejank immersive mode with QS panel
+e42e7540ea3 SystemUI: notch-city: Make it smarter with orientation [1/2]
+1c225d9c8be ScreenDecorations: Account notch-city for custom cutout
+9cddfca65d1 ScreenDecorations: Simplify rounded size selection
+9214e2b933d SystemUI: Revert few changes in notch-city
+28d5051f4d8 SystemUI: notch-city: Reduce code redundancy
+b5dc1afe624 ScreenStabilizationTile: Fix velocity amplitude format
+814ab9555de Fix typos related to sortSelectionIndices
+c8bd7cdb34e Fix app crash if the selection is from reverse direction.
+58dbaaa686b TypeClock: Align owner info as per the clock style
+8fea10cec1d fixup - telephony: Conditionally ignore RSSNR signal level
+a4ddb6219cf Telephony: IMS: Cache subscriber associated uri
+956f6577367 Set Assistant UID of the current user.
+dea5fd47db8 BLE: Fix NPE during start advertising
+2da968c3369 BT: Relocate A2DP codec strings for translation
+11920f4e4d9 ConnectivityService: prevent setting net.hostname to null
+a77cda7d706 SystemUI: Don't reload tiles when auto brightness is toggled
+f5f07e7c723 SystemUI: Allow setting custom rounded corner shapes
+c3f8303cc22 ScreenDecorations: Don't draw cutouts in immerse
+346f8a8dc8d ScreenDecorations: Check setting if newValue is null, respect defaults
+88f2c24e39c ScreenDecorations: Remove the red debug color
+2fe566dc07b base: Rework corner handling in notch-city immerse mode
+0f10fe92c4f base: Remove current immserse corner impl
+325f9cec5b3 SystemUI: Show infinity for large notification counts
+2bece0dc2f3 SystemUI: Forward-port notification counters [1/2]
+432649285d7 Add JustIcons QS Tile style [1/3]
+ef817796270 TypographicCLock: Fix missing minute entry for german language
+d448c7cd214 Adds Zygote policy flags to control how applications are launched
+c123da2120d Start process of next activity with top priority in advance
+e38b36fac70 SystemUI: Improve QS Background
+04c6f35a0b5 Don't request render in GLSurfaceView.GLThread ctr
+b99c49d9ef7 Add synchronization for invokeForAllObservers call
+a96fcb4984c Return null on failed insert due to permissions
+30e55b4250c Fixes crash/race condition when destroyActivity
+39f7f7ec821 NotificationPanelView: Fix initial touch co-ordinates
+a22a6239d78 base: Reduce keyguard delay
+31e89d33f4c API changes due to importing RI BigInteger
+e329a294420 Remove unused / unimplemented CorePlatformAPI methods.
+
+   * manifest
+b1c42a9 Merge pull request #3 from Raaj52/ten
+
+   * packages/apps/OmniStyle
+c699dfb OmniStyle:Add naruto,dragonballz and superhero headers *These images have been picked from various commits *credit to @GMLR27v2 *Credits to all those unknown authors of the images
+4497f45 Revert "OmniStyle: Add 'Colorful' headers"
+e14159a Revert "OmniStyle: Add 'Space' headers"
+60dd47c Revert "OmniStyle: Add itsaalex poison headers"
+
+   * packages/apps/ZenHub
+a7ff19a Add VolumePanel Location Customization [2/2]
+0e75154 Add MusicText next to VolumePanel [2/2]
+ea6302c Add More VolumePanel Themes [2/2]
+eb12bc4 Add Volume Panel Theme  [2/2]
+c51e076 Hide Things below VolumePanel [2/2]
+7ce5b9b Extended Volume panel [2/2]
+
+   * vendor/lawnchair
+7229e7c Merge pull request #1 from Raaj52/ten
+260beca Lawnchair: Introduce TARGET_MINIMAL_APPS
+
+   * vendor/zenx
+3ace98dc Merge pull request #3 from Raaj52/ten
+15c658d8 vendor: common: Add Lawnchair conditionally
+
+=======================
+     09-05-2020
+=======================
+
+
+   * manifest
+488892f manifest: Track Lawnchair from now
+
+   * vendor/lawnchair
+6c373e7 Updated Weather App to v2.7.1
+b6c5425 Fix bootloop on system only devices (3/3)
+d94a791 Use TARGET_COPY_OUT_PRODUCT
+cdfb307 Added Oneplus Weather App, Icon packs & Widgets
+c65ab29 prebuilts: Update libhoko_blur.so
+714c69c prebuilts: Improve Lawnchair build config
+d29fd41 Lawnchair: Bringing up for ZenX-OS!
+
+=======================
+     09-04-2020
+=======================
+
+
+=======================
+     09-03-2020
+=======================
+
+
+   * packages/apps/ZenHub
+68675ca Revert "ZenHub: Nuke Oreo Volume Panel"
 
 =======================
      09-02-2020
 =======================
 
-
-   * frameworks/base
-dc95ac9f71c Merge pull request #10 from theOverpoweredGuy/screenoff-fod
-818459445d3 fwb: Optimise how plugins are applied
-58b95184917 SystemUI: Improve HeaderImage background
-
-   * packages/apps/OmniStyle
-481a4e4 Omnistyle: Compress images
 
    * packages/apps/Settings
 de3f5fab39 Settings: Improve text padding
@@ -44,13 +318,6 @@ fb404c80 vendor: ZenX-OS 1.9
 =======================
 
 
-   * frameworks/base
-3f742369869 Revert "BoostFramework: New hintType for App Starting from BG."
-822947df929 Revert "framework: add boost for package installation"
-4ad86364c0e Revert "Perf: Boost UI thread during app launching"
-962f793dcff SystemUI: Fix multiple issues with hiding unprovisioned SIMs
-eb438ddc42f StatusBarSignalPolicy: Hide signal icons for disabled SIMs
-
    * frameworks/opt/telephony
 2e146c1bb TelephonyExtUtils: Handle extphone binder death
 ca095bb2b TelephonyExtUtils: Set timeout for (de)activating provision
@@ -59,53 +326,13 @@ ca095bb2b TelephonyExtUtils: Set timeout for (de)activating provision
    * manifest
 b624243 manifest:Track chromium-webview from los
 
-   * packages/apps/OmniStyle
-9b8c767 OmniStyle:Add marvel and DC superohero headers
-880bb58 Revert "OmniStyle: Add itsaalex poison headers"
-a427ca1 Revert "OmniStyle: Add 'Space' headers"
-0027a47 Revert "OmniStyle: Add 'Colorful' headers"
-
-   * packages/apps/ZenHub
-28bf935 ZenHub: Allow hiding Device Parts from ZenHub [1/2]
-
 =======================
      08-31-2020
 =======================
 
 
-   * frameworks/base
-1997aea0852 PackageInstaller: Fix crash when uninstalling apps with fragile data
-a6f1038700c Skip screen on animation when wake and unlock via biometrics
-f91fcb6cd98 Navbar: Introduce navbar styles [1/3]
-ac1755e60fe base: Q seekbar: Tweak it's size
-da894217941 Revert "base: media_seekbar: make it sexy"
-ad77a6b4307 base: Introduce awesome brightness slider style [1/3]
-48560cf6410 SystemUI:Add new v(O)lte icon[1/2] *@Lokesh773:Bringup to ZenX-OS *Icon by @yashdevelops
-a0982b40ad4 base: Allow hiding Device Parts from ZenHub [1/2]
-64d04461ca4 Quick Brightness Slider: Fix padding issues
-dafa246e77a SystemUI: adapt to work with our UI styler
-e0eb5887bbd base: Separate vibrate drawable for vol panel from common icon
-635932eecff Notification: Fix no icon shown for data limit notification
-e2d00aa8d75 ChooserActivity: fix android crash from null object
-af8227193f4 services: LightsService: Mute an annoying error message.
-97926e9fd4c webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
-43e04036ff1 Gracefully handle integer overflows.
-5c24069b1a1 Taskhelper api: fix NPE
-20de8f60b5a Refactor killapp implementation into a Dependency controller class
-dc058d64c37 base: Add overlay to Enable/Disable Home button wake
-cc2264d3b44 base: Enable home button wake
-e998808b6a2 [SQUASH] base: Cleanup for new screen off fod implementation
-f4fee0aa26d fwb: Add screen off fod [1/2]
-
    * packages/apps/CustomDoze
 8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
-
-   * packages/apps/OmniStyle
-f22d169 Bring Animeness to the world of Custom Roms (#1)
-1aa983d Omnistyle: Add more scenery headers
-f3dd62b OmniStyle: Added SAO headers
-83b170f OmniStyle: Add scenery headers
-c2575e8 OmniStyle: Add Naruto Headers
 
    * packages/apps/Plugins
 565ff4f plugins: adapt to work with our UI styler
@@ -117,7 +344,15 @@ dabf585484 Merge pull request #3 from theOverpoweredGuy/screenoff-fod
 7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
 
    * packages/apps/ZenHub
+28bf935 ZenHub: Allow hiding Device Parts from ZenHub [1/2]
 6fb9d92 ZenHub: Introduce navbar styles [2/3]
+
+=======================
+     08-30-2020
+=======================
+
+
+   * packages/apps/ZenHub
 d6a6c0e ZenHub:Add new v(O)lte icon[2/2]
 28ac74c ZenHub: Introduce awesome brightness slider style picker [3/3]
 d3e551d Revert "Revert "QSPanel Visualizer [2/2]""
@@ -125,13 +360,6 @@ d3e551d Revert "Revert "QSPanel Visualizer [2/2]""
    * vendor/zenx
 1cb2125f Navbar: Introduce navbar styles [3/3]
 1d4595fd vendor: Introduce awesome brightness slider style [2/3]
-
-=======================
-     08-30-2020
-=======================
-
-
-   * vendor/zenx
 f3c01a1b vendor: apns-conf: Drop proxy for Movistar
 7ad369b8 repopick: Address PEP8 warnings regarding indentations and variable naming
 8bb8d0d7 repopick: Use empty metavar parameter to fix help's indentation
@@ -157,7 +385,6 @@ a7783237 repopick: Use upstream instead of revision to determine branch
 
    * packages/apps/ZenHub
 8684759 [SQUASH] ZenHub: Clean-Up for new Screen off FOD implementation
-1f2d2a4 Revert "Revert "QSPanel Visualizer [2/2]""
 
 =======================
      08-28-2020
@@ -165,6 +392,7 @@ a7783237 repopick: Use upstream instead of revision to determine branch
 
 
    * packages/apps/ZenHub
+1f2d2a4 Revert "Revert "QSPanel Visualizer [2/2]""
 47ff71b ZenHub: Nuke Oreo Volume Panel
 
    * system/sepolicy
@@ -175,32 +403,7 @@ a7783237 repopick: Use upstream instead of revision to determine branch
 =======================
 
 
-   * frameworks/base
-86b19cb58c1 base: Separate vibrate drawable for vol panel from common icon
-4abd2cfae64 Notification: Fix no icon shown for data limit notification
-fad0cead0ea ChooserActivity: fix android crash from null object
-e202ea20df6 services: LightsService: Mute an annoying error message.
-d13732f9b8c webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
-7f26e7d27b4 Gracefully handle integer overflows.
-6b423785190 Taskhelper api: fix NPE
-3899fd1fd5a Refactor killapp implementation into a Dependency controller class
-1ac3812e9dc base: Add overlay to Enable/Disable Home button wake
-d5a8eddeb42 base: Enable home button wake
-7c903585460 VolumeDialog: notifyVisible after the volume panel is fully hidden
-010941c574a VolumeDialog: display default row when active row is notification
-2c5d1d57021 SystemUI: fix size of icon of vibrate ringer mode
-de4fa6cc410 fixup - SystemUI: Allow device to override audio panel location
-f8b1a2e548e Add isFaceAuthEnabledForUser checks in KeyguardLiftController
-af4dbaea916 PocketJudge: allow register vendor pocket sensor
-541df69d95e SystemUI: Block face authentication when device is in pocket mode
-9eced9a7b74 avoid duplicate doFrame calls.
-28d79c1c48b make ui touch optimization work normally.
-b4c54dd19c1 add VSYNC scheduled flag and avoid two doFrame calls in one period
-91ff87e4aa5 core: touch response optimizations
-461adfb76ce Revert "ScreenDecorations: Account notch-city for custom cutout"
-
    * frameworks/native
-30a969935 touch response optimizations
 66c029128 gui: Fix array out of bound
 a8ffa93f4 binder: Parcel avoid too small initial allocation
 89645573b gl: Reorder when ImageManager thread starts
@@ -213,40 +416,6 @@ f33c88850 Failed to show hold call when user click swap and merge simultaneously
 =======================
 
 
-   * frameworks/base
-8144e21d01b base: Add support for MiSound FX
-0d6eeea26ef base: Add DiracSound and MiSound to current api
-6b202ee2d52 SystemUI: Fix QS tiles clipping when too many icons in view
-5fefad9e01d SystemUI: fix qs footer divider width and header image height
-26847f91b40 SystemUI: keep width on qs expand move
-bd58a2ed0f3 SystemUI: decrease margin between qs and text
-55ede5de56c Fix a race conditon in `incident`.
-82e7e7517bb SystemUI: use OnePlus drawables for autobrightness icon
-77c146cd871 BrightnessSlider: Correct the slider thumb
-ec0e2c43da2 base: SystemUI: fix brightness slider animation
-9cc15152262 QSBHeader: code clean-up n improvements
-ca40c4fe2c1 Fixup QSPanel Mess
-3e54b9ab9c4 Brightness slider: Visual improvements
-d471afe7ea0 SystemUI: Don't re add brightness slider if its already present
-13367774176 base: SystemUI: fix moving of qs brightness slider
-ed92261bd56 QSPanel: fix brightness slider logic
-0e4c82de7e7 base: SystemUI: Kill brightness mirror
-3e351949e71 SystemUI: extend quick qs slider position [1/3]
-0d623401c81 SystemUI: Add brightness buttons to quick qs brightness slider
-7c35d67c24a SystemUI: QQS brightness: get container padding directly
-d5e5c0728c6 Implement quick QS brightness slider [1/3]
-890cc97892a base: Fix another SystemUI crash
-b8fa5489db7 base: Remove Duplicate FOD animations [1/2]
-f851e2b5ba6 base: VolumePluginManager: Add default constructor
-35d9a98f9fa base: Allow using plugins even on production
-0890ad4d3a8 base: Implement VolumePluginManager
-4f56c071f89 base: Add Mi 10 Ultra FOD animations [1/2]
-73d062b81c8 Show the nearby chip for images and files too.
-85af5516b65 Allow navbar to work with hw keys
-589ec05f1ae RGB Accenter: Listen for more accent colors
-3df1fbad2c5 System UI: Restore correct Padding for qs Header
-daaf83220fd Add option to center "R style" notification headers [1/2]
-
    * packages/apps/ZenHub
 a644f56 ZenHub: Implement quick QS brightness slider [2/2]
 0bc9830 ZenHub: Remove duplicate FOD animations [2/2]
@@ -254,6 +423,13 @@ a644f56 ZenHub: Implement quick QS brightness slider [2/2]
 1da8c1b ZenHub: Make all accent color presets 8 char long
 d01e7ac ZenHub: POSP Vol panel styles
 905516c ZenHub: Add RGB accent presets
+
+=======================
+     08-25-2020
+=======================
+
+
+   * packages/apps/ZenHub
 b1c725a Revert "QSPanel Visualizer [2/2]"
 1a79a99 ZenHub: Add Mi 10 Ultra FOD animations [2/2]
 5c2f77f ZenHub: Allow to keep hw keys enabled [2/2]
@@ -262,36 +438,4 @@ acc599f ZenHub:Update Maintainers and Devices
 33c3da7 Merge pull request #6 from Gasiyu/patch-1
 039a92a ZenHub: Add RGB Accent Picker
 817b027 QSPanel Visualizer [2/2]
-
-=======================
-     08-25-2020
-=======================
-
-
-=======================
-     08-24-2020
-=======================
-
-
-=======================
-     08-23-2020
-=======================
-
-
-=======================
-     08-22-2020
-=======================
-
-
-   * packages/apps/Settings
-e3e1ab0c75 Settings: update lottie animations
-f824fb08db Settings: update some lottie animations
-94091e8e5f Settings: add icons for privacy settings
-8ea4bfd64a Settings: Add new face settings video
-9b30be3d0f Settings: Make Homepage great again - OOS Homepage
-
-=======================
-     08-21-2020
-=======================
-
 
